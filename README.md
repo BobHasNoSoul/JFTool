@@ -1,4 +1,4 @@
-#JFTool
+# JFTool
 
 ```
    __       _ _        __ _                       
@@ -35,7 +35,7 @@ I cannot stress how much the devs do for us all.
 Please enter your choice: 
 ```
 
-#How to use
+# How to use
 
 - Download the jtfool.zip (it has the tool.sh and the images folder with placeholder images already in it).
 - Extract the file to your machine with the jellyfin install on it.
@@ -47,5 +47,3 @@ Please enter your choice:
 
 Note: you may be able to modify these without stopping jellyfin server but i would reccomend for sanitys sake when
 modifying any files you stop the server, make the edits, then start it again.
-
-<img>
