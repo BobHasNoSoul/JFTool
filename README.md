@@ -39,6 +39,7 @@ Please enter your choice:
 
 - Download the jtfool.zip (it has the tool.sh and the images folder with placeholder images already in it).
 - Extract the file to your machine with the jellyfin install on it.
+- Edit the images inside the images folder with your favorite image editor and replace them with your own images with the same dimensions (or go wild and change the dimensions.. but if you do your mileage may vary).
 - Stop jellyfin from running `sudo service jellyfin stop`
 - run `./tool.sh`
 - select your options you want to apply from the numbered menu
@@ -47,6 +48,9 @@ Please enter your choice:
 
 Note: you may be able to modify these without stopping jellyfin server but i would reccomend for sanitys sake when
 modifying any files you stop the server, make the edits, then start it again.
+
+# Disclaimer
+The tool will replace the existing files for logos in your install... so if you want to get them back you will need to grab them from either another install or back them up before running these are located at /var/lib/jellyfin/bin/jellyfin-web/ sometimes located in assets or themes.. depending on version.
 
 # Pictures
 Replace the stock logos on entire interface
