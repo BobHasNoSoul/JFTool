@@ -50,8 +50,13 @@ modifying any files you stop the server, make the edits, then start it again.
 
 # Pictures
 Replace the stock logos on entire interface
+
 <img src="https://i.imgur.com/W6ewXAi.png">
+
 Custom Links and a top side bar logo
+
 <img src="https://i.imgur.com/t8m1oy6.png">
+
 Change Page Title and favicon
+
 <img src="https://i.imgur.com/Wfxtw9S.png">
