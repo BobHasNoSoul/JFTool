@@ -31,7 +31,8 @@ I cannot stress how much the devs do for us all.
 1) Add Custom Link	     5) Remove icon from sidebar
 2) Change Page Title	     6) Read Me
 3) Change Icons		     7) Remove Sidebar Link
-4) Add icon to sidebar	     8) Quit
+4) Add icon to sidebar	  8) Add logo above login
+9) Quit
 Please enter your choice: 
 ```
 
@@ -64,3 +65,7 @@ Custom Links and a top side bar logo
 Change Page Title and favicon
 
 <img src="https://i.imgur.com/Wfxtw9S.png">
+
+Add logo above login
+
+<img src="http://imgur.com/jf6LxYul.png">
