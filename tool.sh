@@ -11,7 +11,7 @@ echo " / / | | | / __| __/ _ \|  _   _ \| |_  / _ \  __|"
 echo "/ /__| |_| \__ \ || (_) | | | | | | |/ /  __/ |   "
 echo "\____/\__,_|___/\__\___/|_| |_| |_|_/___\___|_|   "
 echo ""
-echo "Jellyfin Customizer v0.2"
+echo "Jellyfin Customizer v0.3"
 echo ""
 echo "Note: THIS IS FOR 1.4.X and 1.5.x"
 echo "Tested and working on debian installs (i.e. Raspbian)"
@@ -27,7 +27,7 @@ echo ""
 echo "============================================================"
 echo ""
 PS3='Please enter your choice: '
-options=("Add Custom Link" "Change Page Title" "Change Icons" "Add icon to sidebar" "Remove icon from sidebar" "Read Me" "Remove Sidebar Link" "Add logo above login" "Quit")
+options=("Add Custom Link" "Change Page Title" "Change Icons" "Add icon to sidebar" "Remove icon from sidebar" "Read Me" "Remove Sidebar Link" "Add logo above login" "Backup current icons" "Change to original jellyfin icons" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -170,7 +170,31 @@ do
           ${logowhite}" /usr/lib/jellyfin/bin/jellyfin-web/login.html
 	  sudo sed -i "/logowhite.png/a \
 	  </div>" /usr/lib/jellyfin/bin/jellyfin-web/login.html
-	  echo "done"
+	  echo "(Optional) to remove the icon in the top left top bar on the login page please login to the admin panel"
+	  echo "General tab and insert the following under custom css"
+	  echo ""
+	  echo "For 10.4.x add:"
+	  echo ".listItemImage.listItemImage-large.itemAction.lazy {height: 110px;}"
+	  echo "div.skinHeader.skinHeader-withBackground.headroom.noHeaderRight {display:none; }"
+	  echo " "
+#	  echo "adding the css to remove dual icons on login page"
+#      sudo sed -i "/CustomCSS/a \ .listItemImage.listItemImage-large.itemAction.lazy {height: 110px;}" /etc/jellyfin/branding.xml
+#	  sudo sed -i "/CustomCSS/a \ div.skinHeader.skinHeader-withBackground.headroom.noHeaderRight {display:none; }" /etc/jellyfin/branding.xml
+	  echo "once you have done that you can click save on web admin page"
+	  ;;
+	  	"Backup current icons")
+	  mkdir ./backedupimages
+	  sudo cp /usr/lib/jellyfin/bin/jellyfin-web/*.png ./backedupimages/
+	  sudo cp /usr/lib/jellyfin/bin/jellyfin-web/components/themes/*.png ./backedupimages/
+	  sudo cp /usr/lib/jellyfin/bin/jellyfin-web/assets/img/*.png ./backedupimages/
+	  sudo cp /usr/lib/jellyfin/bin/jellyfin-web/favicon.ico ./backedupimages/favicon.ico
+	  echo "Done"
+	  ;;
+	"Change to original jellyfin icons")
+	  sudo cp ./originalimages/*.png /usr/lib/jellyfin/bin/jellyfin-web/
+	  sudo cp ./originalimages/*.png /usr/lib/jellyfin/bin/jellyfin-web/components/themes/
+	  sudo cp ./originalimages/*.png /usr/lib/jellyfin/bin/jellyfin-web/assets/img/
+	  sudo cp ./originalimages/favicon.ico /usr/lib/jellyfin/bin/jellyfin-web/favicon.ico
 	  ;;
  	"Quit")
 	  break
