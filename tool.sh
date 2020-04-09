@@ -11,7 +11,7 @@ echo " / / | | | / __| __/ _ \|  _   _ \| |_  / _ \  __|"
 echo "/ /__| |_| \__ \ || (_) | | | | | | |/ /  __/ |   "
 echo "\____/\__,_|___/\__\___/|_| |_| |_|_/___\___|_|   "
 echo ""
-echo "Jellyfin Customizer v0.1"
+echo "Jellyfin Customizer v0.2"
 echo ""
 echo "Note: THIS IS FOR 1.4.X and 1.5.x"
 echo "Tested and working on debian installs (i.e. Raspbian)"
@@ -27,7 +27,7 @@ echo ""
 echo "============================================================"
 echo ""
 PS3='Please enter your choice: '
-options=("Add Custom Link" "Change Page Title" "Change Icons" "Add icon to sidebar" "Remove icon from sidebar" "Read Me" "Remove Sidebar Link" "Quit")
+options=("Add Custom Link" "Change Page Title" "Change Icons" "Add icon to sidebar" "Remove icon from sidebar" "Read Me" "Remove Sidebar Link" "Add logo above login" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -161,17 +161,17 @@ do
 	  read removelink
           sudo sed -i "/${removelink}/d" /usr/lib/jellyfin/bin/jellyfin-web/scripts/librarymenu.js 
 	  ;;
-#	"Add logo above login")
-#	  echo "adding the logo"
-#	  logowhite='<img src="/web/logowhite.png" width=400px style="padding: 5px;display:block; margin-left: auto; margin-right: auto;">'
- #         sudo sed -i "/fakeusernameremembered/i \
-  #        <div class="Login-Logo">" /usr/lib/jellyfin/bin/jellyfin-web/login.html
-   #       sudo sed -i "/Login-Logo/a \
-    #      ${logowhite}" /usr/lib/jellyfin/bin/jellyfin-web/login.html
-#	  sudo sed -i "/logowhite.png/a \
-#	  </div>" /usr/lib/jellyfin/bin/jellyfin-web/login.html
-#	  echo "done"
-#	  ;;
+	"Add logo above login")
+	  echo "adding the logo"
+	  logowhite='<img src="/web/logowhite.png" width=400px style="padding: 5px;display:block; margin-left: auto; margin-right: auto;">'
+          sudo sed -i "/manualLoginForm hide/i \
+          <div class="Login-Logo">" /usr/lib/jellyfin/bin/jellyfin-web/login.html
+          sudo sed -i "/Login-Logo/a \
+          ${logowhite}" /usr/lib/jellyfin/bin/jellyfin-web/login.html
+	  sudo sed -i "/logowhite.png/a \
+	  </div>" /usr/lib/jellyfin/bin/jellyfin-web/login.html
+	  echo "done"
+	  ;;
  	"Quit")
 	  break
 	  ;;
