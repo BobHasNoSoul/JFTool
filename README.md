@@ -13,10 +13,7 @@
 / /__| |_| \__ \ || (_) | | | | | | |/ /  __/ |   
 \____/\__,_|___/\__\___/|_| |_| |_|_/___\___|_|   
 
-Jellyfin Customizer v0.5
-
-Current Bug: on some android phones in chrome when applying holiday items
-(animations) will play over the video however in a web browser on pc they wont
+Jellyfin Customizer v0.5b
 
 Note: THIS IS FOR 1.4.X and 1.5.x
 Tested and working on debian installs (i.e. Raspbian)
@@ -31,15 +28,14 @@ I cannot stress how much the devs do for us all.
 
 ============================================================
 
-1) Add Custom Link		       10) Change to original jellyfin icons
-2) Change Page Title		       11) Add snow animation
-3) Change Icons			       12) Add Heart animation
-4) Add icon to sidebar		       13) Add Halloween animation
-5) Remove icon from sidebar	       14) Add Fireworks
-6) Read Me			       15) Add Pattys day
-7) Remove Sidebar Link		       16) Remove Animations
-8) Add logo above login		       17) Quit
-9) Backup current icons
+1) Add Custom Link		        9) Change to original jellyfin icons
+2) Change Page Title		       10) Add snow animation
+3) Change Icons			       11) Add Heart animation
+4) Add icon to sidebar		       12) Add Halloween animation
+5) Remove icon from sidebar	       13) Add Fireworks
+6) Remove Sidebar Link		       14) Add Pattys day
+7) Add logo above login		       15) Remove Animations
+8) Backup current icons		       16) Quit
 Please enter your choice: 
 
 
