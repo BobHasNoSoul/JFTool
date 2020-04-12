@@ -123,6 +123,7 @@ This makes your icons go back to normal stock jellyfin icons incase for some rea
 This adds a touch of seasonal boom to your install, pattys day, christmas, halloween, valentines, saintpatricks day, FIREWORKS...... just because who doesnt like fireworks. these do need to be manually triggered until i get some extra time to update a way to crontab this (due to dir permissions on /usr/lib/jellyfin/bin/jellyfin-web)
 
 <img src="https://i.imgur.com/xDWkJkc.gif">
+note: this looks laggy because im not great at making gifs, however end result is not laggy and smoother.
 
 # Things to be added that are not in this version
 - Custom css injection from a few presets
