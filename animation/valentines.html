@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html class="preload">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="manifest" href="manifest.json">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <meta http-equiv="X-UA-Compatibility" content="IE=Edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Jellyfin">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <meta property="og:title" content="Jellyfin">
+    <meta property="og:site_name" content="Jellyfin">
+    <meta property="og:url" content="http://jellyfin.media">
+    <meta property="og:description" content="The Free Software Media System.">
+    <meta property="og:type" content="article">
+    <meta property="fb:app_id" content="1618309211750238">
+    <link rel="apple-touch-icon" sizes="180x180" href="touchicon.png">
+
+    <!-- iPhone 5 -->
+    <link href="assets/splash/iphone5_splash.png" media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" rel="apple-touch-startup-image" />
+    <link href="assets/splash/iphone5_splash_l.png" media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" rel="apple-touch-startup-image" />
+
+    <!-- iPhone 6, 6S, 7 and 8 -->
+    <link href="assets/splash/iphone6_splash.png" media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" rel="apple-touch-startup-image" />
+    <link href="assets/splash/iphone6_splash_l.png" media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" rel="apple-touch-startup-image" />
+
+    <!-- iPhone 6+, 7+ and 8+ -->
+    <link href="assets/splash/iphoneplus_splash.png" media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" rel="apple-touch-startup-image" />
+    <link href="assets/splash/iphoneplus_splash_l.png" media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" rel="apple-touch-startup-image" />
+
+    <!-- iPhone X -->
+    <link href="assets/splash/iphonex_splash.png" media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" rel="apple-touch-startup-image" />
+    <link href="assets/splash/iphonex_splash_l.png" media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" rel="apple-touch-startup-image" />
+
+    <!-- iPhone Xr -->
+    <link href="assets/splash/iphonexr_splash.png" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" rel="apple-touch-startup-image" />
+    <link href="assets/splash/iphonexr_splash_l.png" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" rel="apple-touch-startup-image" />
+
+    <!-- iPhone Xs -->
+    <link href="assets/splash/iphonexsmax_splash.png" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" rel="apple-touch-startup-image" />
+    <link href="assets/splash/iphonexsmax_splashl.png" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" rel="apple-touch-startup-image" />
+
+    <!-- iPad -->
+    <link href="assets/splash/ipad_splash.png" media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" rel="apple-touch-startup-image" />
+    <link href="assets/splash/ipad_splash_l.png" media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" rel="apple-touch-startup-image" />
+
+    <!-- iPad Pro 1 -->
+    <link href="assets/splash/ipadpro1_splash.png" media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" rel="apple-touch-startup-image" />
+    <link href="assets/splash/ipadpro1_splash_l.png" media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" rel="apple-touch-startup-image" />
+    
+    <!-- iPad Pro 3 -->
+    <link href="assets/splash/ipadpro3_splash.png" media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" rel="apple-touch-startup-image" />
+    <link href="assets/splash/ipadpro3_splash_l.png" media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" rel="apple-touch-startup-image" />
+
+    <!-- iPad Pro 2 -->
+    <link href="assets/splash/ipadpro2_splash.png" media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" rel="apple-touch-startup-image" />
+    <link href="assets/splash/ipadpro2_splash_l.png" media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" rel="apple-touch-startup-image" />
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="msapplication-TileImage" content="touchicon144.png">
+    <meta name="msapplication-TileColor" content="#333333">
+    <meta name="theme-color" content="#101010">
+
+    <title>Jellyfin</title>
+
+    <style>
+/* customizable snowflake styling */
+.snowflake {
+  position:relative;
+  z-index: 2;
+  color: #FF0000;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 5px #000;
+}
+
+@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(10){left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s}.snowflake:nth-of-type(11){left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s}
+        .transparentDocument, .backgroundContainer-transparent:not(.withBackdrop) {
+            background: none !important;
+            background-color: transparent !important;
+        }
+
+        .mouseIdle, .mouseIdle button, .mouseIdle select, .mouseIdle input, .mouseIdle textarea, .mouseIdle a, .mouseIdle label {
+            cursor: none !important;
+        }
+
+        .preload {
+            background-color: #101010;
+        }
+
+        .hide, .mouseIdle .hide-mouse-idle, .mouseIdle-tv .hide-mouse-idle-tv {
+            display: none !important;
+        }
+
+        .mainDrawerHandle {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 1;
+            width: 10px;
+        }
+    </style>
+</head>
+<body>
+<snowflake>
+<div class="snowflakes" aria-hidden="true">
+  <div class="snowflake">
+  ❤️
+  </div>
+  <div class="snowflake">
+  💙
+  </div>
+  <div class="snowflake">
+  ❤️
+  </div>
+  <div class="snowflake">
+  💗
+  </div>
+  <div class="snowflake">
+  ❤️
+  </div>
+  <div class="snowflake">
+  💙
+  </div>
+  <div class="snowflake">
+    ❤️
+  </div>
+  <div class="snowflake">
+    💙
+  </div>
+  <div class="snowflake">
+    ❤️
+  </div>
+  <div class="snowflake">
+    💙
+  </div>
+  <div class="snowflake">
+    ❤️
+  </div>
+  <div class="snowflake">
+    💙
+  </div>
+</div>
+</snowflake>
+    <div class="backdropContainer"></div>
+    <div class="backgroundContainer"></div>
+    <div class="mainDrawer hide">
+        <div class="mainDrawer-scrollContainer scrollContainer focuscontainer-y"></div>
+    </div>
+    <div class="skinHeader focuscontainer-x"></div>
+    <div class="mainAnimatedPages skinBody"></div>
+    <div class="mainDrawerHandle"></div>
+</body>
+</html>
