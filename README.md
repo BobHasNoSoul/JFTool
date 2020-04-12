@@ -146,17 +146,17 @@ now add this at the bottom to make them run for a specific period (modify to you
 1 0 29 10 * /home/pi/jftool/cronhalloween.sh
 1 0 1 11 * /home/pi/jftool/cronstock.sh
 # Christmas and lead up
-1 0 15 12 * /home/pi/jftool/cronsnow.sh
-1 0 15 27 * /home/pi/jftool/cronstock.sh
+1 0 15 12 * /home/pi/jftool/cron/cronsnow.sh
+1 0 15 27 * /home/pi/jftool/cron/cronstock.sh
 # New Year Day
-1 0 31 12 * /home/pi/jftool/cronfirework.sh
-1 0 2 1 * /home/pi/jftool/cronstock.sh
+1 0 31 12 * /home/pi/jftool/cron/cronfirework.sh
+1 0 2 1 * /home/pi/jftool/cron/cronstock.sh
 # ST Patricks Day
-1 0 17 3 * /home/pi/jftool/cronpatty.sh
-1 0 18 3 * /home/pi/jftool/cronstock.sh
+1 0 17 3 * /home/pi/jftool/cron/cronpatty.sh
+1 0 18 3 * /home/pi/jftool/cron/cronstock.sh
 # Valentines Day
-1 0 14 2 * /home/pi/jftool/cronhearts.sh
-1 0 15 2 * /home/pi/jftool/cronstock.sh
+1 0 14 2 * /home/pi/jftool/cron/cronhearts.sh
+1 0 15 2 * /home/pi/jftool/cron/cronstock.sh
 
 ```
 now press ctrl+x and then press y then press enter (this saves the crontab)
