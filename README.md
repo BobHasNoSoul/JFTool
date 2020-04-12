@@ -143,8 +143,8 @@ now add this at the bottom to make them run for a specific period (modify to you
 ```
 # CUSTOM ANIMATIONS FOR JELLYFIN
 # Halloween and lead up
-1 0 29 10 * /home/pi/jftool/cronhalloween.sh
-1 0 1 11 * /home/pi/jftool/cronstock.sh
+1 0 29 10 * /home/pi/jftool/cron/cronhalloween.sh
+1 0 1 11 * /home/pi/jftool/cron/cronstock.sh
 # Christmas and lead up
 1 0 15 12 * /home/pi/jftool/cron/cronsnow.sh
 1 0 15 27 * /home/pi/jftool/cron/cronstock.sh
