@@ -134,6 +134,6 @@ This adds a touch of seasonal boom to your install, pattys day, christmas, hallo
 note: this looks laggy because im not great at making gifs, however end result is not laggy and smoother.
 
 # Things to be added that are not in this version
-- Custom css injection from a few presets
-- version checks for automatic population of compatible items on the menu
-- non-linux OS support
+- Custom css injection from a few presets (i have this working for now on 10.4.x but i feel like it doesnt work on 10.5.x looking into it soon)
+- <s>version checks for automatic population of compatible items on the menu</s> (i have just checked most of the features and dont think this is needed any more)
+- non-linux OS support (trying to convert the bash script to powershell but it is fairly time consuming)
