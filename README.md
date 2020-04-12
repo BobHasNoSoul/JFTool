@@ -119,6 +119,11 @@ This will make a folder in the jftool folder called "backedupimages" where your 
 # Change to original jellyfin icons
 This makes your icons go back to normal stock jellyfin icons incase for some reason you decided you did not like your own icons you previously changed
 
+# Add custom holiday / seasonal animations
+This adds a touch of seasonal boom to your install, pattys day, christmas, halloween, valentines, saintpatricks day, FIREWORKS...... just because who doesnt like fireworks. these do need to be manually triggered until i get some extra time to update a way to crontab this (due to dir permissions on /usr/lib/jellyfin/bin/jellyfin-web)
+
+<img src="https://i.imgur.com/xDWkJkc.gif">
+
 # Things to be added that are not in this version
 - Custom css injection from a few presets
 - version checks for automatic population of compatible items on the menu
