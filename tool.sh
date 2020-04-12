@@ -225,7 +225,6 @@ do
   	  echo "Added Halloween animations (note you may have to change your page title again from 'Jellyfin')"
 	  ;;
 	"Add Fireworks")
-      sudo cp ./animation/fireworks.js /usr/lib/jellyfin/bin/jellyfin-web/css/videoosd.css
 	  sudo cp ./animation/stylefix.css /usr/lib/jellyfin/bin/jellyfin-web/components/htmlvideoplayer/style.css	
 	  sudo cp ./animation/videoosd.css.fix /usr/lib/jellyfin/bin/jellyfin-web/assets/css/videoosd.css
       sudo cp ./animation/fireworks.html /usr/lib/jellyfin/bin/jellyfin-web/index.html
