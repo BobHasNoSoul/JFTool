@@ -11,8 +11,11 @@ echo " / / | | | / __| __/ _ \|  _   _ \| |_  / _ \  __|"
 echo "/ /__| |_| \__ \ || (_) | | | | | | |/ /  __/ |   "
 echo "\____/\__,_|___/\__\___/|_| |_| |_|_/___\___|_|   "
 echo ""
-echo "Jellyfin Customizer v0.3"
+echo "Jellyfin Customizer v0.5"
 echo ""
+echo "Current Bug: on some android phones in chrome when applying holiday items"
+echo "(animations) will play over the video however in a web browser on pc they wont"
+ehco ""
 echo "Note: THIS IS FOR 1.4.X and 1.5.x"
 echo "Tested and working on debian installs (i.e. Raspbian)"
 echo ""
@@ -27,7 +30,7 @@ echo ""
 echo "============================================================"
 echo ""
 PS3='Please enter your choice: '
-options=("Add Custom Link" "Change Page Title" "Change Icons" "Add icon to sidebar" "Remove icon from sidebar" "Read Me" "Remove Sidebar Link" "Add logo above login" "Backup current icons" "Change to original jellyfin icons" "Quit")
+options=("Add Custom Link" "Change Page Title" "Change Icons" "Add icon to sidebar" "Remove icon from sidebar" "Read Me" "Remove Sidebar Link" "Add logo above login" "Backup current icons" "Change to original jellyfin icons" "Add snow animation" "Add Heart animation" "Add Halloween animation" "Add Fireworks" "Add Pattys day" "Remove Animations" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -178,8 +181,36 @@ do
 	  echo "div.skinHeader.skinHeader-withBackground.headroom.noHeaderRight {display:none; }"
 	  echo " "
 #	  echo "adding the css to remove dual icons on login page"
+#	  if [ -f "/etc/jellyfin/branding.xml" ]; then 
+#      echo -e "\e[32m/etc/jellyfin/branding.xml located\e[39m"
 #      sudo sed -i "/CustomCSS/a \ .listItemImage.listItemImage-large.itemAction.lazy {height: 110px;}" /etc/jellyfin/branding.xml
-#	  sudo sed -i "/CustomCSS/a \ div.skinHeader.skinHeader-withBackground.headroom.noHeaderRight {display:none; }" /etc/jellyfin/branding.xml
+#	   sudo sed -i "/CustomCSS/a \ div.skinHeader.skinHeader-withBackground.headroom.noHeaderRight {display:none; }" /etc/jellyfin/branding.xml
+#      else
+#      echo "branding.xml is not located in /etc/jellyfin/branding.xml (do not worry this is not an error)"
+#      fi
+#     if [ -f "/root/.config/jellyfin/branding.xml" ]; then 
+#      echo -e "\e[32m/root/.config/jellyfin/branding.xml located (this means you might be running jellyfin as root.. you shouldn't do this but i wont tell if you don't)\e[39m"
+#      sudo sed -i "/CustomCSS/a \ .listItemImage.listItemImage-large.itemAction.lazy {height: 110px;}" /root/.config/jellyfin/branding.xml
+#      sudo sed -i "/CustomCSS/a \ div.skinHeader.skinHeader-withBackground.headroom.noHeaderRight {display:none; }" /root/.config/jellyfin/branding.xml
+#                                  
+#      else
+#      echo "branding.xml is not located in /root/.config/jellyfin/branding.xml (do not worry this is not an error)"
+#      fi
+#     if [ -f "/home/jellyfin/.config/jellyfin/branding.xml" ]; then 
+#      echo -e "\e[32m/home/jellyfin/.config/jellyfin/branding.xml located\e[39m"
+#      sudo sed -i "/CustomCSS/a \ .listItemImage.listItemImage-large.itemAction.lazy {height: 110px;}" /home/jellyfin/.config/jellyfin/branding.xml
+#	   sudo sed -i "/CustomCSS/a \ div.skinHeader.skinHeader-withBackground.headroom.noHeaderRight {display:none; }" /home/jellyfin/.config/jellyfin/branding.xml
+#      else
+#      echo "branding.xml is not located in /home/jellyfin/.config/jellyfin/branding.xml (this is not an error)"
+#      fi
+#     if [ -f "${HOME}/.config/jellyfin/branding.xml" ]; then 
+#      echo -e "\e[32m${HOME}/.config/jellyfin/branding.xml located\e[39m"
+#      sudo sed -i "/CustomCSS/a \ .listItemImage.listItemImage-large.itemAction.lazy {height: 110px;}" ${HOME}/.config/jellyfin/branding.xml
+#	   sudo sed -i "/CustomCSS/a \ div.skinHeader.skinHeader-withBackground.headroom.noHeaderRight {display:none; }" ${HOME}/.config/jellyfin/branding.xml
+#      else
+#      echo "branding.xml is not located in ${HOME}/.config/jellyfin/branding.xml (this is not an error)"
+#      fi
+#      echo "if you do not see a located message above this line you may need to find the location of your branding.xml and send u/heroinpigeon a message because something has gone very.. very wrong."
 	  echo "once you have done that you can click save on web admin page"
 	  ;;
 	  	"Backup current icons")
@@ -195,7 +226,53 @@ do
 	  sudo cp ./originalimages/*.png /usr/lib/jellyfin/bin/jellyfin-web/components/themes/
 	  sudo cp ./originalimages/*.png /usr/lib/jellyfin/bin/jellyfin-web/assets/img/
 	  sudo cp ./originalimages/favicon.ico /usr/lib/jellyfin/bin/jellyfin-web/favicon.ico
+	  ;; 
+	"Add snow animation")
+	  sudo cp ./animation/stylefix.css /usr/lib/jellyfin/bin/jellyfin-web/components/htmlvideoplayer/style.css
+	  sudo cp ./animation/snow.html /usr/lib/jellyfin/bin/jellyfin-web/index.html
+	  echo "Added snow (note you may have to change your page title again from 'Jellyfin')"
+	  echo "All animations will be stopped upon playing a video this is to stop overlay issues,"
+	  echo "or you can keep them off it also makes them less intrusive"
 	  ;;
+	"Add Heart animation")
+	  sudo cp ./animation/stylefix.css /usr/lib/jellyfin/bin/jellyfin-web/components/htmlvideoplayer/style.css
+	  sudo cp ./animation/valentines.html /usr/lib/jellyfin/bin/jellyfin-web/index.html
+	  echo "Added hearts (note you may have to change your page title again from 'Jellyfin')"
+	  echo "All animations will be stopped upon playing a video this is to stop overlay issues,"
+	  echo "or you can keep them off it also makes them less intrusive"
+	  ;;
+	"Add Halloween animation")
+	  sudo cp ./animation/stylefix.css /usr/lib/jellyfin/bin/jellyfin-web/components/htmlvideoplayer/style.css
+	  sudo cp ./animation/halloween.html /usr/lib/jellyfin/bin/jellyfin-web/index.html
+	  sudo cp ./animation/ghost_20x20.png /usr/lib/jellyfin/bin/jellyfin-web/
+	  sudo cp ./animation/bat_20x20.png /usr/lib/jellyfin/bin/jellyfin-web/
+  	  sudo cp ./animation/pumpkin_20x20.png /usr/lib/jellyfin/bin/jellyfin-web/
+  	  echo "Added Halloween animations (note you may have to change your page title again from 'Jellyfin')"
+	  echo "All animations will be stopped upon playing a video this is to stop overlay issues,"
+	  echo "or you can keep them off it also makes them less intrusive"
+	  ;;
+	"Add Fireworks")
+	  sudo cp ./animation/stylefix.css /usr/lib/jellyfin/bin/jellyfin-web/components/htmlvideoplayer/style.css
+      sudo cp ./animation/fireworks.html /usr/lib/jellyfin/bin/jellyfin-web/index.html
+      sudo cp ./animation/fireworks.css /usr/lib/jellyfin/bin/jellyfin-web/fireworks.css
+      echo "Added fireworks (note you may have to change your page title again from 'Jellyfin')"
+	  echo "All animations will be stopped upon playing a video this is to stop overlay issues,"
+	  echo "or you can keep them off it also makes them less intrusive"
+      ;;
+    "Add Pattys day")
+	  sudo cp ./animation/stylefix.css /usr/lib/jellyfin/bin/jellyfin-web/components/htmlvideoplayer/style.css
+      sudo cp ./animation/pattysday.html /usr/lib/jellyfin/bin/jellyfin-web/index.html
+	  sudo cp ./animation/lep_30x30.png /usr/lib/jellyfin/bin/jellyfin-web/
+  	  sudo cp ./animation/clover_20x20.png /usr/lib/jellyfin/bin/jellyfin-web/
+      echo "Added Pattys day (note you may have to change your page title again from 'Jellyfin')"
+	  echo "All animations will be stopped upon playing a video this is to stop overlay issues,"
+	  echo "or you can keep them off it also makes them less intrusive"
+      ;;
+	"Remove Animations")
+	  sudo cp ./animation/stylestock.css /usr/lib/jellyfin/bin/jellyfin-web/components/htmlvideoplayer/style.css	
+	  sudo cp ./animation/stockify.html /usr/lib/jellyfin/bin/jellyfin-web/index.html
+	  echo "Removed animations (note you may have to change your page title again)"
+	  ;; 
  	"Quit")
 	  break
 	  ;;
