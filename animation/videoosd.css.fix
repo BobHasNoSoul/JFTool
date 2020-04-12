@@ -18,7 +18,7 @@
     -webkit-transition: opacity 0.3s ease-out;
     -o-transition: opacity 0.3s ease-out;
     transition: opacity 0.3s ease-out;
-    position: relative;
+    position: fixed;
     z-index: 4;
     background: rgba(0, 0, 0, 0.7) !important;
     -webkit-backdrop-filter: none !important;
@@ -40,7 +40,7 @@
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
     flex-grow: 1;
-    position: relative;
+    position: relative
 }
 
 .chapterThumb {
