@@ -13,8 +13,11 @@
 / /__| |_| \__ \ || (_) | | | | | | |/ /  __/ |   
 \____/\__,_|___/\__\___/|_| |_| |_|_/___\___|_|   
 
-Jellyfin Customizer v0.3
+Jellyfin Customizer v0.5
 
+Current Bug: on some android phones in chrome when applying holiday items
+(animations) will play over the video however in a web browser on pc they wont
+./tool.sh: line 18: ehco: command not found
 Note: THIS IS FOR 1.4.X and 1.5.x
 Tested and working on debian installs (i.e. Raspbian)
 
@@ -28,13 +31,17 @@ I cannot stress how much the devs do for us all.
 
 ============================================================
 
-1) Add Custom Link	     5) Remove icon from sidebar
-2) Change Page Title	     6) Read Me
-3) Change Icons		     7) Remove Sidebar Link
-4) Add icon to sidebar	  8) Add logo above login
-9) Backup current icons  10) Change to original jellyfin icons
-11) Quit
+1) Add Custom Link		       10) Change to original jellyfin icons
+2) Change Page Title		       11) Add snow animation
+3) Change Icons			       12) Add Heart animation
+4) Add icon to sidebar		    13) Add Halloween animation
+5) Remove icon from sidebar    14) Add Fireworks
+6) Read Me			             15) Add Pattys day
+7) Remove Sidebar Link		    16) Remove Animations
+8) Add logo above login		    17) Quit
+9) Backup current icons
 Please enter your choice: 
+
 ```
 
 # How to use
