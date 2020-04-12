@@ -202,12 +202,14 @@ do
 	  ;; 
 	"Add snow animation")
       sudo cp ./animation/videoosd104.css.fix /usr/lib/jellyfin/bin/jellyfin-web/css/videoosd.css
+	  sudo cp ./animation/videoosd.css.fix /usr/lib/jellyfin/bin/jellyfin-web/assets/css/videoosd.css
 	  sudo cp ./animation/stylefix.css /usr/lib/jellyfin/bin/jellyfin-web/components/htmlvideoplayer/style.css	
 	  sudo cp ./animation/snow.html /usr/lib/jellyfin/bin/jellyfin-web/index.html
 	  echo "Added snow (note you may have to change your page title again from 'Jellyfin')"
 	  ;;
 	"Add Heart animation")
       sudo cp ./animation/videoosd104.css.fix /usr/lib/jellyfin/bin/jellyfin-web/css/videoosd.css
+	  sudo cp ./animation/videoosd.css.fix /usr/lib/jellyfin/bin/jellyfin-web/assets/css/videoosd.css
 	  sudo cp ./animation/stylefix.css /usr/lib/jellyfin/bin/jellyfin-web/components/htmlvideoplayer/style.css	
 	  sudo cp ./animation/valentines.html /usr/lib/jellyfin/bin/jellyfin-web/index.html
 	  echo "Added hearts (note you may have to change your page title again from 'Jellyfin')"
