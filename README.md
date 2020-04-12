@@ -129,7 +129,44 @@ This adds a touch of seasonal boom to your install, pattys day, christmas, hallo
 <img src="https://i.imgur.com/xDWkJkc.gif">
 note: this looks laggy because im not great at making gifs, however end result is not laggy and smoother.
 
+# Automatically change animations based on date
+inside the cron folder you will see templates for people using this on a raspberry pi with the default user of pi, if you need to change the dir to the location of your jftool folder do so **before** adding the crontab(s)
+
+okay so hopefully you have modified the templates in the cron folder.
+
+now we will go through the steps of making them run on a calendar timer in crontab
+
+first run `sudo crontab -e` if prompted select option 1 for nano
+
+now add this at the bottom to make them run for a specific period (modify to your own taste or to remove selected ones)
+
+```
+# CUSTOM ANIMATIONS FOR JELLYFIN
+# Halloween and lead up
+1 0 29 10 * /home/pi/jftool/cronhalloween.sh
+1 0 1 11 * /home/pi/jftool/cronstock.sh
+# Christmas and lead up
+1 0 15 12 * /home/pi/jftool/cronsnow.sh
+1 0 15 27 * /home/pi/jftool/cronstock.sh
+# New Year Day
+1 0 31 12 * /home/pi/jftool/cronfirework.sh
+1 0 2 1 * /home/pi/jftool/cronstock.sh
+# ST Patricks Day
+1 0 17 3 * /home/pi/jftool/cronpatty.sh
+1 0 18 3 * /home/pi/jftool/cronstock.sh
+# Valentines Day
+1 0 14 2 * /home/pi/jftool/cronhearts.sh
+1 0 15 2 * /home/pi/jftool/cronstock.sh
+
+```
+now press ctrl+x and then press y then press enter (this saves the crontab)
+
+okay so now on the dates above at 1 min past midnight it will change the animations.
+
+these work like so min of the day, hour of the day, what day of the month, what month of the year and a wild card because we do not need a day flag there. 
+
+note you may need to make each cron script executable first with `sudo chmod +x cron*.sh` while inside the cron folder
+
 # Things to be added that are not in this version
 - Custom css injection from a few presets (i have this working for now on 10.4.x but i feel like it doesnt work on 10.5.x looking into it soon)
-- <s>version checks for automatic population of compatible items on the menu</s> (i have just checked most of the features and dont think this is needed any more)
 - non-linux OS support (trying to convert the bash script to powershell but it is fairly time consuming)
