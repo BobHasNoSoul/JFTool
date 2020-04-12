@@ -43,7 +43,7 @@ Please enter your choice:
 
 # How to use
 
-- Download the jtfool.zip (it has the tool.sh and the images folder with placeholder images already in it).
+- Download the this as a zip, you know that big green button sat in the top right (its just easier than me pushing zip after zip).
 - Extract the file to your machine with the jellyfin install on it.
 - Edit the images inside the images folder with your favorite image editor and replace them with your own images with the same dimensions (or go wild and change the dimensions.. but if you do your mileage may vary).
 - Stop jellyfin from running `sudo service jellyfin stop`
@@ -124,7 +124,7 @@ This will make a folder in the jftool folder called "backedupimages" where your 
 This makes your icons go back to normal stock jellyfin icons incase for some reason you decided you did not like your own icons you previously changed
 
 # Add custom holiday / seasonal animations
-This adds a touch of seasonal boom to your install, pattys day, christmas, halloween, valentines, saintpatricks day, FIREWORKS...... just because who doesnt like fireworks. these do need to be manually triggered until i get some extra time to update a way to crontab this (due to dir permissions on /usr/lib/jellyfin/bin/jellyfin-web)
+This adds a touch of seasonal boom to your install, pattys day, christmas, halloween, valentines, saintpatricks day, FIREWORKS...... just because who doesnt like fireworks. these do need to be triggered manually until i get some extra time to update a way to crontab this (due to dir permissions on /usr/lib/jellyfin/bin/jellyfin-web)
 
 <img src="https://i.imgur.com/xDWkJkc.gif">
 note: this looks laggy because im not great at making gifs, however end result is not laggy and smoother.
