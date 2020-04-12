@@ -201,16 +201,19 @@ do
 	  sudo cp ./originalimages/favicon.ico /usr/lib/jellyfin/bin/jellyfin-web/favicon.ico
 	  ;; 
 	"Add snow animation")
+      sudo cp ./animation/videoosd104.css.fix /usr/lib/jellyfin/bin/jellyfin-web/css/videoosd.css
 	  sudo cp ./animation/stylefix.css /usr/lib/jellyfin/bin/jellyfin-web/components/htmlvideoplayer/style.css	
 	  sudo cp ./animation/snow.html /usr/lib/jellyfin/bin/jellyfin-web/index.html
 	  echo "Added snow (note you may have to change your page title again from 'Jellyfin')"
 	  ;;
 	"Add Heart animation")
+      sudo cp ./animation/videoosd104.css.fix /usr/lib/jellyfin/bin/jellyfin-web/css/videoosd.css
 	  sudo cp ./animation/stylefix.css /usr/lib/jellyfin/bin/jellyfin-web/components/htmlvideoplayer/style.css	
 	  sudo cp ./animation/valentines.html /usr/lib/jellyfin/bin/jellyfin-web/index.html
 	  echo "Added hearts (note you may have to change your page title again from 'Jellyfin')"
 	  ;;
 	"Add Halloween animation")
+      sudo cp ./animation/videoosd104.css.fix /usr/lib/jellyfin/bin/jellyfin-web/css/videoosd.css
 	  sudo cp ./animation/stylefix.css /usr/lib/jellyfin/bin/jellyfin-web/components/htmlvideoplayer/style.css	
 	  sudo cp ./animation/videoosd.css.fix /usr/lib/jellyfin/bin/jellyfin-web/assets/css/videoosd.css
 	  sudo cp ./animation/halloween.html /usr/lib/jellyfin/bin/jellyfin-web/index.html
@@ -220,6 +223,7 @@ do
   	  echo "Added Halloween animations (note you may have to change your page title again from 'Jellyfin')"
 	  ;;
 	"Add Fireworks")
+      sudo cp ./animation/videoosd104.css.fix /usr/lib/jellyfin/bin/jellyfin-web/css/videoosd.css
 	  sudo cp ./animation/stylefix.css /usr/lib/jellyfin/bin/jellyfin-web/components/htmlvideoplayer/style.css	
 	  sudo cp ./animation/videoosd.css.fix /usr/lib/jellyfin/bin/jellyfin-web/assets/css/videoosd.css
       sudo cp ./animation/fireworks.html /usr/lib/jellyfin/bin/jellyfin-web/index.html
@@ -227,6 +231,7 @@ do
       echo "Added fireworks (note you may have to change your page title again from 'Jellyfin')"
       ;;
     "Add Pattys day")
+      sudo cp ./animation/videoosd104.css.fix /usr/lib/jellyfin/bin/jellyfin-web/css/videoosd.css
 	  sudo cp ./animation/stylefix.css /usr/lib/jellyfin/bin/jellyfin-web/components/htmlvideoplayer/style.css	
 	  sudo cp ./animation/videoosd.css.fix /usr/lib/jellyfin/bin/jellyfin-web/assets/css/videoosd.css
       sudo cp ./animation/pattysday.html /usr/lib/jellyfin/bin/jellyfin-web/index.html
@@ -235,6 +240,7 @@ do
       echo "Added Pattys day (note you may have to change your page title again from 'Jellyfin')"
       ;;
 	"Remove Animations")
+	  sudo cp ./animation/videoosd104.css.original /usr/lib/jellyfin/bin/jellyfin-web/css/videoosd.css
 	  sudo cp ./animation/videoosd.css.original /usr/lib/jellyfin/bin/jellyfin-web/assets/css/videoosd.css
 	  sudo cp ./animation/stylestock.css /usr/lib/jellyfin/bin/jellyfin-web/components/htmlvideoplayer/style.css	
 	  sudo cp ./animation/stockify.html /usr/lib/jellyfin/bin/jellyfin-web/index.html
