@@ -11,10 +11,7 @@ echo " / / | | | / __| __/ _ \|  _   _ \| |_  / _ \  __|"
 echo "/ /__| |_| \__ \ || (_) | | | | | | |/ /  __/ |   "
 echo "\____/\__,_|___/\__\___/|_| |_| |_|_/___\___|_|   "
 echo ""
-echo "Jellyfin Customizer v0.5"
-echo ""
-echo "Current Bug: on some android phones in chrome when applying holiday items"
-echo "(animations) will play over the video however in a web browser on pc they wont"
+echo "Jellyfin Customizer v0.5b"
 echo ""
 echo "Note: THIS IS FOR 1.4.X and 1.5.x"
 echo "Tested and working on debian installs (i.e. Raspbian)"
@@ -30,7 +27,7 @@ echo ""
 echo "============================================================"
 echo ""
 PS3='Please enter your choice: '
-options=("Add Custom Link" "Change Page Title" "Change Icons" "Add icon to sidebar" "Remove icon from sidebar" "Read Me" "Remove Sidebar Link" "Add logo above login" "Backup current icons" "Change to original jellyfin icons" "Add snow animation" "Add Heart animation" "Add Halloween animation" "Add Fireworks" "Add Pattys day" "Remove Animations" "Quit")
+options=("Add Custom Link" "Change Page Title" "Change Icons" "Add icon to sidebar" "Remove icon from sidebar" "Remove Sidebar Link" "Add logo above login" "Backup current icons" "Change to original jellyfin icons" "Add snow animation" "Add Heart animation" "Add Halloween animation" "Add Fireworks" "Add Pattys day" "Remove Animations" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -135,30 +132,6 @@ do
 	"Remove icon from sidebar")
           sudo sed -i "/logowhite.png/d" /usr/lib/jellyfin/bin/jellyfin-web/scripts/librarymenu.js
 	  ;;
-	"Read Me")
-	  echo "Welcome, Glad you decided to read this, not many will"
-	  echo ""
-	  echo "Image Replacement:"
-          echo "Please open the folder 'images' and replace them with images of the same size that you want to replace the current with."
-	  echo "The errors that pop up on this is normal basically it has them because it works on both 10.5.x and 10.4.x"
-	  echo ""
-	  echo "Custom Links:"
-	  echo "This is quite simple but you can add a custom link for custom items like ombi etc in the side bar"
-	  echo "You can upload an icon 20x20 px to /usr/lib/jellyfin/bin/jellyfin-web/iconname.png"
-	  echo "and call it by simply putting /web/iconname.png instead of full url"
-	  echo ""
-	  echo "Adding icon to sidebar:"
-	  echo "This gives you a custom icon in the left side bar this puts the icon from logowhite.png there after the custom image install has completed"
-	  echo ""
-	  echo "Changing the title:"
-	  echo "The title can be changed to anything you want aslong as it does not contain special chars or punctuation"
-	  echo "The default is 'Jellyfin' however you can also use this tool to change it from what ever you changed it to, to something else again by adding you current title to the string instead of Jellyfin"
-	  echo ""
-	  echo "Removing Sidebar Link"
-	  echo "To remove the link you can put in the domain that is linked to like myspace.com, note this has a drawback and does not let you put any slashes in the sidebar removal tool"
-	  echo "Note: you can always remove them manually by finding the link in the /usr/lib/jellyfin/bin/jellyfin-web/scripts/librarymenu.js"
-	  echo ""
-	  ;;
 	"Remove Sidebar Link")
 	  echo "Please Input the exact link address to remove without https:// or slashes (e.g. myspace.com)"
 	  read removelink
@@ -228,47 +201,41 @@ do
 	  sudo cp ./originalimages/favicon.ico /usr/lib/jellyfin/bin/jellyfin-web/favicon.ico
 	  ;; 
 	"Add snow animation")
-	  sudo cp ./animation/stylefix.css /usr/lib/jellyfin/bin/jellyfin-web/components/htmlvideoplayer/style.css
+	  sudo cp ./animation/stylefix.css /usr/lib/jellyfin/bin/jellyfin-web/components/htmlvideoplayer/style.css	
 	  sudo cp ./animation/snow.html /usr/lib/jellyfin/bin/jellyfin-web/index.html
 	  echo "Added snow (note you may have to change your page title again from 'Jellyfin')"
-	  echo "All animations will be stopped upon playing a video this is to stop overlay issues,"
-	  echo "or you can keep them off it also makes them less intrusive"
 	  ;;
 	"Add Heart animation")
-	  sudo cp ./animation/stylefix.css /usr/lib/jellyfin/bin/jellyfin-web/components/htmlvideoplayer/style.css
+	  sudo cp ./animation/stylefix.css /usr/lib/jellyfin/bin/jellyfin-web/components/htmlvideoplayer/style.css	
 	  sudo cp ./animation/valentines.html /usr/lib/jellyfin/bin/jellyfin-web/index.html
 	  echo "Added hearts (note you may have to change your page title again from 'Jellyfin')"
-	  echo "All animations will be stopped upon playing a video this is to stop overlay issues,"
-	  echo "or you can keep them off it also makes them less intrusive"
 	  ;;
 	"Add Halloween animation")
-	  sudo cp ./animation/stylefix.css /usr/lib/jellyfin/bin/jellyfin-web/components/htmlvideoplayer/style.css
+	  sudo cp ./animation/stylefix.css /usr/lib/jellyfin/bin/jellyfin-web/components/htmlvideoplayer/style.css	
+	  sudo cp ./animation/videoosd.css.fix /usr/lib/jellyfin/bin/jellyfin-web/assets/css/videoosd.css
 	  sudo cp ./animation/halloween.html /usr/lib/jellyfin/bin/jellyfin-web/index.html
 	  sudo cp ./animation/ghost_20x20.png /usr/lib/jellyfin/bin/jellyfin-web/
 	  sudo cp ./animation/bat_20x20.png /usr/lib/jellyfin/bin/jellyfin-web/
   	  sudo cp ./animation/pumpkin_20x20.png /usr/lib/jellyfin/bin/jellyfin-web/
   	  echo "Added Halloween animations (note you may have to change your page title again from 'Jellyfin')"
-	  echo "All animations will be stopped upon playing a video this is to stop overlay issues,"
-	  echo "or you can keep them off it also makes them less intrusive"
 	  ;;
 	"Add Fireworks")
-	  sudo cp ./animation/stylefix.css /usr/lib/jellyfin/bin/jellyfin-web/components/htmlvideoplayer/style.css
+	  sudo cp ./animation/stylefix.css /usr/lib/jellyfin/bin/jellyfin-web/components/htmlvideoplayer/style.css	
+	  sudo cp ./animation/videoosd.css.fix /usr/lib/jellyfin/bin/jellyfin-web/assets/css/videoosd.css
       sudo cp ./animation/fireworks.html /usr/lib/jellyfin/bin/jellyfin-web/index.html
       sudo cp ./animation/fireworks.css /usr/lib/jellyfin/bin/jellyfin-web/fireworks.css
       echo "Added fireworks (note you may have to change your page title again from 'Jellyfin')"
-	  echo "All animations will be stopped upon playing a video this is to stop overlay issues,"
-	  echo "or you can keep them off it also makes them less intrusive"
       ;;
     "Add Pattys day")
-	  sudo cp ./animation/stylefix.css /usr/lib/jellyfin/bin/jellyfin-web/components/htmlvideoplayer/style.css
+	  sudo cp ./animation/stylefix.css /usr/lib/jellyfin/bin/jellyfin-web/components/htmlvideoplayer/style.css	
+	  sudo cp ./animation/videoosd.css.fix /usr/lib/jellyfin/bin/jellyfin-web/assets/css/videoosd.css
       sudo cp ./animation/pattysday.html /usr/lib/jellyfin/bin/jellyfin-web/index.html
 	  sudo cp ./animation/lep_30x30.png /usr/lib/jellyfin/bin/jellyfin-web/
   	  sudo cp ./animation/clover_20x20.png /usr/lib/jellyfin/bin/jellyfin-web/
       echo "Added Pattys day (note you may have to change your page title again from 'Jellyfin')"
-	  echo "All animations will be stopped upon playing a video this is to stop overlay issues,"
-	  echo "or you can keep them off it also makes them less intrusive"
       ;;
 	"Remove Animations")
+	  sudo cp ./animation/videoosd.css.original /usr/lib/jellyfin/bin/jellyfin-web/assets/css/videoosd.css
 	  sudo cp ./animation/stylestock.css /usr/lib/jellyfin/bin/jellyfin-web/components/htmlvideoplayer/style.css	
 	  sudo cp ./animation/stockify.html /usr/lib/jellyfin/bin/jellyfin-web/index.html
 	  echo "Removed animations (note you may have to change your page title again)"
