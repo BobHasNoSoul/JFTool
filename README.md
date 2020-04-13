@@ -77,13 +77,14 @@ The errors that pop up on this is normal basically it has them because it works 
 
 # Custom Links:
 
+<img src="https://i.imgur.com/t8m1oy6.png">
+
 This is quite simple but you can add a custom link for custom items like ombi etc in the side bar.
 
 You can upload an icon 20x20 px to "/usr/lib/jellyfin/bin/jellyfin-web/iconname.png" and call it by simply putting /web/iconname.png instead of full https://full.url/web/iconname.png
 
 # Adding icon to sidebar:
 *only changes the web interface not the app sorry*
-<img src="https://i.imgur.com/t8m1oy6.png">
 
 This gives you a custom icon in the left side bar this puts the icon from logowhite.png (from web root "/var/lib/jellyfin/bin/jellyfin-web/logowhite.png") you can put a image there named logowhite.png if you wish or you can let the custom image make the there after the custom image install has completed.
 
