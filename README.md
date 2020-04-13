@@ -181,3 +181,4 @@ I am unsure if crontab would work this way with the ubuntu window not open.. I h
 # Things to be added that are not in this version
 - Custom css injection from a few presets (i have this working for now on 10.4.x but i feel like it doesnt work on 10.5.x looking into it soon)
 - Docker support (this i am looking into however i am very new to docker.. so may take a while).
+- pre windows 10 support (im unable to access a machine on lower than windows 10 but will try a vm an cygwin with the tool-win.sh soon when i can get time)
