@@ -16,7 +16,9 @@
 Jellyfin Customizer v0.5b
 
 Note: THIS IS FOR 1.4.X and 1.5.x
+
 Tested and working on debian installs (i.e. Raspbian)
+Tested and working on Windows 10 standard installs (C:/Program Files/Jellyfin) using WSL 
 
 Written By: u/HeroinPigeon
 
@@ -167,6 +169,24 @@ these work like so min of the day, hour of the day, what day of the month, what 
 
 note you may need to make each cron script executable first with `sudo chmod +x cron*.sh` while inside the cron folder
 
+# Windows 10  64-bit support instructions
+Hey there sorry this took so long but basically im a linux guy, here i will link to the source i used to get WSL working on windows 10 https://itsfoss.com/install-bash-on-windows/ however there are a few tweaks you need to get this to work.
+
+prerequisite: you will need a standard install of jellyfin (when you havent changed the install dir of the program)
+by default this is "C:/Program Files/Jellyfin" if this is not the case, please modify the script to show your custom dir.. I assume you would know how to do that using notepad on the jftool-win64.sh if you are installing into a different dir just replacing the `/mnt/c/Program Files/Jellyfin/` string with your custom dir for your install (use notepad++ and ctrl+H to do it fast).
+
+**install WSL and running the script**
+- Start > powershell > run as admin
+- Wait for it to load, then run `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
+- When prompted press Y and hit enter to restart you windows install
+- Now you have enabled WSL but you need a platform, pick your flavour in the microsoft store but i personally went with the Ubuntu option.. install it.
+- Open Ubuntu as admin from the start menu not from the launch option (you are editing files installed by an admin so you need to run this as an admin)
+- navigate to where you downloaded the script i.e. if you downloaded it on windows and decided to leave them in unzipped form just modify this line with your username. `/mnt/c/Users/YOURUSERNAMEHERE/Downloads/JFTool-master/JFTool-master`
+- now run the windows version of the tool `./tool-win64.sh`
+- enjoy your modifications when done you can close the ubuntu window (or whatever flavour you picked earlier)
+
+I am unsure if crontab would work this way with the ubuntu window not open.. I have not attempted maybe someone else can if their server is their main daily driver, but for me it is not (if you do send me a message on reddit at u/HeroinPigeon or on here and this will get updated for the crontab)
+
 # Things to be added that are not in this version
 - Custom css injection from a few presets (i have this working for now on 10.4.x but i feel like it doesnt work on 10.5.x looking into it soon)
-- non-linux OS support (trying to convert the bash script to powershell but it is fairly time consuming)
+- Docker support (this i am looking into however i am very new to docker.. so may take a while).
