@@ -59,34 +59,17 @@ Note: you may be able to modify these without stopping jellyfin server but i wou
 modifying any files you stop the server, make the edits, then start it again.
 
 # Disclaimer
-The tool will replace the existing files for logos in your install... so if you want to get them back you will need to grab them from either another install or back them up before running these are located at /var/lib/jellyfin/bin/jellyfin-web/ sometimes located in assets or themes.. depending on version.
+The tool will replace the existing files for logos in your install... so if you want to get them back you will need to grab them from either another install or back them up before running these are located at /var/lib/jellyfin/bin/jellyfin-web/ or on windows C:/Program Files/Jellyfin/Server/jellyfin-web/ sometimes located in assets or themes.. depending on version.
 
-# Pictures
-Replace the stock logos on entire interface
-
-<img src="https://i.imgur.com/W6ewXAi.png">
-
-Custom Links and a top side bar logo
-
-<img src="https://i.imgur.com/t8m1oy6.png">
-
-Change Page Title and favicon
-
-<img src="https://i.imgur.com/Wfxtw9S.png">
-
-Add logo above login
-
-<img src="http://imgur.com/jf6LxYul.png">
-
-
-My country is in lockdown and I decided to make it a bit easier to modify your own installs of jellyfin by making a tool in bash.
-
-Sadly this means no windows support.. yet (it is something i am working on) but it has been tested and confirmed working on installs on debian based linux distros (like raspbian and mx linux native installs).
+I decided to make it a bit easier to modify your own installs of jellyfin by making a tool in bash.
 
 Feel free to download and use it feedback is more than welcome here or at the tools github page
 
 # Image Replacement:
 *This changes the images for the Web interface, not the apps sorry.*
+
+<img src="https://i.imgur.com/Wfxtw9S.png">
+<img src="https://i.imgur.com/W6ewXAi.png">
 
 Please open the folder **'images'** and replace them with images of the same size that you want to replace the current with. black placeholders are currently located here.
 
@@ -100,13 +83,14 @@ You can upload an icon 20x20 px to "/usr/lib/jellyfin/bin/jellyfin-web/iconname.
 
 # Adding icon to sidebar:
 *only changes the web interface not the app sorry*
-
-please see the image for the custom links for how this looks
+<img src="https://i.imgur.com/t8m1oy6.png">
 
 This gives you a custom icon in the left side bar this puts the icon from logowhite.png (from web root "/var/lib/jellyfin/bin/jellyfin-web/logowhite.png") you can put a image there named logowhite.png if you wish or you can let the custom image make the there after the custom image install has completed.
 
 # Changing the page title:
 *only changes the page title in the web browser and web apps not the actual jellyfin app sorry*
+
+<img src="https://i.imgur.com/Wfxtw9S.png">
 
 The title can be changed to anything you want aslong as it does not contain special chars or punctuation so please no ' or ".
 
@@ -118,6 +102,9 @@ To remove any link you added you can put in the domain that is linked to like my
 *Note: you can always remove them manually by finding the link in the /usr/lib/jellyfin/bin/jellyfin-web/scripts/librarymenu.js*
 
 # Add logo above login
+
+<img src="http://imgur.com/jf6LxYul.png">
+
 This option adds a logo above the login page (fixed the issue i was being stupid and inserting the line bellow not above where it needs to go) the logo is logowhite.png located at the root of the web dir /usr/lib/jellyfin/bin/jellyfin-web/logowhite.png (note this will auto populate this file if you have already changed the icons in the image folder and pushed them to your server).
 
 # Backup current icons
@@ -177,12 +164,12 @@ prerequisite: you will need a standard install of jellyfin specifically for your
 by default this is "C:/Program Files/Jellyfin" if this is not the case, please modify the script to show your custom dir.. I assume you would know how to do that using notepad on the jftool-win64.sh (this should work on 32 and 64 bit as long as dir is correct) if you are installing into a different dir just replacing the `c/Program Files/Jellyfin/` string with your custom dir for your install (use notepad++ and ctrl+H to do it fast).
 
 **install WSL and running the script**
-- Start > powershell > run as admin
+- Start > type "powershell" > run as admin
 - Wait for it to load, then run `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
 - When prompted press Y and hit enter to restart you windows install
 - Now you have enabled WSL but you need a platform, pick your flavour in the microsoft store but i personally went with the Ubuntu option.. install it.
-- Open Ubuntu as admin from the start menu not from the launch option (you are editing files installed by an admin so you need to run this as an admin)
-- navigate to where you downloaded the script i.e. if you downloaded it on windows and decided to leave them in unzipped form just modify this line with your username. `/mnt/c/Users/YOURUSERNAMEHERE/Downloads/JFTool-master/JFTool-master`
+- Open Ubuntu (or your flavour picked in previous step) as admin from the start menu not from the launch option (you are editing files installed by an admin so you need to run this as an admin)
+- navigate to where you downloaded the script i.e. if you downloaded it on windows and decided to leave them in unzipped form just modify this line with your username. ` cd "/mnt/c/Users/YOURUSERNAMEHERE/Downloads/JFTool-master/JFTool-master"`
 - now run the windows version of the tool `./tool-win64.sh`
 - enjoy your modifications when done you can close the ubuntu window (or whatever flavour you picked earlier)
 
