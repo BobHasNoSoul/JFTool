@@ -173,7 +173,7 @@ note you may need to make each cron script executable first with `sudo chmod +x 
 Hey there sorry this took so long but basically im a linux guy, here i will link to the source i used to get WSL working on windows 10 https://itsfoss.com/install-bash-on-windows/ however there are a few tweaks you need to get this to work.
 
 prerequisite: you will need a standard install of jellyfin (when you havent changed the install dir of the program)
-by default this is "C:/Program Files/Jellyfin" if this is not the case, please modify the script to show your custom dir.. I assume you would know how to do that using notepad on the jftool-win64.sh if you are installing into a different dir just replacing the `/mnt/c/Program Files/Jellyfin/` string with your custom dir for your install (use notepad++ and ctrl+H to do it fast).
+by default this is "C:/Program Files/Jellyfin" if this is not the case, please modify the script to show your custom dir.. I assume you would know how to do that using notepad on the jftool-win64.sh if you are installing into a different dir just replacing the `c/Program Files/Jellyfin/` string with your custom dir for your install (use notepad++ and ctrl+H to do it fast).
 
 **install WSL and running the script**
 - Start > powershell > run as admin
