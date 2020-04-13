@@ -162,7 +162,7 @@ note you may need to make each cron script executable first with `sudo chmod +x 
 Hey there sorry this took so long but basically im a linux guy, here i will link to the source i used to get WSL working on windows 10 https://itsfoss.com/install-bash-on-windows/ however there are a few tweaks you need to get this to work.
 
 prerequisite: you will need a standard install of jellyfin specifically for your system type (32 bit for 32 bit and 64 bit for 64 bit) and you havent changed the install dir of the program)
-by default this is "C:/Program Files/Jellyfin" if this is not the case, please modify the script to show your custom dir.. I assume you would know how to do that using notepad on the jftool-win64.sh (this should work on 32 and 64 bit as long as dir is correct) if you are installing into a different dir just replacing the `c/Program Files/Jellyfin/` string with your custom dir for your install (use notepad++ and ctrl+H to do it fast).
+by default this is "C:/Program Files/Jellyfin" if this is not the case, please modify the script to show your custom dir.. I assume you would know how to do that using notepad on the tool-win.sh (this should work on 32 and 64 bit as long as dir is correct) if you are installing into a different dir just replacing the `c/Program Files/Jellyfin/` string with your custom dir for your install (use notepad++ and ctrl+H to do it fast).
 
 **install WSL and running the script**
 - Start > type "powershell" > run as admin
@@ -171,7 +171,7 @@ by default this is "C:/Program Files/Jellyfin" if this is not the case, please m
 - Now you have enabled WSL but you need a platform, pick your flavour in the microsoft store but i personally went with the Ubuntu option.. install it.
 - Open Ubuntu (or your flavour picked in previous step) as admin from the start menu not from the launch option (you are editing files installed by an admin so you need to run this as an admin)
 - navigate to where you downloaded the script i.e. if you downloaded it on windows and decided to leave them in unzipped form just modify this line with your username. ` cd "/mnt/c/Users/YOURUSERNAMEHERE/Downloads/JFTool-master/JFTool-master"`
-- now run the windows version of the tool `./tool-win64.sh`
+- now run the windows version of the tool `./tool-win.sh`
 - enjoy your modifications when done you can close the ubuntu window (or whatever flavour you picked earlier)
 
 I am unsure if crontab would work this way with the ubuntu window not open.. I have not attempted maybe someone else can if their server is their main daily driver, but for me it is not (if you do send me a message on reddit at u/HeroinPigeon or on here and this will get updated for the crontab)
