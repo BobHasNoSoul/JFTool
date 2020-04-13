@@ -1,25 +1,23 @@
 # JFTool
 
 ```
-   __       _ _        __ _                       
-   \ \  ___| | |_   _ / _(_)_ __                  
-    \ \/ _ \ | | | | | |_| | '_ \                 
- /\_/ /  __/ | | |_| |  _| | | | |                
- \___/ \___|_|_|\__, |_| |_|_| |_|                
-                |___/                             
-   ___          _                  _              
-  / __\   _ ___| |_ ___  _ __ ___ (_)_______ ____ 
+   __       _ _        __ _
+   \ \  ___| | |_   _ / _(_)_ __
+    \ \/ _ \ | | | | | |_| | '_ \
+ /\_/ /  __/ | | |_| |  _| | | | |
+ \___/ \___|_|_|\__, |_| |_|_| |_|
+                |___/
+   ___          _                  _
+  / __\   _ ___| |_ ___  _ __ ___ (_)_______ ____
  / / | | | / __| __/ _ \|  _   _ \| |_  / _ \  __|
-/ /__| |_| \__ \ || (_) | | | | | | |/ /  __/ |   
-\____/\__,_|___/\__\___/|_| |_| |_|_/___\___|_|   
+/ /__| |_| \__ \ || (_) | | | | | | |/ /  __/ |
+\____/\__,_|___/\__\___/|_| |_| |_|_/___\___|_|
 
 Jellyfin Customizer v0.5b
 
 Note: THIS IS FOR 1.4.X and 1.5.x
 
-Tested and working on debian installs (i.e. Raspbian)
-Tested and working on Windows 10 standard installs (C:/Program Files/Jellyfin) using WSL
-Tested and working on Windows 10 (so should also work on 7 8) using cygwin
+THIS VERSION IS FOR WINDOWS (STANDARD INSTALLS) using cygwin
 
 Written By: u/HeroinPigeon
 
@@ -31,16 +29,16 @@ I cannot stress how much the devs do for us all.
 
 ============================================================
 
-1) Add Custom Link		        9) Change to original jellyfin icons
-2) Change Page Title		       10) Add snow animation
-3) Change Icons			       11) Add Heart animation
-4) Add icon to sidebar		       12) Add Halloween animation
-5) Remove icon from sidebar	       13) Add Fireworks
-6) Remove Sidebar Link		       14) Add Pattys day
-7) Add logo above login		       15) Remove Animations
-8) Backup current icons		       16) Quit
-Please enter your choice: 
-
+1) Add Custom Link                     10) Add snow animation
+2) Change Page Title                   11) Add Heart animation
+3) Change Icons                        12) Add Halloween animation
+4) Add icon to sidebar                 13) Add Fireworks
+5) Remove icon from sidebar            14) Add Pattys day
+6) Remove Sidebar Link                 15) Remove Animations
+7) Add logo above login                16) Remove logo above login
+8) Backup current icons                17) Quit
+9) Change to original jellyfin icons
+Please enter your choice:
 
 ```
 
@@ -158,6 +156,9 @@ okay so now on the dates above at 1 min past midnight it will change the animati
 these work like so min of the day, hour of the day, what day of the month, what month of the year and a wild card because we do not need a day flag there. 
 
 note you may need to make each cron script executable first with `sudo chmod +x cron*.sh` while inside the cron folder
+
+# Remove logo above login
+this option removes the custom icon you may have installed, this option does nothing and no harm if there is not a logo on the page above the login.
 
 # Windows 10 support instructions
 <img src="https://cdn.iconscout.com/icon/free/png-256/windows-53-226423.png">
