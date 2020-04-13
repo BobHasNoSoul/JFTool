@@ -178,7 +178,20 @@ by default this is "C:/Program Files/Jellyfin" if this is not the case, please m
 
 I am unsure if crontab would work this way with the ubuntu window not open.. I have not attempted maybe someone else can if their server is their main daily driver, but for me it is not (if you do send me a message on reddit at u/HeroinPigeon or on here and this will get updated for the crontab)
 
+# Pre Windows 10 support (cygwin)
+<img src="https://img.gadgethacks.com/img/13/26/63580503638581/0/activate-windows-10-with-windows-7-8-product-key.1280x600.jpg">
+
+Okay this one is for people that dont have the ability to use or just dont want to use WSL.
+
+- Download the JFTool-master.zip
+- Unzip JFTool-master.zip
+- Install cygwin ( https://cygwin.com/install.html ) (all default install options are fine)
+- Open cygwin as administrator (start > cygwin > right-click > run as admin)
+- Navigate to your dir that your JFtool-master folder (by default if you just unzip the zip in your downloads folder it will only take this command just edit your username) 
+`cd /cygdrive/c/Users/YOURUSERNAMEHERE/Downloads/JFTool-master/JFTool-master`
+- Run jftool `./tool-cygwin.sh`
+- Once complete simply close the cygwin tool
+
 # Things to be added that are not in this version
 - Custom css injection from a few presets (i have this working for now on 10.4.x but i feel like it doesnt work on 10.5.x looking into it soon)
 - Docker support (this i am looking into however i am very new to docker.. so may take a while).
-- pre windows 10 support (im unable to access a machine on lower than windows 10 but will try a vm an cygwin with the tool-win.sh soon when i can get time)
