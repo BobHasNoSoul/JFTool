@@ -190,7 +190,7 @@ Okay this one is for people that dont have the ability to use or just dont want 
 - Install cygwin ( https://cygwin.com/install.html ) (all default install options are fine)
 - Open cygwin as administrator (start > cygwin > right-click > run as admin)
 - Navigate to your dir that your JFtool-master folder (by default if you just unzip the zip in your downloads folder it will only take this command just edit your username) 
-`cd /cygdrive/c/Users/YOURUSERNAMEHERE/Downloads/JFTool-master/JFTool-master`
+`cd "/cygdrive/c/Users/YOURUSERNAMEHERE/Downloads/JFTool-master/JFTool-master"`
 - Run jftool `./tool-cygwin.sh`
 - Once complete simply close the cygwin tool
 
