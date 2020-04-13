@@ -18,7 +18,8 @@ Jellyfin Customizer v0.5b
 Note: THIS IS FOR 1.4.X and 1.5.x
 
 Tested and working on debian installs (i.e. Raspbian)
-Tested and working on Windows 10 standard installs (C:/Program Files/Jellyfin) using WSL 
+Tested and working on Windows 10 standard installs (C:/Program Files/Jellyfin) using WSL
+Tested and working on Windows 10 (so should also work on 7 8) using cygwin
 
 Written By: u/HeroinPigeon
 
