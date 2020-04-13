@@ -18,7 +18,7 @@ Jellyfin Customizer v0.5b
 Note: THIS IS FOR 1.4.X and 1.5.x
 
 Tested and working on debian installs (i.e. Raspbian)
-Tested and working on Windows 10 64-bit standard installs (C:/Program Files/Jellyfin) using WSL 
+Tested and working on Windows 10 standard installs (C:/Program Files/Jellyfin) using WSL 
 
 Written By: u/HeroinPigeon
 
@@ -44,7 +44,7 @@ Please enter your choice:
 ```
 
 # How to use
-*For windows 10 64-bit please see the section lower down for windows 10*
+*For windows 10 please see the section lower down for windows 10*
 
 - Download the this as a zip, you know that big green button sat in the top right (its just easier than me pushing zip after zip).
 - Extract the file to your machine with the jellyfin install on it.
@@ -170,11 +170,11 @@ these work like so min of the day, hour of the day, what day of the month, what 
 
 note you may need to make each cron script executable first with `sudo chmod +x cron*.sh` while inside the cron folder
 
-# Windows 10  64-bit support instructions
+# Windows 10 support instructions
 Hey there sorry this took so long but basically im a linux guy, here i will link to the source i used to get WSL working on windows 10 https://itsfoss.com/install-bash-on-windows/ however there are a few tweaks you need to get this to work.
 
-prerequisite: you will need a standard install of jellyfin (when you havent changed the install dir of the program)
-by default this is "C:/Program Files/Jellyfin" if this is not the case, please modify the script to show your custom dir.. I assume you would know how to do that using notepad on the jftool-win64.sh if you are installing into a different dir just replacing the `c/Program Files/Jellyfin/` string with your custom dir for your install (use notepad++ and ctrl+H to do it fast).
+prerequisite: you will need a standard install of jellyfin specifically for your system type (32 bit for 32 bit and 64 bit for 64 bit) and you havent changed the install dir of the program)
+by default this is "C:/Program Files/Jellyfin" if this is not the case, please modify the script to show your custom dir.. I assume you would know how to do that using notepad on the jftool-win64.sh (this should work on 32 and 64 bit as long as dir is correct) if you are installing into a different dir just replacing the `c/Program Files/Jellyfin/` string with your custom dir for your install (use notepad++ and ctrl+H to do it fast).
 
 **install WSL and running the script**
 - Start > powershell > run as admin
