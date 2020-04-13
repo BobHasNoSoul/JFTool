@@ -28,7 +28,7 @@ echo ""
 echo "============================================================"
 echo ""
 PS3='Please enter your choice: '
-options=("Add Custom Link" "Change Page Title" "Change Icons" "Add icon to sidebar" "Remove icon from sidebar" "Remove Sidebar Link" "Add logo above login" "Backup current icons" "Change to original jellyfin icons" "Add snow animation" "Add Heart animation" "Add Halloween animation" "Add Fireworks" "Add Pattys day" "Remove Animations" "Quit")
+options=("Add Custom Link" "Change Page Title" "Change Icons" "Add icon to sidebar" "Remove icon from sidebar" "Remove Sidebar Link" "Add logo above login" "Backup current icons" "Change to original jellyfin icons" "Add snow animation" "Add Heart animation" "Add Halloween animation" "Add Fireworks" "Add Pattys day" "Remove Animations" "Remove logo above login" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -247,7 +247,11 @@ do
 	  cp ./animation/stylestock.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/htmlvideoplayer/style.css"
 	  cp ./animation/stockify.html "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/index.html"
 	  echo "Removed animations (note you may have to change your page title again)"
-	  ;; 
+	  ;;
+	"Remove logo above login")
+	  echo "Removing the logo"
+	  sed -i '/<div class=Login-Logo>/,+2d' "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/login.html"
+      ;;
  	"Quit")
 	  break
 	  ;;
