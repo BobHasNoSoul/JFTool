@@ -44,6 +44,7 @@ Please enter your choice:
 ```
 
 # How to use
+*For windows 10 64-bit please see the section lower down for windows 10*
 
 - Download the this as a zip, you know that big green button sat in the top right (its just easier than me pushing zip after zip).
 - Extract the file to your machine with the jellyfin install on it.
