@@ -15,7 +15,7 @@ echo "Jellyfin Customizer v0.5b"
 echo ""
 echo "Note: THIS IS FOR 1.4.X and 1.5.x"
 echo ""
-echo "THIS VERSION IS FOR WINDOWS (64-BIT STANDARD INSTALLS)"
+echo "THIS VERSION IS FOR WINDOWS (64-BIT STANDARD INSTALLS) using WSL"
 echo ""
 echo "Written By: u/HeroinPigeon"
 echo ""
@@ -230,6 +230,8 @@ do
 	  sudo cp ./animation/videoosd.css.fix "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/assets/css/videoosd.css"
       sudo cp ./animation/fireworks.html "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/index.html"
       sudo cp ./animation/fireworks.css "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/fireworks.css"
+      sudo cp ./animation/sitefix10.4.css "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/css/site.css"
+      sudo cp ./animation/sitefix10.5.css "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/css/site.css"
       echo "Added fireworks (note you may have to change your page title again from 'Jellyfin')"
       ;;
     "Add Pattys day")
