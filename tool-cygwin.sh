@@ -230,6 +230,8 @@ do
 	  cp ./animation/videoosd.css.fix "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/css/videoosd.css"
       cp ./animation/fireworks.html "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/index.html"
       cp ./animation/fireworks.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/fireworks.css"
+      cp ./animation/sitefix10.4.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/css/site.css"
+      cp ./animation/sitefix10.5.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/css/site.css"
       echo "Added fireworks (note you may have to change your page title again from 'Jellyfin')"
       ;;
     "Add Pattys day")
