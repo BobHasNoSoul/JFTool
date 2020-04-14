@@ -231,7 +231,7 @@ do
       sudo cp ./animation/fireworks.html "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/index.html"
       sudo cp ./animation/fireworks.css "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/fireworks.css"
       sudo cp ./animation/sitefix10.4.css "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/css/site.css"
-      sudo cp ./animation/sitefix10.5.css "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/css/site.css"
+      sudo cp ./animation/sitefix10.5.css "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/assets/css/site.css"
       echo "Added fireworks (note you may have to change your page title again from 'Jellyfin')"
       ;;
     "Add Pattys day")
