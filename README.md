@@ -194,6 +194,18 @@ Okay this one is for people that dont have the ability to use or just dont want 
 - Run jftool `./tool-cygwin.sh`
 - Once complete simply close the cygwin tool
 
+# Dark to clear theme
+This is my personal theme, modified by me :) so what this does? it makes the background slightly lighter, makes the scroll bar thinner so it isnt so intrusive, it also has a totally clear top navigation bar and a partially clear side navigation bar. turn on backdrops for maximum effect. (this will not change your icons)
+Screen shots:
+<img src="http://imgur.com/apiE5rAl.png" />
+<img src="http://imgur.com/p1oMlfyl.png" />
+
+I did get asked why i do this to overwrite the dark theme? the answer is because it is easier for some people to just replace that instead of trying to change the default theme for all users of their server.. i also do like the dark theme, but it depends on how you feel on the day.
+
+# Clear back to dark theme
+This is to remove the clear theme and put the original dark theme back, because some people wont like the changes, some will and the main goal of this tool is to let you the server owner and root user decided how your server looks.
+
+no screen shots needed.. dark theme should already be known by most.
+
 # Things to be added that are not in this version
-- Custom css injection from a few presets (i have this working for now on 10.4.x but i feel like it doesnt work on 10.5.x looking into it soon)
 - Docker support (this i am looking into however i am very new to docker.. so may take a while).
