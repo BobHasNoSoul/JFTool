@@ -11,7 +11,7 @@ echo " / / | | | / __| __/ _ \|  _   _ \| |_  / _ \  __|"
 echo "/ /__| |_| \__ \ || (_) | | | | | | |/ /  __/ |   "
 echo "\____/\__,_|___/\__\___/|_| |_| |_|_/___\___|_|   "
 echo ""
-echo "Jellyfin Customizer v0.5b"
+echo "Jellyfin Customizer v0.6"
 echo ""
 echo "Note: THIS IS FOR 1.4.X and 1.5.x"
 echo ""
@@ -28,7 +28,7 @@ echo ""
 echo "============================================================"
 echo ""
 PS3='Please enter your choice: '
-options=("Add Custom Link" "Change Page Title" "Change Icons" "Add icon to sidebar" "Remove icon from sidebar" "Remove Sidebar Link" "Add logo above login" "Backup current icons" "Change to original jellyfin icons" "Add snow animation" "Add Heart animation" "Add Halloween animation" "Add Fireworks" "Add Pattys day" "Remove Animations" "Remove logo above login" "Quit")
+options=("Add Custom Link" "Change Page Title" "Change Icons" "Add icon to sidebar" "Remove icon from sidebar" "Remove Sidebar Link" "Add logo above login" "Backup current icons" "Change to original jellyfin icons" "Add snow animation" "Add Heart animation" "Add Halloween animation" "Add Fireworks" "Add Pattys day" "Remove Animations" "Remove logo above login" "Change Dark theme to clear" "Change clear theme back to dark""Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -254,6 +254,38 @@ do
 	  echo "Removing the logo"
 	  sudo sed -i '/<div class=Login-Logo>/,+2d' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/login.html"
       ;;
+ #       "CSS injection fix")
+ #         sudo mv "/mnt/c/Program Files/Jellyfin/Server/branding.xml /etc/jellyfin/branding.originalxml
+ #         sudo cp ./css/brandingfix.xml /etc/jellyfin/branding.xml
+ #         ;;
+ #       "CSS Invisible background on top bar")
+ #         sudo sed -i '/<CustomCss>/a div.skinHeader-withBackground {background-color: #10101000;} !important' /etc/jellyfin/branding.xml
+ #         echo "to apply this css you now need to restart your jellyfin server"
+ #         echo "e.g. sudo service jellyfin restart"
+ #         ;;
+ #       "CSS Slightly see-through side bar")
+ #         sudo sed -i '/<CustomCss/a div.mainDrawer {background-color: #101010e6;} !important' /etc/jellyfin/branding.xml
+ #         echo "to apply this css please restart your jellyfin server"
+ #         echo "e.g. sudo service jellyfin restart"
+ #         ;;
+# 	"CSS 10.4 remove login top left logo")
+#	  echo "This will not work or do anything on 10.5 and above this only for 10.4"
+#	  sudo sed -i '/<CustomCss/a .listItemImage.listItemImage-large.itemAction.lazy {height: 110px;}' /etc/jellyfin/branding.xml
+#	  sudo sed -i '/<CustomCss/a div.skinHeader.skinHeader-withBackground.headroom.noHeaderRight {display:none; } !important' /etc/jellyfin/branding.xml
+#	  echo "to apply this css please restart your jellyfin server"
+ #         echo "e.g. sudo service jellyfin restart"
+  #        ;;
+        "Change Dark theme to clear")
+          echo "Changing your dark theme to clear by heroinpigeon :)"
+          echo "also putting that side bar on a diet"
+          echo "backing up your original dark theme"
+          sudo cp /usr/lib/jellyfin/bin/jellyfin-web/components/themes/dark/theme.css ./darktheme.css.backup
+          sudo cp ./themes/darktoclear/theme.css /usr/lib/jellyfin/bin/jellyfin-web/components/themes/dark/theme.css
+          ;;
+	"Change clear theme back to dark")
+	  echo "Changing clear theme back to dark"
+	  sudo cp ./themes/dark/theme.css /usr/lib/jellyfin/bin/jellyfin-web/components/themes/dark/theme.css
+	  ;;
  	"Quit")
 	  break
 	  ;;
