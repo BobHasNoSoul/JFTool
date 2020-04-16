@@ -26,7 +26,7 @@ echo ""
 echo "============================================================"
 echo ""
 PS3='Please enter your choice: '
-options=("Add Custom Link" "Change Page Title" "Change Icons" "Add icon to sidebar" "Remove icon from sidebar" "Remove Sidebar Link" "Add logo above login" "Backup current icons" "Change to original jellyfin icons" "Add snow animation" "Add Heart animation" "Add Halloween animation" "Add Fireworks" "Add Pattys day" "Remove Animations" "Remove logo above login" "CSS injection fix" "CSS Invisible background on top bar" "CSS Slightly see-through side bar" "CSS 10.4 remove login top left logo" "Quit")
+options=("Add Custom Link" "Change Page Title" "Change Icons" "Add icon to sidebar" "Remove icon from sidebar" "Remove Sidebar Link" "Add logo above login" "Backup current icons" "Change to original jellyfin icons" "Add snow animation" "Add Heart animation" "Add Halloween animation" "Add Fireworks" "Add Pattys day" "Remove Animations" "Remove logo above login" "CSS injection fix" "CSS Invisible background on top bar" "CSS Slightly see-through side bar" "CSS 10.4 remove login top left logo" "Change Dark theme to clear" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -272,6 +272,13 @@ do
 	  sudo sed -i '/<CustomCss/a div.skinHeader.skinHeader-withBackground.headroom.noHeaderRight {display:none; } !important' /etc/jellyfin/branding.xml
 	  echo "to apply this css please restart your jellyfin server"
           echo "e.g. sudo service jellyfin restart"
+          ;;
+        "Change Dark theme to clear")
+          echo "Changing your dark theme to clear by heroinpigeon :)"
+          echo "also putting that side bar on a diet"
+          echo "backing up your original dark theme"
+          sudo cp /usr/lib/jellyfin/bin/jellyfin-web/components/themes/dark/theme.css ./darktheme.css.backup
+          sudo cp ./themes/darktoclear/themes.css /usr/lib/jellyfin/bin/jellyfin-web/components/themes/dark/theme.css
           ;;
 	"Quit")
 	  break
