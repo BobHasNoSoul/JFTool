@@ -240,11 +240,11 @@ do
           sudo cp "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/dark/theme.css" ./darktheme.css.backup
           sudo cp ./themes/darktoclear/theme.css "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/dark/theme.css"
 	  sudo cp "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/themes/dark/theme.css" ./darktheme.css.backup
-	  sudo cp ./themes/darktoclear/theme.css "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/themes/dark/theme.css"
+	  sudo cp ./themes/darktoclear/theme10.5.css "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/themes/dark/theme.css"
           ;;
 	"Change clear theme back to dark")
 	  echo "Changing clear theme back to dark"
-	  sudo cp ./themes/dark/theme.css "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/themes/dark/"
+	  sudo cp ./themes/dark/theme10.5.css "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/themes/dark/"
 	  sudo cp ./themes/dark/theme.css "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/dark/"
 	  ;;
  	"Quit")
