@@ -11,7 +11,7 @@ echo " / / | | | / __| __/ _ \|  _   _ \| |_  / _ \  __|"
 echo "/ /__| |_| \__ \ || (_) | | | | | | |/ /  __/ |   "
 echo "\____/\__,_|___/\__\___/|_| |_| |_|_/___\___|_|   "
 echo ""
-echo "Jellyfin Customizer v0.5b"
+echo "Jellyfin Customizer v0.6"
 echo ""
 echo "Note: THIS IS FOR 1.4.X and 1.5.x"
 echo ""
@@ -254,6 +254,38 @@ do
 	  echo "Removing the logo"
 	  sed -i '/<div class=Login-Logo>/,+2d' "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/login.html"
       ;;
+        "CSS injection fix")
+          mv "/cygdrive/c/ProgramData/Jellyfin/Server/config/branding.xml" "/cygdrive/c/ProgramData/Jellyfin/Server/config/branding.originalxml"
+          cp ./css/brandingfix.xml "/cygdrive/c/ProgramData/Jellyfin/Server/config/branding.xml"
+          ;;
+        "CSS Invisible background on top bar")
+          sed -i '/<CustomCss>/a div.skinHeader-withBackground {background-color: #10101000;} !important' "/cygdrive/c/ProgramData/Jellyfin/Server/config/branding.xml"
+          echo "to apply this css you now need to restart your jellyfin server"
+          ;;
+        "CSS Slightly see-through side bar")
+          sudo sed -i '/<CustomCss/a div.mainDrawer {background-color: #101010e6;} !important' "/cygdrive/c/ProgramData/Jellyfin/Server/config/branding.xml"
+          echo "to apply this css please restart your jellyfin server"
+          ;;
+ 	"CSS 10.4 remove login top left logo")
+	  echo "This will not work or do anything on 10.5 and above this only for 10.4"
+	  sudo sed -i '/<CustomCss/a .listItemImage.listItemImage-large.itemAction.lazy {height: 110px;}' "/cygdrive/c/ProgramData/Jellyfin/Server/config/branding.xml"
+	  sudo sed -i '/<CustomCss/a div.skinHeader.skinHeader-withBackground.headroom.noHeaderRight {display:none; } !important' "/cygdrive/c/ProgramData/Jellyfin/Server/config/branding.xml"
+	  echo "to apply this css please restart your jellyfin server"
+          ;;
+        "Change Dark theme to clear")
+          echo "Changing your dark theme to clear by heroinpigeon :)"
+          echo "also putting that side bar on a diet"
+          echo "backing up your original dark theme"
+          sudo cp "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/dark/theme.css" ./darktheme.css.backup
+          sudo cp ./themes/darktoclear/theme.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/dark/theme.css"
+	  sudo cp "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/themes/dark/theme.css" ./darktheme.css.backup
+	  sudo cp ./themes/darktoclear/theme.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/dark/theme.css"
+          ;;
+	"Change clear theme back to dark")
+	  echo "Changing clear theme back to dark"
+	  sudo cp ./themes/dark/theme.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/themes/dark/"
+	  sudo cp ./themes/dark/theme.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/dark/"
+	  ;;
  	"Quit")
 	  break
 	  ;;
