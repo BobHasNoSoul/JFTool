@@ -433,7 +433,7 @@ html {
 }
 
 .layout-desktop ::-webkit-scrollbar {
-    width: 0.4em;
+    width: 1em;
 }
 
 ::-webkit-scrollbar-thumb:horizontal,
