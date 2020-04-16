@@ -241,12 +241,12 @@ do
           sudo cp /usr/lib/jellyfin/bin/jellyfin-web/components/themes/dark/theme.css ./darktheme.css.backup
           sudo cp ./themes/darktoclear/theme.css /usr/lib/jellyfin/bin/jellyfin-web/components/themes/dark/theme.css
 	  sudo cp /usr/lib/jellyfin/bin/jellyfin-web/themes/dark/theme.css ./darktheme.css.backup
-          sudo cp ./themes/darktoclear/theme.css /usr/lib/jellyfin/bin/jellyfin-web/themes/dark/theme.css
+          sudo cp ./themes/darktoclear/theme10.5.css /usr/lib/jellyfin/bin/jellyfin-web/themes/dark/theme.css
           ;;
 	"Change clear theme back to dark")
 	  echo "Changing clear theme back to dark"
 	  sudo cp ./themes/dark/theme.css /usr/lib/jellyfin/bin/jellyfin-web/components/themes/dark/theme.css
-	  sudo cp ./themes/dark/theme.css /usr/lib/jellyfin/bin/jellyfin-web/themes/dark/theme.css
+	  sudo cp ./themes/dark/theme10.5.css /usr/lib/jellyfin/bin/jellyfin-web/themes/dark/theme.css
 	  ;;
 	"Quit")
 	  break
