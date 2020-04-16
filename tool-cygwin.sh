@@ -279,11 +279,11 @@ do
           cp "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/dark/theme.css" ./darktheme.css.backup
           cp ./themes/darktoclear/theme.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/dark/theme.css"
 	  cp "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/themes/dark/theme.css" ./darktheme.css.backup
-	  cp ./themes/darktoclear/theme.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/themes/dark/theme.css"
+	  cp ./themes/darktoclear/theme10.5.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/themes/dark/theme.css"
           ;;
 	"Change clear theme back to dark")
 	  echo "Changing clear theme back to dark"
-	  cp ./themes/dark/theme.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/themes/dark/"
+	  cp ./themes/dark/theme10.5.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/themes/dark/"
 	  cp ./themes/dark/theme.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/dark/"
 	  ;;
  	"Quit")
