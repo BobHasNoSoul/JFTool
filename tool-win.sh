@@ -279,12 +279,15 @@ do
           echo "Changing your dark theme to clear by heroinpigeon :)"
           echo "also putting that side bar on a diet"
           echo "backing up your original dark theme"
-          sudo cp /usr/lib/jellyfin/bin/jellyfin-web/components/themes/dark/theme.css ./darktheme.css.backup
-          sudo cp ./themes/darktoclear/theme.css /usr/lib/jellyfin/bin/jellyfin-web/components/themes/dark/theme.css
+          sudo cp "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/dark/theme.css" ./darktheme.css.backup
+          sudo cp ./themes/darktoclear/theme.css "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/dark/theme.css"
+	  sudo cp "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/themes/dark/theme.css" ./darktheme.css.backup
+	  sudo cp ./themes/darktoclear/theme.css "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/dark/theme.css"
           ;;
 	"Change clear theme back to dark")
 	  echo "Changing clear theme back to dark"
-	  sudo cp ./themes/dark/theme.css /usr/lib/jellyfin/bin/jellyfin-web/components/themes/dark/theme.css
+	  sudo cp ./themes/dark/theme.css "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/themes/dark/"
+	  sudo cp ./themes/dark/theme.css "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/dark/"
 	  ;;
  	"Quit")
 	  break
