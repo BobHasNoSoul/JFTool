@@ -28,7 +28,7 @@ echo ""
 echo "============================================================"
 echo ""
 PS3='Please enter your choice: '
-options=("Add Custom Link" "Change Page Title" "Change Icons" "Add icon to sidebar" "Remove icon from sidebar" "Remove Sidebar Link" "Add logo above login" "Backup current icons" "Change to original jellyfin icons" "Add snow animation" "Add Heart animation" "Add Halloween animation" "Add Fireworks" "Add Pattys day" "Remove Animations" "Remove logo above login" "Change Dark theme to clear" "Change clear theme back to dark""Quit")
+options=("Add Custom Link" "Change Page Title" "Change Icons" "Add icon to sidebar" "Remove icon from sidebar" "Remove Sidebar Link" "Add logo above login" "Backup current icons" "Change to original jellyfin icons" "Add snow animation" "Add Heart animation" "Add Halloween animation" "Add Fireworks" "Add Pattys day" "Remove Animations" "Remove logo above login" "Change Dark theme to clear" "Change clear theme back to dark" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
