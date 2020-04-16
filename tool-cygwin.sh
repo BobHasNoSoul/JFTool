@@ -263,28 +263,28 @@ do
           echo "to apply this css you now need to restart your jellyfin server"
           ;;
         "CSS Slightly see-through side bar")
-          sudo sed -i '/<CustomCss/a div.mainDrawer {background-color: #101010e6;} !important' "/cygdrive/c/ProgramData/Jellyfin/Server/config/branding.xml"
+          sed -i '/<CustomCss/a div.mainDrawer {background-color: #101010e6;} !important' "/cygdrive/c/ProgramData/Jellyfin/Server/config/branding.xml"
           echo "to apply this css please restart your jellyfin server"
           ;;
  	"CSS 10.4 remove login top left logo")
 	  echo "This will not work or do anything on 10.5 and above this only for 10.4"
-	  sudo sed -i '/<CustomCss/a .listItemImage.listItemImage-large.itemAction.lazy {height: 110px;}' "/cygdrive/c/ProgramData/Jellyfin/Server/config/branding.xml"
-	  sudo sed -i '/<CustomCss/a div.skinHeader.skinHeader-withBackground.headroom.noHeaderRight {display:none; } !important' "/cygdrive/c/ProgramData/Jellyfin/Server/config/branding.xml"
+	  sed -i '/<CustomCss/a .listItemImage.listItemImage-large.itemAction.lazy {height: 110px;}' "/cygdrive/c/ProgramData/Jellyfin/Server/config/branding.xml"
+	  sed -i '/<CustomCss/a div.skinHeader.skinHeader-withBackground.headroom.noHeaderRight {display:none; } !important' "/cygdrive/c/ProgramData/Jellyfin/Server/config/branding.xml"
 	  echo "to apply this css please restart your jellyfin server"
           ;;
         "Change Dark theme to clear")
           echo "Changing your dark theme to clear by heroinpigeon :)"
           echo "also putting that side bar on a diet"
           echo "backing up your original dark theme"
-          sudo cp "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/dark/theme.css" ./darktheme.css.backup
-          sudo cp ./themes/darktoclear/theme.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/dark/theme.css"
-	  sudo cp "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/themes/dark/theme.css" ./darktheme.css.backup
-	  sudo cp ./themes/darktoclear/theme.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/dark/theme.css"
+          cp "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/dark/theme.css" ./darktheme.css.backup
+          cp ./themes/darktoclear/theme.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/dark/theme.css"
+	  cp "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/themes/dark/theme.css" ./darktheme.css.backup
+	  cp ./themes/darktoclear/theme.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/dark/theme.css"
           ;;
 	"Change clear theme back to dark")
 	  echo "Changing clear theme back to dark"
-	  sudo cp ./themes/dark/theme.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/themes/dark/"
-	  sudo cp ./themes/dark/theme.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/dark/"
+	  cp ./themes/dark/theme.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/themes/dark/"
+	  cp ./themes/dark/theme.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/dark/"
 	  ;;
  	"Quit")
 	  break
