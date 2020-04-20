@@ -232,7 +232,7 @@ Please note you need to select the correct version for your install 10.4 or 10.5
 
 This is simple enough we remove the scenes on the item details page and add a ExtraFanart row that if a user clicks on it they will get the full version for that image, banner, art, disc, box, etc.
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/kaDtkmQ"  ><a href="//imgur.com/a/kaDtkmQ">extrafanart jellyfin</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/kaDtkmQ"  ><a href="//imgur.com/a/kaDtkmQ">extrafanart jellyfin</a></blockquote>
 
 again sorry i have bad gif skills this is me trying to make a webm file
 
