@@ -11,7 +11,7 @@ echo " / / | | | / __| __/ _ \|  _   _ \| |_  / _ \  __|"
 echo "/ /__| |_| \__ \ || (_) | | | | | | |/ /  __/ |   "
 echo "\____/\__,_|___/\__\___/|_| |_| |_|_/___\___|_|   "
 echo ""
-echo "Jellyfin Customizer v0.6"
+echo "Jellyfin Customizer v0.8"
 echo ""
 echo "Note: THIS IS FOR 1.4.X and 1.5.x"
 echo ""
@@ -21,6 +21,8 @@ echo "Written By: u/HeroinPigeon"
 echo ""
 echo "Thanks to the Jellyfin Devs and community at r/Jellyfin"
 echo ""
+echo "Special Thanks to @boris for the help"
+echo ""
 echo "This tool is not to take away devs work but simply to"
 echo "Make the user have more control over the look of their setup"
 echo "I cannot stress how much the devs do for us all."
@@ -28,7 +30,7 @@ echo ""
 echo "============================================================"
 echo ""
 PS3='Please enter your choice: '
-options=("Add Custom Link" "Change Page Title" "Change Icons" "Add icon to sidebar" "Remove icon from sidebar" "Remove Sidebar Link" "Add logo above login" "Backup current icons" "Change to original jellyfin icons" "Add snow animation" "Add Heart animation" "Add Halloween animation" "Add Fireworks" "Add Pattys day" "Remove Animations" "Remove logo above login"  "CSS injection fix" "CSS Invisible background on top bar" "CSS Slightly see-through side bar" "CSS 10.4 remove login top left logo" "Change Dark theme to clear" "Change clear theme back to dark" "Quit")
+options=("Add Custom Link" "Change Page Title" "Change Icons" "Add icon to sidebar" "Remove icon from sidebar" "Remove Sidebar Link" "Add logo above login" "Backup current icons" "Change to original jellyfin icons" "Add snow animation" "Add Heart animation" "Add Halloween animation" "Add Fireworks" "Add Pattys day" "Remove Animations" "Remove logo above login"  "CSS injection fix" "CSS Invisible background on top bar" "CSS Slightly see-through side bar" "CSS 10.4 remove login top left logo" "Change Dark theme to clear" "Change clear theme back to dark" "10.4 Change scenes to ExtraFanart" "10.4 Change ExtraFanart back to scenes" "10.5 Change scenes to ExtraFanart" "10.5 Change ExtraFanart back to scenes" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -286,6 +288,26 @@ do
 	  cp ./themes/dark/theme10.5.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/themes/dark/"
 	  cp ./themes/dark/theme.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/dark/"
 	  ;;
+	 "10.4 Change scenes to ExtraFanart")
+	  echo "This changes the Scenes in the item page to show extrafanart when clicked these also open a new window to show full size image"
+      cp ./mods/10.4/extrafanart/itemdetailpage.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/"
+      cp ./mods/10.4/extrafanart/itemdetails.html "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
+	  ;;
+	"10.4 Change ExtraFanart back to scenes")
+      echo "Changing the itemdetails page back to normal before we touched it"
+      cp ./mods/10.4/stock/itemdetailpage.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/"
+      cp ./mods/10.4/stock/itemdetails.html "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
+	  ;;
+	"10.5 Change scenes to ExtraFanart")
+	  echo "This changes the Scenes in the item page to show extrafanart when clicked these also open a new window to show full size image"
+      cp ./mods/10.5/extrafanart/itemdetailpage.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/"
+      cp ./mods/10.5/extrafanart/itemdetails.html "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
+	  ;;
+	"10.5 Change ExtraFanart back to scenes")
+      echo "Changing the itemdetails page back to normal before we touched it"
+      cp ./mods/10.5/stock/itemdetails.html "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
+      cp ./mods/10.5/stock/itemdetailpage.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/"
+	  ;; 
  	"Quit")
 	  break
 	  ;;
