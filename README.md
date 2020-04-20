@@ -1,27 +1,27 @@
 # JFTool
 
 ```
-   __       _ _        __ _
-   \ \  ___| | |_   _ / _(_)_ __
-    \ \/ _ \ | | | | | |_| | '_ \
- /\_/ /  __/ | | |_| |  _| | | | |
- \___/ \___|_|_|\__, |_| |_|_| |_|
-                |___/
-   ___          _                  _
-  / __\   _ ___| |_ ___  _ __ ___ (_)_______ ____
+   __       _ _        __ _                       
+   \ \  ___| | |_   _ / _(_)_ __                  
+    \ \/ _ \ | | | | | |_| | '_ \                 
+ /\_/ /  __/ | | |_| |  _| | | | |                
+ \___/ \___|_|_|\__, |_| |_|_| |_|                
+                |___/                             
+   ___          _                  _              
+  / __\   _ ___| |_ ___  _ __ ___ (_)_______ ____ 
  / / | | | / __| __/ _ \|  _   _ \| |_  / _ \  __|
-/ /__| |_| \__ \ || (_) | | | | | | |/ /  __/ |
-\____/\__,_|___/\__\___/|_| |_| |_|_/___\___|_|
+/ /__| |_| \__ \ || (_) | | | | | | |/ /  __/ |   
+\____/\__,_|___/\__\___/|_| |_| |_|_/___\___|_|   
 
-Jellyfin Customizer v0.5b
+Jellyfin Customizer v0.8
 
-Note: THIS IS FOR 1.4.X and 1.5.x
-
-THIS VERSION IS FOR WINDOWS (STANDARD INSTALLS) using cygwin
+THIS VERSION IS FOR LINUX INSTALLS
 
 Written By: u/HeroinPigeon
 
 Thanks to the Jellyfin Devs and community at r/Jellyfin
+
+Special Thanks to @boris for the help
 
 This tool is not to take away devs work but simply to
 Make the user have more control over the look of their setup
@@ -29,15 +29,34 @@ I cannot stress how much the devs do for us all.
 
 ============================================================
 
-1) Add Custom Link                     10) Add snow animation
-2) Change Page Title                   11) Add Heart animation
-3) Change Icons                        12) Add Halloween animation
-4) Add icon to sidebar                 13) Add Fireworks
-5) Remove icon from sidebar            14) Add Pattys day
-6) Remove Sidebar Link                 15) Remove Animations
-7) Add logo above login                16) Remove logo above login
-8) Backup current icons                17) Quit
-9) Change to original jellyfin icons
+ 1) Add Custom Link
+ 2) Change Page Title
+ 3) Change Icons
+ 4) Add icon to sidebar
+ 5) Remove icon from sidebar
+ 6) Remove Sidebar Link
+ 7) Add logo above login
+ 8) Backup current icons
+ 9) Change to original jellyfin icons
+10) Add snow animation
+11) Add Heart animation
+12) Add Halloween animation
+13) Add Fireworks
+14) Add Pattys day
+15) Remove Animations
+16) Remove logo above login
+17) CSS injection fix
+18) CSS Invisible background on top bar
+19) CSS Slightly see-through side bar
+20) CSS 10.4 remove login top left logo
+21) Change Dark theme to clear
+22) Change clear theme back to dark
+23) 10.4 Change scenes to ExtraFanart
+24) 10.4 Change ExtraFanart back to scenes
+25) 10.5 Change scenes to ExtraFanart
+26) 10.5 Change ExtraFanart back to scenes
+27) Quit
+
 Please enter your choice:
 
 ```
@@ -206,6 +225,22 @@ I did get asked why i do this to overwrite the dark theme? the answer is because
 This is to remove the clear theme and put the original dark theme back, because some people wont like the changes, some will and the main goal of this tool is to let you the server owner and root user decided how your server looks.
 
 no screen shots needed.. dark theme should already be known by most.
+
+# Scenes to ExtraFanart
+
+Please note you need to select the correct version for your install 10.4 or 10.5 if you pick the wrong one all you need to do is use the tool and select the correct version
+
+This is simple enough we remove the scenes on the item details page and add a ExtraFanart row that if a user clicks on it they will get the full version for that image, banner, art, disc, box, etc.
+
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/kaDtkmQ"  ><a href="//imgur.com/a/kaDtkmQ">extrafanart jellyfin</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
+again sorry i have bad gif skills this is me trying to make a webm file
+
+# ExtraFanart to Scenes
+
+Please note you need to select the correct version for your install 10.4 or 10.5 if you pick the wrong one all you need to do is use the tool and select the correct version
+
+This option repairs the files we modified for extrafanart back to normal stock version.
 
 # Things to be added that are not in this version
 - Docker support (this i am looking into however i am very new to docker.. so may take a while).
