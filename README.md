@@ -69,10 +69,12 @@ Please enter your choice:
 - run `./tool.sh`
 - select your options you want to apply from the numbered menu
 - once done exit the program using option 8 on the menu or pressing ctrl+c 
-- restart you jellyfin install with `sudo service jellyfin start`
+- restart you jellyfin install with `sudo service jellyfin start
 
 Note: you may be able to modify these without stopping jellyfin server but i would reccomend for sanitys sake when
 modifying any files you stop the server, make the edits, then start it again.
+
+**Some browsers will require you to clear the cache to display properly after changing the images like favicon and page title to do this you should use the settings privacy content and clear the cache or use inprivate browsing / incognito mode to see what the outside world will see**
 
 # Disclaimer
 The tool will replace the existing files for logos in your install... so if you want to get them back you will need to grab them from either another install or back them up before running these are located at /var/lib/jellyfin/bin/jellyfin-web/ or on windows C:/Program Files/Jellyfin/Server/jellyfin-web/ sometimes located in assets or themes.. depending on version.
