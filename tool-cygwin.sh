@@ -11,7 +11,7 @@ echo " / / | | | / __| __/ _ \|  _   _ \| |_  / _ \  __|"
 echo "/ /__| |_| \__ \ || (_) | | | | | | |/ /  __/ |   "
 echo "\____/\__,_|___/\__\___/|_| |_| |_|_/___\___|_|   "
 echo ""
-echo "Jellyfin Customizer v0.8"
+echo "Jellyfin Customizer v1.1"
 echo ""
 echo "Note: THIS IS FOR 1.4.X and 1.5.x"
 echo ""
@@ -147,50 +147,7 @@ do
 	  echo "adding the logo"
 	  logowhite='<img src="/web/logowhite.png" width=400px style="padding: 5px;display:block; margin-left: auto; margin-right: auto;">'
           sed -i "/manualLoginForm hide/i \
-          <div class="Login-Logo">" "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/login.html"
-          sed -i "/Login-Logo/a \
-          ${logowhite}" "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/login.html"
-	  sed -i "/logowhite.png/a \
-	  </div>" "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/login.html"
-	  echo "(Optional) to remove the icon in the top left top bar on the login page please login to the admin panel"
-	  echo "General tab and insert the following under custom css"
-	  echo ""
-	  echo "For 10.4.x add:"
-	  echo ".listItemImage.listItemImage-large.itemAction.lazy {height: 110px;}"
-	  echo "div.skinHeader.skinHeader-withBackground.headroom.noHeaderRight {display:none; }"
-	  echo " "
-#	  echo "adding the css to remove dual icons on login page"
-#	  if [ -f "/etc/jellyfin/branding.xml" ]; then 
-#      echo -e "\e[32m/etc/jellyfin/branding.xml located\e[39m"
-#      sed -i "/CustomCSS/a \ .listItemImage.listItemImage-large.itemAction.lazy {height: 110px;}" /etc/jellyfin/branding.xml
-#	   sed -i "/CustomCSS/a \ div.skinHeader.skinHeader-withBackground.headroom.noHeaderRight {display:none; }" /etc/jellyfin/branding.xml
-#      else
-#      echo "branding.xml is not located in /etc/jellyfin/branding.xml (do not worry this is not an error)"
-#      fi
-#     if [ -f "/root/.config/jellyfin/branding.xml" ]; then 
-#      echo -e "\e[32m/root/.config/jellyfin/branding.xml located (this means you might be running jellyfin as root.. you shouldn't do this but i wont tell if you don't)\e[39m"
-#      sed -i "/CustomCSS/a \ .listItemImage.listItemImage-large.itemAction.lazy {height: 110px;}" /root/.config/jellyfin/branding.xml
-#      sed -i "/CustomCSS/a \ div.skinHeader.skinHeader-withBackground.headroom.noHeaderRight {display:none; }" /root/.config/jellyfin/branding.xml
-#                                  
-#      else
-#      echo "branding.xml is not located in /root/.config/jellyfin/branding.xml (do not worry this is not an error)"
-#      fi
-#     if [ -f "/home/jellyfin/.config/jellyfin/branding.xml" ]; then 
-#      echo -e "\e[32m/home/jellyfin/.config/jellyfin/branding.xml located\e[39m"
-#      sed -i "/CustomCSS/a \ .listItemImage.listItemImage-large.itemAction.lazy {height: 110px;}" /home/jellyfin/.config/jellyfin/branding.xml
-#	   sed -i "/CustomCSS/a \ div.skinHeader.skinHeader-withBackground.headroom.noHeaderRight {display:none; }" /home/jellyfin/.config/jellyfin/branding.xml
-#      else
-#      echo "branding.xml is not located in /home/jellyfin/.config/jellyfin/branding.xml (this is not an error)"
-#      fi
-#     if [ -f "${HOME}/.config/jellyfin/branding.xml" ]; then 
-#      echo -e "\e[32m${HOME}/.config/jellyfin/branding.xml located\e[39m"
-#      sed -i "/CustomCSS/a \ .listItemImage.listItemImage-large.itemAction.lazy {height: 110px;}" ${HOME}/.config/jellyfin/branding.xml
-#	   sed -i "/CustomCSS/a \ div.skinHeader.skinHeader-withBackground.headroom.noHeaderRight {display:none; }" ${HOME}/.config/jellyfin/branding.xml
-#      else
-#      echo "branding.xml is not located in ${HOME}/.config/jellyfin/branding.xml (this is not an error)"
-#      fi
-#      echo "if you do not see a located message above this line you may need to find the location of your branding.xml and send u/heroinpigeon a message because something has gone very.. very wrong."
-	  echo "once you have done that you can click save on web admin page"
+          <div class="Login-Logo">${logowhite}</div>" "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/login.html"
 	  ;;
 	  	"Backup current icons")
 	  mkdir ./backedupimages

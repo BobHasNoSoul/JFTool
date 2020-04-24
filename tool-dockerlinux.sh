@@ -11,7 +11,7 @@ echo " / / | | | / __| __/ _ \|  _   _ \| |_  / _ \  __|"
 echo "/ /__| |_| \__ \ || (_) | | | | | | |/ /  __/ |   "
 echo "\____/\__,_|___/\__\___/|_| |_| |_|_/___\___|_|   "
 echo ""
-echo "Jellyfin Customizer v1.0"
+echo "Jellyfin Customizer v1.1"
 echo ""
 echo "THIS VERSION IS FOR DOCKER LINUX INSTALLS"
 echo ""
@@ -145,11 +145,7 @@ do
 	  echo "adding the logo"
 	  logowhite='<img src="/web/logowhite.png" width=400px style="padding: 5px;display:block; margin-left: auto; margin-right: auto;">'
           sudo sed -i "/manualLoginForm hide/i \
-          <div class="Login-Logo">" ${HOME}/Docker/jellyfin/jellyfin-web/login.html
-          sudo sed -i "/Login-Logo/a \
-          ${logowhite}" ${HOME}/Docker/jellyfin/jellyfin-web/login.html
-	  sudo sed -i "/logowhite.png/a \
-	  </div>" ${HOME}/Docker/jellyfin/jellyfin-web/login.html
+          <div class="Login-Logo">${logowhite}</div>" ${HOME}/Docker/jellyfin/jellyfin-web/login.html
 	  ;;
 	  	"Backup current icons")
 	  mkdir ./backedupimages
@@ -216,7 +212,7 @@ do
 	  ;; 
 	"Remove logo above login")
 	  echo "Removing the logo"
-      sudo sed -i '/<div class=Login-Logo>/,+2d' ${HOME}/Docker/jellyfin/jellyfin-web/login.html
+      sudo sed -i '/<div class=Login-Logo>/d' ${HOME}/Docker/jellyfin/jellyfin-web/login.html
       ;;
         "CSS injection fix")
           sudo mv /etc/jellyfin/branding.xml /etc/jellyfin/branding.originalxml

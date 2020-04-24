@@ -11,7 +11,7 @@ echo " / / | | | / __| __/ _ \|  _   _ \| |_  / _ \  __|"
 echo "/ /__| |_| \__ \ || (_) | | | | | | |/ /  __/ |   "
 echo "\____/\__,_|___/\__\___/|_| |_| |_|_/___\___|_|   "
 echo ""
-echo "Jellyfin Customizer v1.0"
+echo "Jellyfin Customizer v1.1"
 echo ""
 echo "Note: THIS IS FOR 1.4.X and 1.5.x"
 echo ""
@@ -147,19 +147,7 @@ do
 	  echo "adding the logo"
 	  logowhite='<img src="/web/logowhite.png" width=400px style="padding: 5px;display:block; margin-left: auto; margin-right: auto;">'
           sed -i "/manualLoginForm hide/i \
-          <div class="Login-Logo">" "/mnt/c/Docker/jellyfin/jellyfin-web/login.html"
-          sed -i "/Login-Logo/a \
-          ${logowhite}" "/mnt/c/Docker/jellyfin/jellyfin-web/login.html"
-	  sed -i "/logowhite.png/a \
-	  </div>" "/mnt/c/Docker/jellyfin/jellyfin-web/login.html"
-	  echo "(Optional) to remove the icon in the top left top bar on the login page please login to the admin panel"
-	  echo "General tab and insert the following under custom css"
-	  echo ""
-	  echo "For 10.4.x add:"
-	  echo ".listItemImage.listItemImage-large.itemAction.lazy {height: 110px;}"
-	  echo "div.skinHeader.skinHeader-withBackground.headroom.noHeaderRight {display:none; }"
-	  echo " "
-	  echo "once you have done that you can click save on web admin page"
+          <div class="Login-Logo">${logowhite}</div>" "/mnt/c/Docker/jellyfin/jellyfin-web/login.html"
 	  ;;
 	  	"Backup current icons")
 	  mkdir ./backedupimages
@@ -226,7 +214,7 @@ do
 	  ;;
 	"Remove logo above login")
 	  echo "Removing the logo"
-	  sed -i '/<div class=Login-Logo>/,+2d' "/mnt/c/Docker/jellyfin/jellyfin-web/login.html"
+	  sed -i '/<div class=Login-Logo>/d' "/mnt/c/Docker/jellyfin/jellyfin-web/login.html"
       ;;
         "CSS injection fix")
           mv "/mnt/c/ProgramData/Jellyfin/Server/config/branding.xml" "/mnt/c/ProgramData/Jellyfin/Server/config/branding.originalxml"
