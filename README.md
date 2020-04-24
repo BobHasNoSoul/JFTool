@@ -242,7 +242,7 @@ This option repairs the files we modified for extrafanart back to normal stock v
 
 # Docker Linux instructions
 
-<img src="https://cdn.worldvectorlogo.com/logos/docker.svg"> <img src="https://i.pinimg.com/originals/cb/bf/f3/cbbff3649adc9c2fda291b35dcfdaf14.jpg">
+<img src="https://cdn.worldvectorlogo.com/logos/docker.svg" width=200 height=200> <img src="https://i.pinimg.com/originals/cb/bf/f3/cbbff3649adc9c2fda291b35dcfdaf14.jpg">
 
 Firstly make the dirs needed to mount the web files 
 ```
@@ -271,7 +271,7 @@ once done close both terminal windows and launch your jellyfin docker again.
 
 # Docker Windows Cygwin
 
-<img src="https://boxboat.com/2017/11/08/docker-windows-server-1709/docker-windows-server-1709.png"> 
+<img src="https://boxboat.com/2017/11/08/docker-windows-server-1709/docker-windows-server-1709.png" width=200 height=200> 
 
 Firstly make the dirs needed to mount the files so this dir is an empty folder
 ```
