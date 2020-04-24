@@ -13,9 +13,7 @@
 / /__| |_| \__ \ || (_) | | | | | | |/ /  __/ |   
 \____/\__,_|___/\__\___/|_| |_| |_|_/___\___|_|   
 
-Jellyfin Customizer v0.8
-
-THIS VERSION IS FOR LINUX INSTALLS
+Jellyfin Customizer v1.0
 
 Written By: u/HeroinPigeon
 
@@ -242,5 +240,63 @@ Please note you need to select the correct version for your install 10.4 or 10.5
 
 This option repairs the files we modified for extrafanart back to normal stock version.
 
-# Things to be added that are not in this version
-- Docker support (this i am looking into however i am very new to docker.. so may take a while).
+# Docker Linux instructions
+
+<img src="https://cdn.worldvectorlogo.com/logos/docker.svg"> <img src="https://i.pinimg.com/originals/cb/bf/f3/cbbff3649adc9c2fda291b35dcfdaf14.jpg">
+
+Firstly make the dirs needed to mount the web files 
+```
+sudo mkdir ${HOME}/Docker && sudo mkdir ${HOME}/Docker/jellyfin && sudo mkdir ${HOME}/Docker/jellyfin/jellyfin-web
+```
+Now we have done that we will have to make a mount that reflects the containers content on the host :)
+```
+  sudo docker volume create --driver local \
+    --opt type=none \
+    --opt device=${HOME}/Docker/jellyfin/jellyfin-web \
+    --opt o=bind \
+    tool_vol
+```
+now if jellyfin is not running as a container run this in one terminal window 
+
+```
+sudo docker run -it -v tool_vol:/jellyfin/jellyfin-web jellyfin/jellyfin
+```
+
+now you just need to open another terminal window (leaving the one you was just in open and running) 
+and run the `./tool-dockerlinux.sh` from the jftool-master folder
+
+once done close both terminal windows and launch your jellyfin docker again.
+
+
+
+# Docker Windows Cygwin
+
+<img src="https://boxboat.com/2017/11/08/docker-windows-server-1709/docker-windows-server-1709.png"> 
+
+Firstly make the dirs needed to mount the files so this dir is an empty folder
+```
+C:/Docker/jellyfin/jellyfin-web
+```
+Now we have done that we will have to make a mount that reflects the containers content on your pc
+```
+  docker volume create --driver local \
+    --opt type=none \
+    --opt device=C:/Docker/jellyfin/jellyfin-web \
+    --opt o=bind \
+    tool_vol
+```
+now run
+
+```
+docker run -it -v tool_vol:/jellyfin/jellyfin-web jellyfin/jellyfin
+```
+
+now you just need to open cygwin `./tool-dockerlinux.sh` from the jftool-master folder
+
+if you have it in your Downloads folder you simply need to run this (changing your username)
+
+`cd /cygdrive/c/Users/YOURUSERNAME/Downloads/JFTool-master/`
+
+then run `./tool-dockercygwin.sh`
+
+once you are done with the tool close the windows and launch your jellyfin docker again.
