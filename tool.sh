@@ -92,11 +92,15 @@ do
 	  sudo cp ./images/logodark.png /usr/lib/jellyfin/bin/jellyfin-web/assets/img/touchicon114.png
 	  sudo cp ./images/logodark.png /usr/lib/jellyfin/bin/jellyfin-web/assets/img/touchicon144.png
 	  sudo cp ./images/logodark.png /usr/lib/jellyfin/bin/jellyfin-web/assets/img/touchicon512.png
+	  sudo cp ./images/logodark.png /usr/lib/jellyfin/bin/jellyfin-web/assets/img/banner-dark.png
+	  sudo cp ./images/logodark.png /usr/lib/jellyfin/bin/jellyfin-web/themes/banner-dark.png
 	  echo "logowhite.png"
+	  sudo cp ./images/logowhite.png /usr/lib/jellyfin/bin/jellyfin-web/themes/banner-light.png
 	  sudo cp ./images/logowhite.png /usr/lib/jellyfin/bin/jellyfin-web/components/themes/
 	  sudo cp ./images/logowhite.png /usr/lib/jellyfin/bin/jellyfin-web/
 	  sudo cp ./images/logowhite.png /usr/lib/jellyfin/bin/jellyfin-web/assets/img/banner-light.png
 	  echo "touchicon.png"
+	  sudo cp ./images/touchicon.png /usr/lib/jellyfin/bin/jellyfin-web/themes/icon-transparent.png
 	  sudo cp ./images/touchicon.png /usr/lib/jellyfin/bin/jellyfin-web/components/themes/
 	  sudo cp ./images/touchicon.png /usr/lib/jellyfin/bin/jellyfin-web/
 	  sudo cp ./images/touchicon.png /usr/lib/jellyfin/bin/jellyfin-web/assets/img/
