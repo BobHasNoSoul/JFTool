@@ -306,3 +306,23 @@ once you are done with the tool close the windows and launch your jellyfin docke
 # Docker on windows using WSL
 
 same instructions as cygwin but use ./tool-dockerwsl.sh instead of ./tool-dockercygwin.sh
+
+
+# FAQ
+
+***My favicon has not changed what do i do?***
+Please clear you cache in your browser google will help you clear your cache correctly (or test using inprivate browsing).
+
+***Is the script outdated? i keep getting errors?***
+This script is not outdated, please know this was designed not just for the latest version of jellyfin but the older ones as well. The "Errors" as you put them are not always errors if they are happening when changing images or themes etc and it is a cp line error saying file not found this is normal. How cp works in this script is if it does not have the directory that exists it will skip that one file but continue for the ones where the dir is correct.. allowing the scripts to be one for all versions of jellyfin instead of one for each.. please do not worry about this.
+
+***This broke my login page, all i see is a few logos and no login box***
+This only applys to an older version of the script current version 1.0 and above do not have the issue. but on older versions if you added more than 1 logo on login page and tried to remove them you would be left with a broken login page. to get around this you would have to remove the images and </div> tag for each one in the login.html located at your server root. **For the current version of this script this has been fixed by making the logo a simple one line html code added and removed with a single line also instead of being split into 3**
+
+***Do i have to rescan after using this tool?***
+No, not unless you want to.. I mean this tool does not touch your database and has no intention of modifying the database.. personally I would not see a reason to add this in the future either. However you should rescan if you add new video content to your server.
+
+***Why Does this exist?***
+This exists to allow the masses to easily modify their installs on their own hardware, my main philosophy is if you are running it you might aswell customize it to look and feel exactly how you want.
+
+If you have any other feedback please contact me at u/HeroinPigeon or add an issue here if there is an issue/bug not covered here.
