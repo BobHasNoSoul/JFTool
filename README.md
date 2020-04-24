@@ -271,7 +271,7 @@ once done close both terminal windows and launch your jellyfin docker again.
 
 # Docker Windows Cygwin
 
-<img src="https://boxboat.com/2017/11/08/docker-windows-server-1709/docker-windows-server-1709.png" width=200 height=200> 
+<img src="https://boxboat.com/2017/11/08/docker-windows-server-1709/docker-windows-server-1709.png" width=600 height=200> 
 
 Firstly make the dirs needed to mount the files so this dir is an empty folder
 ```
