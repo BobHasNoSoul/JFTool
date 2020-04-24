@@ -191,7 +191,7 @@ by default this is "C:/Program Files/Jellyfin" if this is not the case, please m
 - When prompted press Y and hit enter to restart you windows install
 - Now you have enabled WSL but you need a platform, pick your flavour in the microsoft store but i personally went with the Ubuntu option.. install it.
 - Open Ubuntu (or your flavour picked in previous step) as admin from the start menu not from the launch option (you are editing files installed by an admin so you need to run this as an admin)
-- navigate to where you downloaded the script i.e. if you downloaded it on windows and decided to leave them in unzipped form just modify this line with your username. ` cd "/mnt/c/Users/YOURUSERNAMEHERE/Downloads/JFTool-master/JFTool-master"`
+- navigate to where you downloaded the script i.e. if you downloaded it on windows and decided to leave them in unzipped form just modify this line with your username. ` cd "/mnt/c/Users/YOURUSERNAMEHERE/Downloads/JFTool-master/"`
 - now run the windows version of the tool `./tool-win.sh`
 - enjoy your modifications when done you can close the ubuntu window (or whatever flavour you picked earlier)
 
