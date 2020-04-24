@@ -86,6 +86,7 @@ do
 	  sudo cp ./images/logodark.png ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/
 	  sudo cp ./images/logodark.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/banner-dark.png
 	  sudo cp ./images/logodark.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/icon-transparent.png
+	  sudo cp ./images/logodark.png ${HOME}/Docker/jellyfin/jellyfin-web/themes/banner-dark.png
 	  sudo cp ./images/logodark.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/touchicon.png
 	  sudo cp ./images/logodark.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/touchicon.png
 	  sudo cp ./images/logodark.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/touchicon72.png
@@ -96,10 +97,12 @@ do
 	  sudo cp ./images/logowhite.png ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/
 	  sudo cp ./images/logowhite.png ${HOME}/Docker/jellyfin/jellyfin-web/
 	  sudo cp ./images/logowhite.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/banner-light.png
+	  sudo cp ./images/logowhite.png ${HOME}/Docker/jellyfin/jellyfin-web/themes/banner-light.png
 	  echo "touchicon.png"
 	  sudo cp ./images/touchicon.png ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/
 	  sudo cp ./images/touchicon.png ${HOME}/Docker/jellyfin/jellyfin-web/
 	  sudo cp ./images/touchicon.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/
+	  sudo cp ./images/touchicon.png ${HOME}/Docker/jellyfin/jellyfin-web/themes/icon-transparent.png
 	  echo "touchicon72.png"
 	  sudo cp ./images/touchicon72.png ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/
 	  sudo cp ./images/touchicon72.png ${HOME}/Docker/jellyfin/jellyfin-web/
