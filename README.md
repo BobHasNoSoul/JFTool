@@ -300,3 +300,7 @@ if you have it in your Downloads folder you simply need to run this (changing yo
 then run `./tool-dockercygwin.sh`
 
 once you are done with the tool close the windows and launch your jellyfin docker again.
+
+# Docker on windows using WSL
+
+same instructions as cygwin but use ./tool-dockerwsl.sh instead of ./tool-dockercygwin.sh
