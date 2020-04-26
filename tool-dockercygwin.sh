@@ -11,7 +11,7 @@ echo " / / | | | / __| __/ _ \|  _   _ \| |_  / _ \  __|"
 echo "/ /__| |_| \__ \ || (_) | | | | | | |/ /  __/ |   "
 echo "\____/\__,_|___/\__\___/|_| |_| |_|_/___\___|_|   "
 echo ""
-echo "Jellyfin Customizer v1.1"
+echo "Jellyfin Customizer v1.2"
 echo ""
 echo "Note: THIS IS FOR 1.4.X and 1.5.x"
 echo ""
@@ -30,7 +30,7 @@ echo ""
 echo "============================================================"
 echo ""
 PS3='Please enter your choice: '
-options=("Add Custom Link" "Change Page Title" "Change Icons" "Add icon to sidebar" "Remove icon from sidebar" "Remove Sidebar Link" "Add logo above login" "Backup current icons" "Change to original jellyfin icons" "Add snow animation" "Add Heart animation" "Add Halloween animation" "Add Fireworks" "Add Pattys day" "Remove Animations" "Remove logo above login"  "CSS injection fix" "CSS Invisible background on top bar" "CSS Slightly see-through side bar" "CSS 10.4 remove login top left logo" "Change Dark theme to clear" "Change clear theme back to dark" "10.4 Change scenes to ExtraFanart" "10.4 Change ExtraFanart back to scenes" "10.5 Change scenes to ExtraFanart" "10.5 Change ExtraFanart back to scenes" "Quit")
+options=("Add Custom Link" "Change Page Title" "Change Icons" "Add icon to sidebar" "Remove icon from sidebar" "Remove Sidebar Link" "Add logo above login" "Backup current icons" "Change to original jellyfin icons" "Add snow animation" "Add Heart animation" "Add Halloween animation" "Add Fireworks" "Add Pattys day" "Remove Animations" "Remove logo above login"  "CSS injection fix" "CSS Invisible background on top bar" "CSS Slightly see-through side bar" "CSS 10.4 remove login top left logo" "Change Dark theme to clear" "Change clear theme back to dark" "10.4 Change scenes to ExtraFanart" "10.4 Change ExtraFanart back to scenes" "10.5 Change scenes to ExtraFanart" "10.5 Change ExtraFanart back to scenes" "Force Backdrops" "Remove Forced Backdrops" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -268,6 +268,26 @@ do
       cp ./mods/10.5/stock/itemdetails.html "/cygdrive/c/Docker/jellyfin/jellyfin-web/"
       cp ./mods/10.5/stock/itemdetailpage.js "/cygdrive/c/Docker/jellyfin/jellyfin-web/controllers/"
 	  ;; 
+	"Force Backdrops")
+	echo ""
+	echo "This forces Backdrops to display at all times, there is no turning them off unless you use the option Remove Forced Backdrops"
+    echo "This will now load the script (One error is normal here)"
+	echo "Now for this to take effect you have to clear the cache on your browser (or your client will have to) or just wait for your cache"
+	echo "to clear itself and reload the .js file we will load in"
+	echo ""
+	cp ./mods/10.4/forcedbackdrops.10.4.js "/cygdrive/c/Docker/jellyfin/jellyfin-web/components/usersettings/usersettingsbuilder.js"
+    cp ./mods/10.5/forcedbackdrops.10.5.js "/cygdrive/c/Docker/jellyfin/jellyfin-web/scripts/settings/userSettingsBuilder.js"
+	;;
+	"Remove Forced Backdrops")
+    echo ""
+	echo "This returns forced backdrops to the stock state of 10.4 or 10.5 (the script will figure that out)"
+    echo "This will now load the script (One error is normal here)"
+	echo "Now for this to take effect you have to clear the cache on your browser (or your client will have to) or just wait for your cache"
+	echo "to clear itself and reload the .js file we will load in"
+	echo ""
+	cp ./mods/10.4/usersettingsbuilder.10.4.js "/cygdrive/c/Docker/jellyfin/jellyfin-web/components/usersettings/usersettingsbuilder.js"
+    cp ./mods/10.5/userSettingsBuilder.10.5.js "/cygdrive/c/Docker/jellyfin/jellyfin-web/scripts/settings/userSettingsBuilder.js"
+	;;
  	"Quit")
 	  break
 	  ;;
