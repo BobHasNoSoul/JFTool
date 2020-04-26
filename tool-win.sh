@@ -279,7 +279,7 @@ do
 	echo "Now for this to take effect you have to clear the cache on your browser (or your client will have to) or just wait for your cache"
 	echo "to clear itself and reload the .js file we will load in"
 	echo ""
-	sudo cp ./mods/10.4/forcedbackdrops.10.4.js "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/components/usersettings/usersettingsbuilder.js"
+	sudo cp ./mods/10.4/forcebackdrops.10.4.js "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/components/usersettings/usersettingsbuilder.js"
     sudo cp ./mods/10.5/forcedbackdrops.10.5.js "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/settings/userSettingsBuilder.js"
 	;;
 	"Remove Forced Backdrops")
