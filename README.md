@@ -13,7 +13,7 @@
 / /__| |_| \__ \ || (_) | | | | | | |/ /  __/ |   
 \____/\__,_|___/\__\___/|_| |_| |_|_/___\___|_|   
 
-Jellyfin Customizer v1.0
+Jellyfin Customizer v1.1
 
 Written By: u/HeroinPigeon
 
@@ -53,7 +53,9 @@ I cannot stress how much the devs do for us all.
 24) 10.4 Change ExtraFanart back to scenes
 25) 10.5 Change scenes to ExtraFanart
 26) 10.5 Change ExtraFanart back to scenes
-27) Quit
+27) Force Backdrop
+28) Remove Forced Backdrop
+29) Quit
 
 Please enter your choice:
 
@@ -242,6 +244,14 @@ Please note you need to select the correct version for your install 10.4 or 10.5
 
 This option repairs the files we modified for extrafanart back to normal stock version.
 
+# Force Backdrop EXPERIMENTAL
+this option should force all users to have backdrops enabled (if thats your thing) this has been tested and confirmed working on 10.4 however i have not had complete time to test on 10.5 but it appears to? i had time to check once.
+
+this requires your client or you to clear browser cache so the js file will be reloaded allowing backdrops for all the users.
+
+# Remove Forced Backdrop EXPERIMENTAL
+this removes the changes from the force backdrops option and things should go back to normal after a cache reload on the browser you are using.
+
 # Docker Linux instructions
 
 <img src="https://cdn.worldvectorlogo.com/logos/docker.svg" width=400 height=200> <img src="https://i.pinimg.com/originals/cb/bf/f3/cbbff3649adc9c2fda291b35dcfdaf14.jpg">
@@ -306,7 +316,6 @@ once you are done with the tool close the windows and launch your jellyfin docke
 # Docker on windows using WSL
 
 same instructions as cygwin but use ./tool-dockerwsl.sh instead of ./tool-dockercygwin.sh
-
 
 # FAQ
 
