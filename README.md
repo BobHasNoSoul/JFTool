@@ -1,25 +1,27 @@
 # JFTool
 
 ```
-   __       _ _        __ _                       
-   \ \  ___| | |_   _ / _(_)_ __                  
-    \ \/ _ \ | | | | | |_| | '_ \                 
- /\_/ /  __/ | | |_| |  _| | | | |                
- \___/ \___|_|_|\__, |_| |_|_| |_|                
-                |___/                             
-   ___          _                  _              
-  / __\   _ ___| |_ ___  _ __ ___ (_)_______ ____ 
+   __       _ _        __ _
+   \ \  ___| | |_   _ / _(_)_ __
+    \ \/ _ \ | | | | | |_| | '_ \
+ /\_/ /  __/ | | |_| |  _| | | | |
+ \___/ \___|_|_|\__, |_| |_|_| |_|
+                |___/
+   ___          _                  _
+  / __\   _ ___| |_ ___  _ __ ___ (_)_______ ____
  / / | | | / __| __/ _ \|  _   _ \| |_  / _ \  __|
-/ /__| |_| \__ \ || (_) | | | | | | |/ /  __/ |   
-\____/\__,_|___/\__\___/|_| |_| |_|_/___\___|_|   
+/ /__| |_| \__ \ || (_) | | | | | | |/ /  __/ |
+\____/\__,_|___/\__\___/|_| |_| |_|_/___\___|_|
 
-Jellyfin Customizer v1.1
+Jellyfin Customizer v1.2
+
+Note: THIS IS FOR 1.4.X and 1.5.x
 
 Written By: u/HeroinPigeon
 
 Thanks to the Jellyfin Devs and community at r/Jellyfin
 
-Special Thanks to @boris for the help
+Special Thanks to @boris and @Ashley for the help
 
 This tool is not to take away devs work but simply to
 Make the user have more control over the look of their setup
@@ -43,20 +45,17 @@ I cannot stress how much the devs do for us all.
 14) Add Pattys day
 15) Remove Animations
 16) Remove logo above login
-17) CSS injection fix
-18) CSS Invisible background on top bar
-19) CSS Slightly see-through side bar
-20) CSS 10.4 remove login top left logo
-21) Change Dark theme to clear
-22) Change clear theme back to dark
-23) 10.4 Change scenes to ExtraFanart
-24) 10.4 Change ExtraFanart back to scenes
-25) 10.5 Change scenes to ExtraFanart
-26) 10.5 Change ExtraFanart back to scenes
-27) Force Backdrops
-28) Remove Forced Backdrops
-29) Quit
-
+17) Change Dark theme to clear
+18) Change clear theme back to dark
+19) Change scenes to ExtraFanart
+20) Change ExtraFanart back to scenes
+21) 10.4 Change scenes to ExtraFanart
+22) 10.4 Change ExtraFanart back to scenes
+23) 10.5 Change scenes to ExtraFanart
+24) 10.5 Change ExtraFanart back to scenes
+25) Force Backdrops
+26) Remove Forced Backdrops
+27) Quit
 Please enter your choice:
 
 ```
