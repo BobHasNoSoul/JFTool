@@ -53,8 +53,8 @@ I cannot stress how much the devs do for us all.
 24) 10.4 Change ExtraFanart back to scenes
 25) 10.5 Change scenes to ExtraFanart
 26) 10.5 Change ExtraFanart back to scenes
-27) Force Backdrop
-28) Remove Forced Backdrop
+27) Force Backdrops
+28) Remove Forced Backdrops
 29) Quit
 
 Please enter your choice:
