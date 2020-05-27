@@ -11,7 +11,7 @@ echo " / / | | | / __| __/ _ \|  _   _ \| |_  / _ \  __|"
 echo "/ /__| |_| \__ \ || (_) | | | | | | |/ /  __/ |   "
 echo "\____/\__,_|___/\__\___/|_| |_| |_|_/___\___|_|   "
 echo ""
-echo "Jellyfin Customizer v1.2"
+echo "Jellyfin Customizer v2.0"
 echo ""
 echo "Note: THIS IS FOR 1.4.X and 1.5.x"
 echo ""
@@ -30,7 +30,7 @@ echo ""
 echo "============================================================"
 echo ""
 PS3='Please enter your choice: '
-options=("Add Custom Link" "Change Page Title" "Change Icons" "Add icon to sidebar" "Remove icon from sidebar" "Remove Sidebar Link" "Add logo above login" "Backup current icons" "Change to original jellyfin icons" "Add snow animation" "Add Heart animation" "Add Halloween animation" "Add Fireworks" "Add Pattys day" "Remove Animations" "Remove logo above login" "Change Dark theme to clear" "Change clear theme back to dark" "Change scenes to ExtraFanart" "Change ExtraFanart back to scenes" "10.4 Change scenes to ExtraFanart" "10.4 Change ExtraFanart back to scenes" "10.5 Change scenes to ExtraFanart" "10.5 Change ExtraFanart back to scenes" "Force Backdrops" "Remove Forced Backdrops" "Quit")
+options=("Add Custom Link" "Change Page Title" "Change Icons" "Add icon to sidebar" "Remove icon from sidebar" "Remove Sidebar Link" "Add logo above login" "Backup current icons" "Change to original jellyfin icons" "Add snow animation" "Add Heart animation" "Add Halloween animation" "Add Fireworks" "Add Pattys day" "Remove Animations" "Remove logo above login" "Change Dark theme to clear" "Change clear theme back to dark" "Change scenes to ExtraFanart" "Change ExtraFanart back to scenes" "10.4 Change scenes to ExtraFanart" "10.4 Change ExtraFanart back to scenes" "10.5 Change scenes to ExtraFanart" "10.5 Change ExtraFanart back to scenes" "Force Backdrops" "Remove Forced Backdrops" "10.4 Change Trailer Tab To Requests" "10.4 Change Trailer Tab To Stock" "10.5 Change Trailer Tab To Requests" "10.5 Change Trailer Tab To Stock" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -279,8 +279,8 @@ do
 	echo "Now for this to take effect you have to clear the cache on your browser (or your client will have to) or just wait for your cache"
 	echo "to clear itself and reload the .js file we will load in"
 	echo ""
-	sudo cp ./mods/10.4/forcebackdrops.10.4.js "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/components/usersettings/usersettingsbuilder.js"
-    sudo cp ./mods/10.5/forcedbackdrops.10.5.js "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/settings/userSettingsBuilder.js"
+	cp ./mods/10.4/forcebackdrops.10.4.js "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/components/usersettings/usersettingsbuilder.js"
+    cp ./mods/10.5/forcedbackdrops.10.5.js "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/settings/userSettingsBuilder.js"
 	;;
 	"Remove Forced Backdrops")
     echo ""
@@ -289,8 +289,60 @@ do
 	echo "Now for this to take effect you have to clear the cache on your browser (or your client will have to) or just wait for your cache"
 	echo "to clear itself and reload the .js file we will load in"
 	echo ""
-	sudo cp ./mods/10.4/usersettingsbuilder.10.4.js "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/components/usersettings/usersettingsbuilder.js"
-    sudo cp ./mods/10.5/userSettingsBuilder.10.5.js "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/settings/userSettingsBuilder.js"
+	cp ./mods/10.4/usersettingsbuilder.10.4.js "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/components/usersettings/usersettingsbuilder.js"
+    cp ./mods/10.5/userSettingsBuilder.10.5.js "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/settings/userSettingsBuilder.js"
+	;;
+	"10.4 Change Trailer Tab To Requests")
+	echo ""
+	urltag = REPALCEURLHERE
+	echo "This will change your boring useless broken Trailers Tab to a nice Requests tab to link with ombi (note some people need to change"
+	echo "their reverse proxy settings to allow x-frames from other sources if not on the same domain"
+	echo ""
+	echo "now we will copy the files"
+	cp ./mods/10.4/trailertab/*.js "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/movies/"
+	echo "finished copying files"
+	echo ""
+	echo "Please Input the URL of your ombi install (e.g. domain.com/ombi WITHOUT https:// or http://) :"
+    read ombiurl
+	sed -i -e "s/REPLACEURLHERE/$ombiurl2/g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/movies/movietrailers.js"
+	echo ""
+	echo "This may give you an error and a broken page on the requests tab, if so please check your log does not say the following:"
+	echo "Refused to display 'https://DOMAINNAMEHERE.com/' in a frame because it set 'X-Frame-Options' to 'sameorigin'." 
+	echo ""
+	echo "That error is an issue with the content security policy please check your reverse proxy documentation for how to fix that"
+	;;
+	"10.4 Change Trailer Tab To Stock")
+	echo ""
+	echo "This will restore the stock files for movietrailers.js and moviesrecommended.js making the tab go to the trailers plugin"
+	echo ""
+	cp ./mods/10.4/stock/moviesrecommended.js "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/movies/"
+	cp ./mods/10.4/stock/movietrailers.js "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/movies/"
+	;;
+	"10.5 Change Trailer Tab To Requests")
+	echo ""
+	urltag = REPLACEURLHERE
+	echo "This will change your boring useless broken Trailers Tab to a nice Requests tab to link with ombi (note some people need to change"
+	echo "their reverse proxy settings to allow x-frames from other sources if not on the same domain"
+	echo ""
+	echo "now we will copy the files"
+	cp ./mods/10.5/trailertab/*.js "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/movies/"
+	echo "finished copying files"
+	echo ""
+	echo "Please Input the URL of your ombi install (e.g. domain.com/ombi without https:// or http://):"
+    read ombiurl2
+    sed -i -e "s/REPLACEURLHERE/${ombiurl2}/g" "/mnt/c//Program Files/Jellyfin/Server/jellyfin-web/controllers/movies/movietrailers.js"
+	echo ""
+	echo "This may give you an error and a broken page on the requests tab, if so please check your log does not say the following:"
+	echo "Refused to display 'https://DOMAINNAMEHERE.com/' in a frame because it set 'X-Frame-Options' to 'sameorigin'." 
+	echo ""
+	echo "That error is an issue with the content security policy please check your reverse proxy documentation for how to fix that"
+	;;
+	"10.5 Change Trailer Tab To Stock")
+	echo ""
+	echo "This will restore the stock files for movietrailers.js and moviesrecommended.js making the tab go to the trailers plugin"
+	echo ""
+	cp ./mods/10.5/stock/moviesrecommended.js "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/movies/"
+	cp ./mods/10.5/stock/movietrailers.js "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/movies/"
 	;;
  	"Quit")
 	  break

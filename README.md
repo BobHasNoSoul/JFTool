@@ -13,51 +13,7 @@
 / /__| |_| \__ \ || (_) | | | | | | |/ /  __/ |
 \____/\__,_|___/\__\___/|_| |_| |_|_/___\___|_|
 
-Jellyfin Customizer v1.2
-
-Note: THIS IS FOR 1.4.X and 1.5.x
-
-Written By: u/HeroinPigeon
-
-Thanks to the Jellyfin Devs and community at r/Jellyfin
-
-Special Thanks to @boris and @Ashley for the help
-
-This tool is not to take away devs work but simply to
-Make the user have more control over the look of their setup
-I cannot stress how much the devs do for us all.
-
-============================================================
-
- 1) Add Custom Link
- 2) Change Page Title
- 3) Change Icons
- 4) Add icon to sidebar
- 5) Remove icon from sidebar
- 6) Remove Sidebar Link
- 7) Add logo above login
- 8) Backup current icons
- 9) Change to original jellyfin icons
-10) Add snow animation
-11) Add Heart animation
-12) Add Halloween animation
-13) Add Fireworks
-14) Add Pattys day
-15) Remove Animations
-16) Remove logo above login
-17) Change Dark theme to clear
-18) Change clear theme back to dark
-19) Change scenes to ExtraFanart
-20) Change ExtraFanart back to scenes
-21) 10.4 Change scenes to ExtraFanart
-22) 10.4 Change ExtraFanart back to scenes
-23) 10.5 Change scenes to ExtraFanart
-24) 10.5 Change ExtraFanart back to scenes
-25) Force Backdrops
-26) Remove Forced Backdrops
-27) Quit
-Please enter your choice:
-
+Jellyfin Customizer v2.0
 ```
 
 # How to use
@@ -215,6 +171,7 @@ Okay this one is for people that dont have the ability to use or just dont want 
 - Once complete simply close the cygwin tool
 
 # Dark to clear theme
+**It has been brought to my attention this may not look the same on 10.5.x as it does on 10.4.x use this option with caution on 10.5.x **
 This is my personal theme, modified by me :) so what this does? it makes the background slightly lighter, makes the scroll bar thinner so it isnt so intrusive, it also has a totally clear top navigation bar and a partially clear side navigation bar. turn on backdrops for maximum effect. (this will not change your icons)
 Screen shots:
 <img src="http://imgur.com/apiE5rAl.png" />
@@ -244,12 +201,19 @@ Please note you need to select the correct version for your install 10.4 or 10.5
 This option repairs the files we modified for extrafanart back to normal stock version.
 
 # Force Backdrop EXPERIMENTAL
-this option should force all users to have backdrops enabled (if thats your thing) this has been tested and confirmed working on 10.4 however i have not had complete time to test on 10.5 but it appears to? i had time to check once.
+this option should force all users to have backdrops enabled by default (if thats your thing) this has been tested and confirmed working on 10.4 however i have not had complete time to test on 10.5 but it appears to? i had time to check once.
 
 this requires your client or you to clear browser cache so the js file will be reloaded allowing backdrops for all the users.
 
 # Remove Forced Backdrop EXPERIMENTAL
 this removes the changes from the force backdrops option and things should go back to normal after a cache reload on the browser you are using.
+
+# Trailer tab to Requests
+
+This one is fairly simple in the movies we had a broken trailers tab without a trailers plugin (AFAIK) so i decided turn it into a simple iframe for requests so they can stay and request from there
+
+![Trailer tab to requests](https://i.ibb.co/tM9Gjnw/trailertorequests.png)
+
 
 # Docker Linux instructions
 
