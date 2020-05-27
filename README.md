@@ -233,7 +233,7 @@ note you may need to make each cron script executable first with `sudo chmod +x 
 this option removes the custom icon you may have installed, this option does nothing and no harm if there is not a logo on the page above the login.
 
 ### Dark to clear theme
-**It has been brought to my attention this may not look the same on 10.5.x as it does on 10.4.x use this option with caution on 10.5.x **
+** It has been brought to my attention this may not look the same on 10.5.x as it does on 10.4.x use this option with caution on 10.5.x **
 This is my personal theme, modified by me :) so what this does? it makes the background slightly lighter, makes the scroll bar thinner so it isnt so intrusive, it also has a totally clear top navigation bar and a partially clear side navigation bar. turn on backdrops for maximum effect. (this will not change your icons)
 Screen shots:
 <img src="http://imgur.com/apiE5rAl.png" />
