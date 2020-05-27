@@ -137,6 +137,7 @@ same instructions as cygwin but use ./tool-dockerwsl.sh instead of ./tool-docker
 # Features
 
 ### Image Replacement:
+
 *This changes the images for the Web interface, not the apps sorry.*
 
 <img src="https://i.imgur.com/Wfxtw9S.png">
@@ -155,11 +156,13 @@ This is quite simple but you can add a custom link for custom items like ombi et
 You can upload an icon 20x20 px to "/usr/lib/jellyfin/bin/jellyfin-web/iconname.png" and call it by simply putting /web/iconname.png instead of full https://full.url/web/iconname.png
 
 ### Adding icon to sidebar:
+
 *only changes the web interface not the app sorry*
 
 This gives you a custom icon in the left side bar this puts the icon from logowhite.png (from web root "/var/lib/jellyfin/bin/jellyfin-web/logowhite.png") you can put a image there named logowhite.png if you wish or you can let the custom image make the there after the custom image install has completed.
 
 ### Changing the page title:
+
 *only changes the page title in the web browser and web apps not the actual jellyfin app sorry*
 
 <img src="https://i.imgur.com/Wfxtw9S.png">
@@ -233,7 +236,9 @@ note you may need to make each cron script executable first with `sudo chmod +x 
 this option removes the custom icon you may have installed, this option does nothing and no harm if there is not a logo on the page above the login.
 
 ### Dark to clear theme
-** It has been brought to my attention this may not look the same on 10.5.x as it does on 10.4.x use this option with caution on 10.5.x **
+
+**It has been brought to my attention this may not look the same on 10.5.x as it does on 10.4.x use this option with caution on 10.5.x**
+
 This is my personal theme, modified by me :) so what this does? it makes the background slightly lighter, makes the scroll bar thinner so it isnt so intrusive, it also has a totally clear top navigation bar and a partially clear side navigation bar. turn on backdrops for maximum effect. (this will not change your icons)
 Screen shots:
 <img src="http://imgur.com/apiE5rAl.png" />
@@ -242,6 +247,7 @@ Screen shots:
 I did get asked why i do this to overwrite the dark theme? the answer is because it is easier for some people to just replace that instead of trying to change the default theme for all users of their server.. i also do like the dark theme, but it depends on how you feel on the day.
 
 ### Clear back to dark theme
+
 This is to remove the clear theme and put the original dark theme back, because some people wont like the changes, some will and the main goal of this tool is to let you the server owner and root user decided how your server looks.
 
 no screen shots needed.. dark theme should already be known by most.
