@@ -163,10 +163,10 @@ define(['appSettings', 'events'], function (appsettings, events) {
             return this.set('enableBackdrops', val.toString(), true);
         }
 
-        val = this.get('enableBackdrops', true);
+        val = this.get('enableBackdrops', false);
 
         if (val) {
-            return val !== 'true';
+            return val !== 'false';
         }
 
         return UserSettings.defaults.enableBackdrops;
