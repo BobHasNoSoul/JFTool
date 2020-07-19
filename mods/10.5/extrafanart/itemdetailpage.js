@@ -963,14 +963,14 @@ define(["loading", "appRouter", "layoutManager", "connectionManager", "userSetti
             page.querySelector(".nextUpSection").classList.add("hide");
         }
 
-    function renderScenes(page, item) {
-       var images = item.BackdropImageTags || [];
-       var test = page.querySelector("#scenesCollapsible");
-             if (images)
-                for (var i = 0, length = images.length; i < length; i++) {
-                    test.innerHTML += '<div is="emby-itemscontainer" class="itemsContainer vertical-wrap padded-left padded-right"><a href="/emby/Items/' + item.Id + '/Images/Primary/' + i + '" target="_blank"> <img src="/emby/Items/' + item.Id + '/Images/Primary/' + i + '?maxWidth=150' + '&quality=90"' + 'hspace="20" onerror="this.style.display='+"'none'"+'"/></a><a href="/emby/Items/' + item.Id + '/Images/Art/' + i + '" target="_blank"> <img src="/emby/Items/' + item.Id + '/Images/Art/' + i + '?maxWidth=150' + '&quality=90"' + 'hspace="20" onerror="this.style.display='+"'none'"+'"/></a><a href="/emby/Items/' + item.Id + '/Images/Logo/' + i + '" target="_blank"> <img src="/emby/Items/' + item.Id + '/Images/Logo/' + i + '?maxWidth=150' + '&quality=90"' + 'hspace="20" onerror="this.style.display='+"'none'"+'"/></a><a href="/emby/Items/' + item.Id + '/Images/Disc/' + i + '" target="_blank"><img src="/emby/Items/' + item.Id + '/Images/Disc/' + i + '?maxWidth=150' + '&quality=90"' + 'hspace="35" onerror="this.style.display='+"'none'"+'"/></a><a href="/emby/Items/' + item.Id + '/Images/Backdrop/' + i + '" target="_blank"><img src="/emby/Items/' + item.Id + '/Images/Backdrop/' + i + '?maxWidth=150' + '&quality=90"' + 'hspace="35" onerror="this.style.display='+"'none'"+'"/></a><a href="/emby/Items/' + item.Id + '/Images/Banner/' + i + '" target="_blank"><img src="/emby/Items/' + item.Id + '/Images/Banner/' + i + '?maxWidth=150' + '&quality=90"' + 'hspace="35" onerror="this.style.display='+"'none'"+'"/></a><a href="/emby/Items/' + item.Id + '/Images/Box/' + i + '" target="_blank"><img src="/emby/Items/' + item.Id + '/Images/Box/' + i + '?maxWidth=150' + '&quality=90"' + 'hspace="35" onerror="this.style.display='+"'none'"+'"/></a><a href="/emby/Items/' + item.Id + '/Images/Thumb/' + i + '" target="_blank"><img src="/emby/Items/' + item.Id + '/Images/Thumb/' + i + '?maxWidth=150' + '&quality=90"' + 'hspace="35" onerror="this.style.display='+"'none'"+'"/></a></div>';
-                };
-    }
+        renderScenes(page, item);
+
+        if (item.SpecialFeatureCount && 0 != item.SpecialFeatureCount && "Series" != item.Type) {
+            page.querySelector("#specialsCollapsible").classList.remove("hide");
+            renderSpecials(page, item, user, 6);
+        } else {
+            page.querySelector("#specialsCollapsible").classList.add("hide");
+        }
 
         renderCast(page, item);
 
@@ -1811,22 +1811,12 @@ define(["loading", "appRouter", "layoutManager", "connectionManager", "userSetti
     }
 
     function renderScenes(page, item) {
-        var chapters = item.Chapters || [];
-
-        if (chapters.length && !chapters[0].ImageTag && (chapters = []), chapters.length) {
-            page.querySelector("#scenesCollapsible").classList.remove("hide");
-            var scenesContent = page.querySelector("#scenesContent");
-
-            require(["chaptercardbuilder"], function (chaptercardbuilder) {
-                chaptercardbuilder.buildChapterCards(item, chapters, {
-                    itemsContainer: scenesContent,
-                    backdropShape: "overflowBackdrop",
-                    squareShape: "overflowSquare"
-                });
-            });
-        } else {
-            page.querySelector("#scenesCollapsible").classList.add("hide");
-        }
+       var images = item.BackdropImageTags || [];
+       var test = page.querySelector("#scenesCollapsible");
+             if (images)
+                for (var i = 0, length = images.length; i < length; i++) {
+                    test.innerHTML += '<div is="emby-itemscontainer" class="itemsContainer vertical-wrap padded-left padded-right"><a href="/emby/Items/' + item.Id + '/Images/Primary/' + i + '" target="_blank"> <img src="/emby/Items/' + item.Id + '/Images/Primary/' + i + '?maxWidth=150' + '&quality=90"' + 'hspace="20" onerror="this.style.display='+"'none'"+'"/></a><a href="/emby/Items/' + item.Id + '/Images/Art/' + i + '" target="_blank"> <img src="/emby/Items/' + item.Id + '/Images/Art/' + i + '?maxWidth=150' + '&quality=90"' + 'hspace="20" onerror="this.style.display='+"'none'"+'"/></a><a href="/emby/Items/' + item.Id + '/Images/Logo/' + i + '" target="_blank"> <img src="/emby/Items/' + item.Id + '/Images/Logo/' + i + '?maxWidth=150' + '&quality=90"' + 'hspace="20" onerror="this.style.display='+"'none'"+'"/></a><a href="/emby/Items/' + item.Id + '/Images/Disc/' + i + '" target="_blank"><img src="/emby/Items/' + item.Id + '/Images/Disc/' + i + '?maxWidth=150' + '&quality=90"' + 'hspace="35" onerror="this.style.display='+"'none'"+'"/></a><a href="/emby/Items/' + item.Id + '/Images/Backdrop/' + i + '" target="_blank"><img src="/emby/Items/' + item.Id + '/Images/Backdrop/' + i + '?maxWidth=150' + '&quality=90"' + 'hspace="35" onerror="this.style.display='+"'none'"+'"/></a><a href="/emby/Items/' + item.Id + '/Images/Banner/' + i + '" target="_blank"><img src="/emby/Items/' + item.Id + '/Images/Banner/' + i + '?maxWidth=150' + '&quality=90"' + 'hspace="35" onerror="this.style.display='+"'none'"+'"/></a><a href="/emby/Items/' + item.Id + '/Images/Box/' + i + '" target="_blank"><img src="/emby/Items/' + item.Id + '/Images/Box/' + i + '?maxWidth=150' + '&quality=90"' + 'hspace="35" onerror="this.style.display='+"'none'"+'"/></a><a href="/emby/Items/' + item.Id + '/Images/Thumb/' + i + '" target="_blank"><img src="/emby/Items/' + item.Id + '/Images/Thumb/' + i + '?maxWidth=150' + '&quality=90"' + 'hspace="35" onerror="this.style.display='+"'none'"+'"/></a></div>';
+                };
     }
 
     function getVideosHtml(items, user, limit, moreButtonClass) {
