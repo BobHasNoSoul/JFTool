@@ -492,7 +492,7 @@ do
 	sudo cp ./stock/movietrailers.js "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/movies/"
 	sudo cp ./stock/extrafanart/index.html "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/itemDetails/"
 	sudo cp ./stock/extrafanart/index.js "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/itemDetails/"
-        sudo cp ./stock/libraryMenu.js "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/"
+    sudo cp ./stock/libraryMenu.js "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/"
 	;;
 	"Quit")
 	  break

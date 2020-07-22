@@ -492,6 +492,7 @@ do
 	sudo cp ./stock/movietrailers.js ${HOME}/Docker/controllers/movies/
 	sudo cp ./stock/extrafanart/index.html ${HOME}/Docker/controllers/itemDetails/
 	sudo cp ./stock/extrafanart/index.js ${HOME}/Docker/controllers/itemDetails/
+	sudo cp ./stock/libraryMenu.js ${HOME}/Docker/scripts/
 	;;
 	"Quit")
 	  break
