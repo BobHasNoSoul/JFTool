@@ -13,15 +13,8 @@
 / /__| |_| \__ \ || (_) | | | | | | |/ /  __/ |
 \____/\__,_|___/\__\___/|_| |_| |_|_/___\___|_|
 
-Jellyfin Customizer v3.0
+Jellyfin Customizer v2.0
 ```
-
-JFTool now works with 10.6 *wild fanfair and fireworks* but due to the rush i put to get this version out it may have some minor bugs do not worry you cant totally destroy your install but you may experiance some bugs or errors along the way. If you do please let me know.
-Due to the rush I have removed some minor features leaving main ones intact, but dont dispare these features will return in the end when I get more free time. For the most part they should work still
-
-For pre 10.6 (like versions of jellyfin 10.4 through 10.5) go to the releases and download that version or look in the pre 10.6 folder :)
-
-
 
 # Instructions
 
@@ -178,6 +171,11 @@ The title can be changed to anything you want aslong as it does not contain spec
 
 The default is 'Jellyfin' (without quotes) however you can also use this tool to change it from whatever you changed it to, to something else again by adding you current title to the string instead of Jellyfin.
 
+### Removing Sidebar Link:
+To remove any link you added you can put in the domain that is linked to like myspace.com (sorry couldnt think of a non generic website), note this has a drawback and does not let you put any slashes in the sidebar removal tool so please for this string use your url without any slashes.
+
+*Note: you can always remove them manually by finding the link in the /usr/lib/jellyfin/bin/jellyfin-web/scripts/librarymenu.js*
+
 ### Add logo above login
 
 <img src="http://imgur.com/jf6LxYul.png">
@@ -187,19 +185,16 @@ This option adds a logo above the login page (fixed the issue i was being stupid
 ### Backup current icons
 This will make a folder in the jftool folder called "backedupimages" where your current icons are backed up to (this makes it easier to transition between different updates)
 
+### Change to original jellyfin icons
+This makes your icons go back to normal stock jellyfin icons incase for some reason you decided you did not like your own icons you previously changed
+
 ### Add custom holiday / seasonal animations
-
-This is currently broken in 10.6.0 but im working on it
-
 This adds a touch of seasonal boom to your install, pattys day, christmas, halloween, valentines, saintpatricks day, FIREWORKS...... just because who doesnt like fireworks. these do need to be triggered manually until i get some extra time to update a way to crontab this (due to dir permissions on /usr/lib/jellyfin/bin/jellyfin-web)
 
 <img src="https://i.imgur.com/xDWkJkc.gif">
 note: this looks laggy because im not great at making gifs, however end result is not laggy and smoother.
 
 ### Automatically change animations based on date
-
-broken in 10.6.0 but im working on it
-
 inside the cron folder you will see templates for people using this on a raspberry pi with the default user of pi, if you need to change the dir to the location of your jftool folder do so **before** adding the crontab(s)
 
 okay so hopefully you have modified the templates in the cron folder.
@@ -242,51 +237,20 @@ this option removes the custom icon you may have installed, this option does not
 
 ### Dark to clear theme
 
-This has been moved to custom CSS here is what i use for my look and feel.
+**It has been brought to my attention this may not look the same on 10.5.x as it does on 10.4.x use this option with caution on 10.5.x**
 
-```
-/*Make the red checkmark and likes blue like everything else*/
-.playstatebutton-icon-played, .ratingbutton-icon-withrating {color: #00a4dc;}
+This is my personal theme, modified by me :) so what this does? it makes the background slightly lighter, makes the scroll bar thinner so it isnt so intrusive, it also has a totally clear top navigation bar and a partially clear side navigation bar. turn on backdrops for maximum effect. (this will not change your icons)
+Screen shots:
+<img src="http://imgur.com/apiE5rAl.png" />
+<img src="http://imgur.com/p1oMlfyl.png" />
 
-/*Narrow the login form, size according to display size (bigger on mobile)*/
-#loginPage .readOnlyContent, #loginPage form {max-width: 22em;}
+I did get asked why i do this to overwrite the dark theme? the answer is because it is easier for some people to just replace that instead of trying to change the default theme for all users of their server.. i also do like the dark theme, but it depends on how you feel on the day.
 
-/*Hide "please login" text, margin is to prevent login form moving too far up*/
-#loginPage h1 {display: none}
-#loginPage .padded-left.padded-right.padded-bottom-page {margin-top: 50px}
+### Clear back to dark theme
 
-/*Hide "manual" and "forgot" buttons*/
-#loginPage .raised.cancel.block.btnManual.emby-button {display: none}
-/*#loginPage .raised.cancel.block.btnForgotPassword.emby-button {display: none}*/
+This is to remove the clear theme and put the original dark theme back, because some people wont like the changes, some will and the main goal of this tool is to let you the server owner and root user decided how your server looks.
 
-/*Login background*/
-#loginPage {background: url(https://YOURIMAGE.LINK.HERE) !important; background-size: cover !important;}
-
-/*Lighten background*/
-.backgroundContainer.withBackdrop {background-color: rgba(0, 0, 0, 0.34) !important;}
-
-/*transparent top bar*/
-.skinHeader-withBackground {background-color: #20202000 !important;}
-
-/*Partialy transparent side bar*/
-div.mainDrawer {background-color: #1010109c !important;}
-
-/*List Item make solid background*/
-.listItem { background: #00000082 !important;}
- 
-/*Transparent background cards*/
-.cardBox:not(.visualCardBox) .cardPadder { background-color: #24242400 !important;}
-
-/*no box shadow*/
-.cardBox:not(.visualCardBox) .cardPadder, .cardContent-shadow { box-shadow: 0 0.0725em 0.29em 0 rgba(0, 0, 0, 0) !important;}
-
-/*top ribbon movies transparency*/
-.detailRibbon { background: rgba(32, 32, 32, 0.29) !important;}
-
-/*logo position height on tv page*/
-.detailLogo{top: 6vh !important;} 
-```
-
+no screen shots needed.. dark theme should already be known by most.
 
 ### Scenes to ExtraFanart
 
@@ -305,17 +269,11 @@ Please note you need to select the correct version for your install 10.4 or 10.5
 This option repairs the files we modified for extrafanart back to normal stock version.
 
 ### Force Backdrop EXPERIMENTAL
-
-This has been broken in 10.6 but will be back, in time.
-
 this option should force all users to have backdrops enabled by default (if thats your thing) this has been tested and confirmed working on 10.4 however i have not had complete time to test on 10.5 but it appears to? i had time to check once.
 
 this requires your client or you to clear browser cache so the js file will be reloaded allowing backdrops for all the users.
 
 ### Remove Forced Backdrop EXPERIMENTAL
-
-this has been broken in 10.6 but will be back, in time.
-
 this removes the changes from the force backdrops option and things should go back to normal after a cache reload on the browser you are using.
 
 ### Trailer tab to Requests
