@@ -244,6 +244,10 @@ this option removes the custom icon you may have installed, this option does not
 
 This has been moved to custom CSS here is what i use for my look and feel.
 
+Preview of the css when applied
+
+<img src="https://user-images.githubusercontent.com/23018412/88118962-ee41d680-cbb6-11ea-8222-71d0d3c0dd73.PNG">
+
 ```
 /*Make the red checkmark and likes blue like everything else*/
 .playstatebutton-icon-played, .ratingbutton-icon-withrating {color: #00a4dc;}
