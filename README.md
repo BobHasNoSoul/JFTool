@@ -160,7 +160,14 @@ The errors that pop up on this is normal basically it has them because it works 
 
 This is quite simple but you can add a custom link for custom items like ombi etc in the side bar.
 
-You can upload an icon 20x20 px to "/usr/lib/jellyfin/bin/jellyfin-web/iconname.png" and call it by simply putting /web/iconname.png instead of full https://full.url/web/iconname.png
+You can upload an icon 20x20 px to:
+`/usr/share/jellyfin/web/iconname.png` (on linux) 
+or 
+`C:/Program Files/Jellyfin/Server/jellyfin-web/iconname.png` (on windows) 
+or 
+`C:/Docker/jellyfin/jellyfin-web/` (for docker when using the tool)
+and call it by simply putting `/web/iconname.png` instead of full https://full.url/web/iconname.png
+
 
 ### Adding icon to sidebar:
 
