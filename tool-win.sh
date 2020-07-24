@@ -100,15 +100,15 @@ do
 	  echo "Link name:"
 	  read customlinkname3
 	  sudo cp ./modded/side-menu/libraryMenu3links.js "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-	  sudo sed -i 's~TOPLINKHERE~$customlink3~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-      sudo sed -i 's~TOPLINKICONHERE~$customlinkicon1~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-      sudo sed -i 's~TOPLINKNAMEHERE~$customlinkname1~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-	  sudo sed -i 's~2NDLINKHERE~$customlink3~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-      sudo sed -i 's~2NDLINKICONHERE~$customlinkicon2~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-      sudo sed -i 's~2NDLINKNAMEHERE~$customlinkname2~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-	  sudo sed -i 's~3RDLINKHERE~$customlink3~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-      sudo sed -i 's~3RDLINKICONHERE~$customlinkicon3~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-      sudo sed -i 's~3RDLINKNAMEHERE~$customlinkname3~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+	  sudo sed -i "s~TOPLINKHERE~$customlink3~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+      sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+      sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+	  sudo sed -i "s~2NDLINKHERE~$customlink3~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+      sudo sed -i "s~2NDLINKICONHERE~$customlinkicon2~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+      sudo sed -i "s~2NDLINKNAMEHERE~$customlinkname2~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+	  sudo sed -i "s~3RDLINKHERE~$customlink3~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+      sudo sed -i "s~3RDLINKICONHERE~$customlinkicon3~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+      sudo sed -i "s~3RDLINKNAMEHERE~$customlinkname3~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
    	 ;;
 	 "Four custom link in side bar")
 	  echo ""
@@ -170,9 +170,9 @@ do
 	  read customlinkname1
       echo ""
 	  sudo cp ./modded/side-menu/libraryMenu1linksandicon.js "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu".js
-	  sudo sed -i 's~TOPLINKHERE~$customlink3~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-      sudo sed -i 's~TOPLINKICONHERE~$customlinkicon1~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-      sudo sed -i 's~TOPLINKNAMEHERE~$customlinkname1~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+	  sudo sed -i "s~TOPLINKHERE~$customlink3~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+      sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+      sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
    	 ;;
 	 "Logo and Two custom link in side bar")
 	  echo ""
@@ -194,12 +194,12 @@ do
 	  read customlinkname2
 	  echo ""
 	  sudo cp ./modded/side-menu/libraryMenu2linksandicon.js "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-	  sudo sed -i 's~TOPLINKHERE~$customlink3~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-      sudo sed -i 's~TOPLINKICONHERE~$customlinkicon1~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-      sudo sed -i 's~TOPLINKNAMEHERE~$customlinkname1~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-	  sudo sed -i 's~2NDLINKHERE~$customlink3~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-      sudo sed -i 's~2NDLINKICONHERE~$customlinkicon2~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-      sudo sed -i 's~2NDLINKNAMEHERE~$customlinkname2~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+	  sudo sed -i "s~TOPLINKHERE~$customlink3~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+      sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+      sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+	  sudo sed -i "s~2NDLINKHERE~$customlink3~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+      sudo sed -i "s~2NDLINKICONHERE~$customlinkicon2~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+      sudo sed -i "s~2NDLINKNAMEHERE~$customlinkname2~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
    	 ;;
 	 "Logo and Three custom link in side bar")
 	  echo ""
@@ -229,15 +229,15 @@ do
 	  read customlinkname3
 	  echo ""
 	  sudo cp ./modded/side-menu/libraryMenu3linksandicon.js "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-	  sudo sed -i 's~TOPLINKHERE~$customlink3~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-      sudo sed -i 's~TOPLINKICONHERE~$customlinkicon1~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-      sudo sed -i 's~TOPLINKNAMEHERE~$customlinkname1~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-	  sudo sed -i 's~2NDLINKHERE~$customlink3~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-      sudo sed -i 's~2NDLINKICONHERE~$customlinkicon2~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-      sudo sed -i 's~2NDLINKNAMEHERE~$customlinkname2~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-	  sudo sed -i 's~3RDLINKHERE~$customlink3~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-      sudo sed -i 's~3RDLINKICONHERE~$customlinkicon3~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-      sudo sed -i 's~3RDLINKNAMEHERE~$customlinkname3~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+	  sudo sed -i "s~TOPLINKHERE~$customlink3~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+      sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+      sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+	  sudo sed -i "s~2NDLINKHERE~$customlink3~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+      sudo sed -i "s~2NDLINKICONHERE~$customlinkicon2~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+      sudo sed -i "s~2NDLINKNAMEHERE~$customlinkname2~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+	  sudo sed -i "s~3RDLINKHERE~$customlink3~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+      sudo sed -i "s~3RDLINKICONHERE~$customlinkicon3~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+      sudo sed -i "s~3RDLINKNAMEHERE~$customlinkname3~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
    	 ;;
 	 "Logo and Four custom link in side bar")
 	  echo ""
@@ -275,18 +275,18 @@ do
 	  read customlinkname4
 	  echo ""
 	  sudo cp ./modded/side-menu/libraryMenu4linksandicon.js "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-	  sudo sed -i 's~TOPLINKHERE~$customlink3~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-      sudo sed -i 's~TOPLINKICONHERE~$customlinkicon1~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-      sudo sed -i 's~TOPLINKNAMEHERE~$customlinkname1~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-	  sudo sed -i 's~2NDLINKHERE~$customlink3~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-      sudo sed -i 's~2NDLINKICONHERE~$customlinkicon2~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-      sudo sed -i 's~2NDLINKNAMEHERE~$customlinkname2~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-	  sudo sed -i 's~3RDLINKHERE~$customlink3~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-      sudo sed -i 's~3RDLINKICONHERE~$customlinkicon3~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-      sudo sed -i 's~3RDLINKNAMEHERE~$customlinkname3~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-	  sudo sed -i 's~4THLINKHERE~$customlink4~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-      sudo sed -i 's~4THLINKICONHERE~$customlinkicon4~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
-      sudo sed -i 's~4THLINKNAMEHERE~$customlinkname4~g' "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+	  sudo sed -i "s~TOPLINKHERE~$customlink3~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+      sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+      sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+	  sudo sed -i "s~2NDLINKHERE~$customlink3~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+      sudo sed -i "s~2NDLINKICONHERE~$customlinkicon2~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+      sudo sed -i "s~2NDLINKNAMEHERE~$customlinkname2~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+	  sudo sed -i "s~3RDLINKHERE~$customlink3~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+      sudo sed -i "s~3RDLINKICONHERE~$customlinkicon3~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+      sudo sed -i "s~3RDLINKNAMEHERE~$customlinkname3~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+	  sudo sed -i "s~4THLINKHERE~$customlink4~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+      sudo sed -i "s~4THLINKICONHERE~$customlinkicon4~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
+      sudo sed -i "s~4THLINKNAMEHERE~$customlinkname4~g" "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/libraryMenu.js"
    	 ;;
 	"Change Page Title")
 	  echo "what is the current name of your server"
@@ -354,6 +354,8 @@ do
 	  sudo cp ./images/favicon.ico "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/"
 	  sudo cp ./images/favicon.ico "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/"
   	  sudo cp ./images/favicon.ico "/mnt/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/"
+      sudo cp ./images/favicon.ico "/mnt/c/Program Files/jellyfin/Server/jellyfin-web/assets/favicon.ico"
+      sudo cp ./images/favicon.ico "/mnt/c/Program Files/jellyfin/Server/jellyfin-web/components/themes/favicon.ico"
 	  ;;
 	"Add logo above login")
 	  echo "bleep bloop adding the logo"
