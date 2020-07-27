@@ -1,4 +1,5 @@
 #!/bin/bash
+Vercheck=3.1
 echo "   __       _ _        __ _                       "
 echo "   \ \  ___| | |_   _ / _(_)_ __                  "
 echo "    \ \/ _ \ | | | | | |_| | '_ \                 "
@@ -11,7 +12,7 @@ echo " / / | | | / __| __/ _ \|  _   _ \| |_  / _ \  __|"
 echo "/ /__| |_| \__ \ || (_) | | | | | | |/ /  __/ |   "
 echo "\____/\__,_|___/\__\___/|_| |_| |_|_/___\___|_|   "
 echo ""
-echo "Jellyfin Customizer v3.0 -- DOCKER LINUX"
+echo "Jellyfin Customizer v${Vercheck} -- DOCKER LINUX"
 echo ""
 echo "older version in the pre 10.6 folder"
 echo ""
@@ -23,7 +24,7 @@ echo "  YET"
 echo "============================================================"
 echo ""
 PS3='Please enter your choice: '
-options=("Logo in sidebar" "One custom link in side bar" "Two custom link in side bar" "Three custom link in side bar" "Four custom link in side bar" "Logo and One custom link in side bar" "Logo and Two custom link in side bar" "Logo and Three custom link in side bar" "Logo and Four custom link in side bar" "Change Page Title" "Change Icons" "Add logo above login" "Remove logo above login" "Backup current icons" "Change scenes to ExtraFanart" "Change ExtraFanart back to scenes" "Change Trailer Tab To Requests" "Change Requests back to Trailer Tab" "Return to stock" "Quit")
+options=("Logo in sidebar" "One custom link in side bar" "Two custom link in side bar" "Three custom link in side bar" "Four custom link in side bar" "Logo and One custom link in side bar" "Logo and Two custom link in side bar" "Logo and Three custom link in side bar" "Logo and Four custom link in side bar" "Change Page Title" "Change Icons" "Add logo above login" "Remove logo above login" "Backup current icons" "Change scenes to ExtraFanart" "Change ExtraFanart back to scenes" "Change Trailer Tab To Requests" "Change Requests back to Trailer Tab" "Return to stock" "Add snow animation" "Add Heart animation" "Add Halloween animation" "Add Fireworks" "Add Pattys day" "Remove Animations" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -375,54 +376,48 @@ do
 #	  sudo cp ./originalimages/*.png ${HOME}/Docker/assets/img/
 #	  sudo cp ./originalimages/favicon.ico ${HOME}/Docker/favicon.ico
 #	  ;; 
-#	"Add snow animation")
-	  # sudo cp ./animation/videoosd.css.fix ${HOME}/Docker/assets/css/videoosd.css
-	  # sudo cp ./animation/stylefix.css ${HOME}/Docker/components/htmlvideoplayer/style.css	
-	  # sudo cp ./animation/snow.html ${HOME}/Docker/index.html
-	  # echo "Added snow (note you may have to change your page title again from 'Jellyfin')"
-	  # ;;
-	# "Add Heart animation")
-      # sudo cp ./animation/videoosd104.css.fix ${HOME}/Docker/css/videoosd.css
-	  # sudo cp ./animation/videoosd.css.fix ${HOME}/Docker/assets/css/videoosd.css
-	  # sudo cp ./animation/stylefix.css ${HOME}/Docker/components/htmlvideoplayer/style.css	
-	  # sudo cp ./animation/valentines.html ${HOME}/Docker/index.html
-	  # echo "Added hearts (note you may have to change your page title again from 'Jellyfin')"
-	  # ;;
-	# "Add Halloween animation")
-      # sudo cp ./animation/videoosd104.css.fix ${HOME}/Docker/css/videoosd.css
-	  # sudo cp ./animation/stylefix.css ${HOME}/Docker/components/htmlvideoplayer/style.css	
-	  # sudo cp ./animation/videoosd.css.fix ${HOME}/Docker/assets/css/videoosd.css
-	  # sudo cp ./animation/halloween.html ${HOME}/Docker/index.html
-	  # sudo cp ./animation/ghost_20x20.png ${HOME}/Docker/
-	  # sudo cp ./animation/bat_20x20.png ${HOME}/Docker/
-  	  # sudo cp ./animation/pumpkin_20x20.png ${HOME}/Docker/
-  	  # echo "Added Halloween animations (note you may have to change your page title again from 'Jellyfin')"
-	  # ;;
-	# "Add Fireworks")
-	  # sudo cp ./animation/stylefix.css ${HOME}/Docker/components/htmlvideoplayer/style.css	
-	  # sudo cp ./animation/videoosd.css.fix ${HOME}/Docker/assets/css/videoosd.css
-      # sudo cp ./animation/fireworks.html ${HOME}/Docker/index.html
-      # sudo cp ./animation/fireworks.css ${HOME}/Docker/fireworks.css
-      # sudo cp ./animation/sitefix10.4.css ${HOME}/Docker/css/site.css
-      # sudo cp ./animation/sitefix10.5.css ${HOME}/Docker/assets/css/site.css
-      # echo "Added fireworks (note you may have to change your page title again from 'Jellyfin')"
-      # ;;
-    # "Add Pattys day")
-      # sudo cp ./animation/videoosd104.css.fix ${HOME}/Docker/css/videoosd.css
-	  # sudo cp ./animation/stylefix.css ${HOME}/Docker/components/htmlvideoplayer/style.css	
-	  # sudo cp ./animation/videoosd.css.fix ${HOME}/Docker/assets/css/videoosd.css
-      # sudo cp ./animation/pattysday.html ${HOME}/Docker/index.html
-	  # sudo cp ./animation/lep_30x30.png ${HOME}/Docker/
-  	  # sudo cp ./animation/clover_20x20.png ${HOME}/Docker/
-      # echo "Added Pattys day (note you may have to change your page title again from 'Jellyfin')"
-      # ;;
-	# "Remove Animations")
-	  # sudo cp ./animation/videoosd104.css.original ${HOME}/Docker/css/videoosd.css
-	  # sudo cp ./animation/videoosd.css.original ${HOME}/Docker/assets/css/videoosd.css
-	  # sudo cp ./animation/stylestock.css ${HOME}/Docker/components/htmlvideoplayer/style.css	
-	  # sudo cp ./animation/stockify.html ${HOME}/Docker/index.html
-	  # echo "Removed animations (note you may have to change your page title again)"
-	  # ;; 
+	"Add snow animation")
+	   sudo cp ./animation/videoosd.css ${HOME}/Docker/assets/css/videoosd.css
+	   sudo cp ./animation/videohtmlplayer/style.css ${HOME}/Docker/plugins/htmlVideoPlayer/style.css	
+	   sudo cp ./animation/snow.html ${HOME}/Docker/index.html
+	   echo "Added snow (note you may have to change your page title again from 'Jellyfin')"
+	   ;;
+	 "Add Heart animation")
+	   sudo cp ./animation/videoosd.css ${HOME}/Docker/assets/css/videoosd.css
+	   sudo cp ./animation/videohtmlplayer/style.css ${HOME}/Docker/plugins/htmlVideoPlayer/style.css	
+	   sudo cp ./animation/valentines.html ${HOME}/Docker/index.html
+	   echo "Added hearts (note you may have to change your page title again from 'Jellyfin')"
+	   ;;
+	 "Add Halloween animation")
+	   sudo cp ./animation/videohtmlplayer/style.css ${HOME}/Docker/plugins/htmlVideoPlayer/style.css	
+	   sudo cp ./animation/videoosd.css ${HOME}/Docker/assets/css/videoosd.css
+	   sudo cp ./animation/halloween.html ${HOME}/Docker/index.html
+	   sudo cp ./animation/ghost_20x20.png ${HOME}/Docker/
+	   sudo cp ./animation/bat_20x20.png ${HOME}/Docker/
+  	   sudo cp ./animation/pumpkin_20x20.png ${HOME}/Docker/
+  	   echo "Added Halloween animations (note you may have to change your page title again from 'Jellyfin')"
+	   ;;
+	 "Add Fireworks")
+	   sudo cp ./animation/videohtmlplayer/style.css ${HOME}/Docker/plugins/htmlVideoPlayer/style.css	
+	   sudo cp ./animation/videoosd.css ${HOME}/Docker/assets/css/videoosd.css
+       sudo cp ./animation/fireworks.html ${HOME}/Docker/index.html
+       sudo cp ./animation/fireworks.css ${HOME}/Docker/fireworks.css
+       echo "Added fireworks (note you may have to change your page title again from 'Jellyfin')"
+       ;;
+     "Add Pattys day")
+	   sudo cp ./animation/videohtmlplayer/style.css ${HOME}/Docker/plugins/htmlVideoPlayer/style.css	
+	   sudo cp ./animation/videoosd.css ${HOME}/Docker/assets/css/videoosd.css
+       sudo cp ./animation/pattysday.html ${HOME}/Docker/index.html
+	   sudo cp ./animation/lep_30x30.png ${HOME}/Docker/
+  	   sudo cp ./animation/clover_20x20.png ${HOME}/Docker/
+       echo "Added Pattys day (note you may have to change your page title again from 'Jellyfin')"
+       ;;
+	 "Remove Animations")
+	   sudo cp ./stock/videoosd.css ${HOME}/Docker/assets/css/videoosd.css
+	   sudo cp ./stock/htmlvideoplayer/stylestock.css ${HOME}/Docker/plugins/htmlVideoPlayer/style.css	
+	   sudo cp ./animation/index.html ${HOME}/Docker/index.html
+	   echo "Removed animations (note you may have to change your page title again)"
+	   ;; 
 	"Remove logo above login")
 	  echo "bleep bloop Removing the logo"
       sudo cp ./stock/login.html ${HOME}/Docker/login.html
