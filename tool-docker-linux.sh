@@ -1,5 +1,5 @@
 #!/bin/bash
-Vercheck=3.1
+Vercheck=3.2
 echo "   __       _ _        __ _                       "
 echo "   \ \  ___| | |_   _ / _(_)_ __                  "
 echo "    \ \/ _ \ | | | | | |_| | '_ \                 "
@@ -67,10 +67,10 @@ do
 	  echo "Link name:"
 	  read customlinkname2
 	  sudo cp ./modded/side-menu/libraryMenu2links.js ${HOME}/Docker/scripts/libraryMenu.js
-	  sudo sed -i "s~TOPLINKHERE~$customlink3~g" ${HOME}/Docker/scripts/libraryMenu.js
+	  sudo sed -i "s~TOPLINKHERE~$customlink1~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" ${HOME}/Docker/scripts/libraryMenu.js
-	  sudo sed -i "s~2NDLINKHERE~$customlink3~g" ${HOME}/Docker/scripts/libraryMenu.js
+	  sudo sed -i "s~2NDLINKHERE~$customlink2~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~2NDLINKICONHERE~$customlinkicon2~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~2NDLINKNAMEHERE~$customlinkname2~g" ${HOME}/Docker/scripts/libraryMenu.js
 	  ;;
@@ -101,10 +101,10 @@ do
 	  echo "Link name:"
 	  read customlinkname3
 	  sudo cp ./modded/side-menu/libraryMenu3links.js ${HOME}/Docker/scripts/libraryMenu.js
-	  sudo sed -i "s~TOPLINKHERE~$customlink3~g" ${HOME}/Docker/scripts/libraryMenu.js
+	  sudo sed -i "s~TOPLINKHERE~$customlink1~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" ${HOME}/Docker/scripts/libraryMenu.js
-	  sudo sed -i "s~2NDLINKHERE~$customlink3~g" ${HOME}/Docker/scripts/libraryMenu.js
+	  sudo sed -i "s~2NDLINKHERE~$customlink2~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~2NDLINKICONHERE~$customlinkicon2~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~2NDLINKNAMEHERE~$customlinkname2~g" ${HOME}/Docker/scripts/libraryMenu.js
 	  sudo sed -i "s~3RDLINKHERE~$customlink3~g" ${HOME}/Docker/scripts/libraryMenu.js
@@ -147,10 +147,10 @@ do
 	  read customlinkname4
 	  echo ""
 	  sudo cp ./modded/side-menu/libraryMenu4links.js ${HOME}/Docker/scripts/libraryMenu.js
-	  sudo sed -i "s~TOPLINKHERE~$customlink3~g" ${HOME}/Docker/scripts/libraryMenu.js
+	  sudo sed -i "s~TOPLINKHERE~$customlink1~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" ${HOME}/Docker/scripts/libraryMenu.js
-	  sudo sed -i "s~2NDLINKHERE~$customlink3~g" ${HOME}/Docker/scripts/libraryMenu.js
+	  sudo sed -i "s~2NDLINKHERE~$customlink2~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~2NDLINKICONHERE~$customlinkicon2~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~2NDLINKNAMEHERE~$customlinkname2~g" ${HOME}/Docker/scripts/libraryMenu.js
 	  sudo sed -i "s~3RDLINKHERE~$customlink3~g" ${HOME}/Docker/scripts/libraryMenu.js
@@ -171,7 +171,7 @@ do
 	  read customlinkname1
       echo ""
 	  sudo cp ./modded/side-menu/libraryMenu1linksandicon.js ${HOME}/Docker/scripts/libraryMenu.js
-	  sudo sed -i "s~TOPLINKHERE~$customlink3~g" ${HOME}/Docker/scripts/libraryMenu.js
+	  sudo sed -i "s~TOPLINKHERE~$customlink1~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" ${HOME}/Docker/scripts/libraryMenu.js
    	 ;;
@@ -195,10 +195,10 @@ do
 	  read customlinkname2
 	  echo ""
 	  sudo cp ./modded/side-menu/libraryMenu2linksandicon.js ${HOME}/Docker/scripts/libraryMenu.js
-	  sudo sed -i "s~TOPLINKHERE~$customlink3~g" ${HOME}/Docker/scripts/libraryMenu.js
+	  sudo sed -i "s~TOPLINKHERE~$customlink1~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" ${HOME}/Docker/scripts/libraryMenu.js
-	  sudo sed -i "s~2NDLINKHERE~$customlink3~g" ${HOME}/Docker/scripts/libraryMenu.js
+	  sudo sed -i "s~2NDLINKHERE~$customlink2~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~2NDLINKICONHERE~$customlinkicon2~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~2NDLINKNAMEHERE~$customlinkname2~g" ${HOME}/Docker/scripts/libraryMenu.js
    	 ;;
@@ -230,10 +230,10 @@ do
 	  read customlinkname3
 	  echo ""
 	  sudo cp ./modded/side-menu/libraryMenu3linksandicon.js ${HOME}/Docker/scripts/libraryMenu.js
-	  sudo sed -i "s~TOPLINKHERE~$customlink3~g" ${HOME}/Docker/scripts/libraryMenu.js
+	  sudo sed -i "s~TOPLINKHERE~$customlink1~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" ${HOME}/Docker/scripts/libraryMenu.js
-	  sudo sed -i "s~2NDLINKHERE~$customlink3~g" ${HOME}/Docker/scripts/libraryMenu.js
+	  sudo sed -i "s~2NDLINKHERE~$customlink2~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~2NDLINKICONHERE~$customlinkicon2~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~2NDLINKNAMEHERE~$customlinkname2~g" ${HOME}/Docker/scripts/libraryMenu.js
 	  sudo sed -i "s~3RDLINKHERE~$customlink3~g" ${HOME}/Docker/scripts/libraryMenu.js
@@ -276,10 +276,10 @@ do
 	  read customlinkname4
 	  echo ""
 	  sudo cp ./modded/side-menu/libraryMenu4linksandicon.js ${HOME}/Docker/scripts/libraryMenu.js
-	  sudo sed -i "s~TOPLINKHERE~$customlink3~g" ${HOME}/Docker/scripts/libraryMenu.js
+	  sudo sed -i "s~TOPLINKHERE~$customlink1~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" ${HOME}/Docker/scripts/libraryMenu.js
-	  sudo sed -i "s~2NDLINKHERE~$customlink3~g" ${HOME}/Docker/scripts/libraryMenu.js
+	  sudo sed -i "s~2NDLINKHERE~$customlink2~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~2NDLINKICONHERE~$customlinkicon2~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~2NDLINKNAMEHERE~$customlinkname2~g" ${HOME}/Docker/scripts/libraryMenu.js
 	  sudo sed -i "s~3RDLINKHERE~$customlink3~g" ${HOME}/Docker/scripts/libraryMenu.js
