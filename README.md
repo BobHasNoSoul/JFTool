@@ -271,7 +271,7 @@ Preview of the css when applied
 /*#loginPage .raised.cancel.block.btnForgotPassword.emby-button {display: none}*/
 
 /*Login background*/
-#loginPage {background: url(https://YOURIMAGE.LINK.HERE) !important; background-size: cover !important;}
+#loginPage {background: url(https://pox353.mooo.com/web/bbodback.jpg) !important; background-size: cover !important;}
 
 /*Lighten background*/
 .backgroundContainer.withBackdrop {background-color: rgba(0, 0, 0, 0.34) !important;}
@@ -295,7 +295,32 @@ div.mainDrawer {background-color: #1010109c !important;}
 .detailRibbon { background: rgba(32, 32, 32, 0.29) !important;}
 
 /*logo position height on tv page*/
-.detailLogo{top: 6vh !important;} 
+.detailLogo{top: 6vh !important;}
+
+/* Remove Media Images */
+/*.section0 .cardScalable {display: none;}*/
+
+/* remove My Media title */
+.section0 .sectionTitle {display: none;}
+
+/* My Media Styling */
+.section0 .itemsContainer {align-items: center; justify-content: center;}
+/*.section0 button.itemAction.textActionButton {height: 3.5em; background: #30303000; border-radius: 0.2em;}*/
+.section0 .overflowBackdropCard, .section0 .overflowSmallBackdropCard {max-width: 15vw;}
+/*.section0 .emby-scroller {margin-right: 0;}*/
+/*.section0 .emby-scrollbuttons {display: none;}*/
+/*.section0 .itemsContainer {flex-wrap: wrap;}*/
+/*@media (max-width: 75em) and (orientation: landscape){.section0 {display: none;} }*/
+/*@media (max-width: 75em){.section0 {display: none;}    }*/
+
+/*My custom posters location*/
+/*.detailImageContainer {position: relative; margin-top: -61vh; margin-bottom: 10vh; float: left; width: 120vw; z-index: 3;}*/
+
+/*Logo placement on the detail page*/
+.detailLogo {top: 9vh !important; left: 450px !important;}
+
+/*blurfix for transparent library icons*/
+div[data-type="CollectionFolder"] canvas {display: none;}
 ```
 
 
@@ -308,6 +333,8 @@ This is simple enough we remove the scenes on the item details page and add a Ex
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/kaDtkmQ"  ><a href="//imgur.com/a/kaDtkmQ">extrafanart jellyfin</a></blockquote>
 
 again sorry i have bad gif skills this is me trying to make a webm file
+
+This is really good for any content that has media that is useful (fitness calendars) or has fancy cover art that the user may want to have a full size of or use the backdrop as a downloadable wallpaper.
 
 ### ExtraFanart to Scenes
 
