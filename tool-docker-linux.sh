@@ -1,5 +1,5 @@
 #!/bin/bash
-Vercheck=3.2
+Vercheck=3.3
 echo "   __       _ _        __ _                       "
 echo "   \ \  ___| | |_   _ / _(_)_ __                  "
 echo "    \ \/ _ \ | | | | | |_| | '_ \                 "
@@ -303,7 +303,7 @@ do
       sudo sed -i "s~$currenttitle~$newtitle~g" ${HOME}/Docker/home.html
 	  ;;
 	"Change Icons")
-	  echo "This has errors, but works, i will be fixing these later but it is fine for a quick release version of this tool"
+	  echo "This has errors, But ignore all these errors, it works.. it doesnt harm your system at all and wont move the files if the dir doesnt exist so it is harmless"
 	  echo "favicon.png"
 	  sudo cp ./images/favicon.png ${HOME}/Docker/
 	  sudo cp ./images/favicon.png ${HOME}/Docker/components/themes/
@@ -314,6 +314,7 @@ do
 	  sudo cp ./images/favicon180.png ${HOME}/Docker/assets/img/
 	  echo "logodark.png"
 	  sudo cp ./images/logodark.png ${HOME}/Docker/
+	  sudo cp ./images/logodark.png ${HOME}/Docker/themes/
 	  sudo cp ./images/logodark.png ${HOME}/Docker/components/themes/
 	  sudo cp ./images/logodark.png ${HOME}/Docker/assets/img/banner-dark.png
 	  sudo cp ./images/logodark.png ${HOME}/Docker/assets/img/icon-transparent.png
@@ -333,26 +334,32 @@ do
 	  echo "touchicon.png"
 	  sudo cp ./images/touchicon.png ${HOME}/Docker/themes/icon-transparent.png
 	  sudo cp ./images/touchicon.png ${HOME}/Docker/components/themes/
+	  sudo cp ./images/touchicon.png ${HOME}/Docker/themes/
 	  sudo cp ./images/touchicon.png ${HOME}/Docker/
 	  sudo cp ./images/touchicon.png ${HOME}/Docker/assets/img/
 	  echo "touchicon72.png"
 	  sudo cp ./images/touchicon72.png ${HOME}/Docker/components/themes/
+	  sudo cp ./images/touchicon72.png ${HOME}/Docker/themes/
 	  sudo cp ./images/touchicon72.png ${HOME}/Docker/
 	  sudo cp ./images/touchicon72.png ${HOME}/Docker/assets/img/
 	  echo "touchicon114.png"
 	  sudo cp ./images/touchicon114.png ${HOME}/Docker/components/themes/
+	  sudo cp ./images/touchicon114.png ${HOME}/Docker/themes/
 	  sudo cp ./images/touchicon114.png ${HOME}/Docker/
 	  sudo cp ./images/touchicon114.png ${HOME}/Docker/assets/img/
 	  echo "touchicon144.png"
 	  sudo cp ./images/touchicon144.png ${HOME}/Docker/components/themes/
+	  sudo cp ./images/touchicon144.png ${HOME}/Docker/themes/
 	  sudo cp ./images/touchicon144.png ${HOME}/Docker/
 	  sudo cp ./images/touchicon144.png ${HOME}/Docker/assets/img/
 	  echo "touchicons512"
 	  sudo cp ./images/touchicon512.png ${HOME}/Docker/components/themes/
+	  sudo cp ./images/touchicon512.png ${HOME}/Docker/themes/
 	  sudo cp ./images/touchicon512.png ${HOME}/Docker/
 	  sudo cp ./images/touchicon512.png ${HOME}/Docker/assets/img/
 	  echo "favicon.ico"
 	  sudo cp ./images/favicon.ico ${HOME}/Docker/components/themes/
+	  sudo cp ./images/favicon.ico ${HOME}/Docker/themes/
 	  sudo cp ./images/favicon.ico ${HOME}/Docker/
   	  sudo cp ./images/favicon.ico ${HOME}/Docker/assets/img/
       sudo cp ./images/favicon.ico ${HOME}/Docker/assets/favicon.ico
