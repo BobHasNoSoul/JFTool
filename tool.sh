@@ -1,5 +1,5 @@
 #!/bin/bash
-Vercheck=3.2
+Vercheck=3.3
 echo "   __       _ _        __ _                       "
 echo "   \ \  ___| | |_   _ / _(_)_ __                  "
 echo "    \ \/ _ \ | | | | | |_| | '_ \                 "
@@ -303,18 +303,21 @@ do
       sudo sed -i "s~$currenttitle~$newtitle~g" /usr/share/jellyfin/web/home.html
 	  ;;
 	"Change Icons")
-	  echo "This has errors, but works, i will be fixing these later but it is fine for a quick release version of this tool"
+	  echo "This has errors, these errors are normal, ignore these apparently there is a difference in version 10.6.0 and 10.6.3"
 	  echo "favicon.png"
 	  sudo cp ./images/favicon.png /usr/share/jellyfin/web/
 	  sudo cp ./images/favicon.png /usr/share/jellyfin/web/components/themes/
+	  sudo cp ./images/favicon.png /usr/share/jellyfin/web/themes/
 	  sudo cp ./images/favicon.png /usr/share/jellyfin/web/assets/img/icon-transparent.png
 	  echo "favicon180.png"
 	  sudo cp ./images/favicon180.png /usr/share/jellyfin/web/
 	  sudo cp ./images/favicon180.png /usr/share/jellyfin/web/components/themes/
+	  sudo cp ./images/favicon180.png /usr/share/jellyfin/web/themes/
 	  sudo cp ./images/favicon180.png /usr/share/jellyfin/web/assets/img/
 	  echo "logodark.png"
 	  sudo cp ./images/logodark.png /usr/share/jellyfin/web/
 	  sudo cp ./images/logodark.png /usr/share/jellyfin/web/components/themes/
+	  sudo cp ./images/logodark.png /usr/share/jellyfin/web/themes/
 	  sudo cp ./images/logodark.png /usr/share/jellyfin/web/assets/img/banner-dark.png
 	  sudo cp ./images/logodark.png /usr/share/jellyfin/web/assets/img/icon-transparent.png
 	  sudo cp ./images/logodark.png /usr/share/jellyfin/web/assets/img/touchicon.png
@@ -328,31 +331,38 @@ do
 	  echo "logowhite.png"
 	  sudo cp ./images/logowhite.png /usr/share/jellyfin/web/themes/banner-light.png
 	  sudo cp ./images/logowhite.png /usr/share/jellyfin/web/components/themes/
+	  sudo cp ./images/logowhite.png /usr/share/jellyfin/web/themes/
 	  sudo cp ./images/logowhite.png /usr/share/jellyfin/web/
 	  sudo cp ./images/logowhite.png /usr/share/jellyfin/web/assets/img/banner-light.png
 	  echo "touchicon.png"
 	  sudo cp ./images/touchicon.png /usr/share/jellyfin/web/themes/icon-transparent.png
 	  sudo cp ./images/touchicon.png /usr/share/jellyfin/web/components/themes/
+	  sudo cp ./images/touchicon.png /usr/share/jellyfin/web/themes/
 	  sudo cp ./images/touchicon.png /usr/share/jellyfin/web/
 	  sudo cp ./images/touchicon.png /usr/share/jellyfin/web/assets/img/
 	  echo "touchicon72.png"
 	  sudo cp ./images/touchicon72.png /usr/share/jellyfin/web/components/themes/
+	  sudo cp ./images/touchicon72.png /usr/share/jellyfin/web/themes/
 	  sudo cp ./images/touchicon72.png /usr/share/jellyfin/web/
 	  sudo cp ./images/touchicon72.png /usr/share/jellyfin/web/assets/img/
 	  echo "touchicon114.png"
 	  sudo cp ./images/touchicon114.png /usr/share/jellyfin/web/components/themes/
+	  sudo cp ./images/touchicon114.png /usr/share/jellyfin/web/themes/
 	  sudo cp ./images/touchicon114.png /usr/share/jellyfin/web/
 	  sudo cp ./images/touchicon114.png /usr/share/jellyfin/web/assets/img/
 	  echo "touchicon144.png"
 	  sudo cp ./images/touchicon144.png /usr/share/jellyfin/web/components/themes/
+	  sudo cp ./images/touchicon144.png /usr/share/jellyfin/web/themes/
 	  sudo cp ./images/touchicon144.png /usr/share/jellyfin/web/
 	  sudo cp ./images/touchicon144.png /usr/share/jellyfin/web/assets/img/
 	  echo "touchicons512"
 	  sudo cp ./images/touchicon512.png /usr/share/jellyfin/web/components/themes/
+	  sudo cp ./images/touchicon512.png /usr/share/jellyfin/web/themes/
 	  sudo cp ./images/touchicon512.png /usr/share/jellyfin/web/
 	  sudo cp ./images/touchicon512.png /usr/share/jellyfin/web/assets/img/
 	  echo "favicon.ico"
 	  sudo cp ./images/favicon.ico /usr/share/jellyfin/web/components/themes/
+	  sudo cp ./images/favicon.ico /usr/share/jellyfin/web/themes/
 	  sudo cp ./images/favicon.ico /usr/share/jellyfin/web/
   	  sudo cp ./images/favicon.ico /usr/share/jellyfin/web/assets/img/
       sudo cp ./images/favicon.ico /usr/share/jellyfin/web/assets/favicon.ico
