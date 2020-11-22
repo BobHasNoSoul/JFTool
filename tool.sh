@@ -1,30 +1,24 @@
 #!/bin/bash
-Vercheck=3.3
-echo "   __       _ _        __ _                       "
-echo "   \ \  ___| | |_   _ / _(_)_ __                  "
-echo "    \ \/ _ \ | | | | | |_| | '_ \                 "
-echo " /\_/ /  __/ | | |_| |  _| | | | |                "
-echo " \___/ \___|_|_|\__, |_| |_|_| |_|                "
-echo "                |___/                             "
-echo "   ___          _                  _              "
-echo "  / __\   _ ___| |_ ___  _ __ ___ (_)_______ ____ "
-echo " / / | | | / __| __/ _ \|  _   _ \| |_  / _ \  __|"
-echo "/ /__| |_| \__ \ || (_) | | | | | | |/ /  __/ |   "
-echo "\____/\__,_|___/\__\___/|_| |_| |_|_/___\___|_|   "
+Vercheck=3.4
+echo "        ______________            __"
+echo "       / / ____/_  __/___  ____  / /"
+echo "  __  / / /_    / / / __ \/ __ \/ / "
+echo " / /_/ / __/   / / / /_/ / /_/ / /  "
+echo " \____/_/     /_/  \____/\____/_/   "
+echo "                     "
 echo ""
-echo "Jellyfin Customizer v${Vercheck} -- LINUX"
+echo "JFTool v${Vercheck} -- LINUX"
 echo ""
-echo "older version in the pre 10.6 folder"
+echo "This is for jellyfin 10.6.x versions"
 echo ""
-echo "- This is in beta for the 10.6.0 version of jellyfin"
-echo "- Please note some bugs may be present"
-echo "- More features to be added in the future."
-echo "- SOME FEATURES ARE NOT LISTED AND HAVE NOT BEEN IMPLIMENTED"
-echo "  YET"
+echo "Disclaimer: This tool is provided as-is and I cannot be held"
+echo "accountable for any hair-loss, data-loss, broken"
+echo "relationships or nuclear winter."
+echo ""
 echo "============================================================"
 echo ""
 PS3='Please enter your choice: '
-options=("Logo in sidebar" "One custom link in side bar" "Two custom link in side bar" "Three custom link in side bar" "Four custom link in side bar" "Logo and One custom link in side bar" "Logo and Two custom link in side bar" "Logo and Three custom link in side bar" "Logo and Four custom link in side bar" "Change Page Title" "Change Icons" "Add logo above login" "Remove logo above login" "Backup current icons" "Change scenes to ExtraFanart" "Change ExtraFanart back to scenes" "Change Trailer Tab To Requests" "Change Requests back to Trailer Tab" "Return to stock" "Add snow animation" "Add Heart animation" "Add Halloween animation" "Add Fireworks" "Add Pattys day" "Remove Animations""Quit")
+options=("Logo in sidebar" "One custom link in side bar" "Two custom link in side bar" "Three custom link in side bar" "Four custom link in side bar" "Logo and One custom link in side bar" "Logo and Two custom link in side bar" "Logo and Three custom link in side bar" "Logo and Four custom link in side bar" "Change Page Title" "Change Icons" "Add logo above login" "Remove logo above login" "Backup current icons" "Change scenes to ExtraFanart" "Change ExtraFanart back to scenes" "Change Trailer Tab To Requests" "Change Requests back to Trailer Tab" "Return to stock" "Add snow animation" "Add Heart animation" "Add Halloween animation" "Add Fireworks" "Add Pattys day" "Remove Animations" "add Dynamic login background" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -501,6 +495,22 @@ do
 	sudo cp ./stock/extrafanart/index.js /usr/share/jellyfin/web/controllers/itemDetails/
     sudo cp ./stock/libraryMenu.js /usr/share/jellyfin/web/scripts/
 	;;
+	"add Dynamic login background")
+	echo ""
+	echo "This will make your background on the login page change between 6 pictures in the" 
+	echo "/usr/share/jellyfin/web/fanart/ dir and it will be a random one on each reload"
+  	echo ""
+	echo "copying files now"
+	echo ""
+	sudo cp ./fanart /usr/share/jellyfin/web/fanart
+	echo "injecting the cssbuster.js"
+    loginbackjs='    <script src="fanart/cssbuster.js"></script>'
+    sudo sed -i "/endinject/i \
+    ${loginbackjs}" /usr/share/jellyfin/web/index.html
+	echo "injection complete"
+	echo ""
+	echo "done"
+    ;;
 	"Quit")
 	  break
 	  ;;
