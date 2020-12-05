@@ -492,7 +492,7 @@ do
   	echo ""
 	echo "copying files now"
 	echo ""
-	sudo cp ./fanart /mnt/c/Program Files/Jellyfin/Server/jellyfin-web/fanart
+	sudo cp -r ./fanart /mnt/c/Program Files/Jellyfin/Server/jellyfin-web/fanart
 	echo "injecting the cssbuster.js"
     loginbackjs='    <script src="fanart/cssbuster.js"></script>'
     sudo sed -i "/endinject/i \
