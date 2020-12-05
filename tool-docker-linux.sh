@@ -499,7 +499,7 @@ do
   	echo ""
 	echo "copying files now"
 	echo ""
-	sudo cp ./fanart ${HOME}/Docker/fanart
+	sudo cp -r ./fanart ${HOME}/Docker/fanart
 	echo "injecting the cssbuster.js"
     loginbackjs='    <script src="fanart/cssbuster.js"></script>'
     sudo sed -i "/endinject/i \
