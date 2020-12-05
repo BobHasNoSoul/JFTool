@@ -1,3 +1,6 @@
+
+### This Tool Will Not Work On Jellyfin 10.7.x i am aware, i am working on it please be paitent i will update this tool with a 10.7.x build when i get my head around where they all moved things from 10.6.x (there are a lot of changes)
+
 # JFTool
 
 ```
