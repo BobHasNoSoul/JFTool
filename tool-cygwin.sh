@@ -489,7 +489,7 @@ do
   	echo ""
 	echo "copying files now"
 	echo ""
-	cp ./fanart /cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/fanart
+	cp -r ./fanart /cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/fanart
 	echo "injecting the cssbuster.js"
     loginbackjs='    <script src="fanart/cssbuster.js"></script>'
     sed -i "/endinject/i \
