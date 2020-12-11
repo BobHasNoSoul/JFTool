@@ -1,29 +1,27 @@
 
-### This Tool Will Not Work On Jellyfin 10.7.x i am aware, i am working on it please be paitent i will update this tool with a 10.7.x build when i get my head around where they all moved things from 10.6.x (there are a lot of changes)
-
 # JFTool
 
 ```
-   __       _ _        __ _
-   \ \  ___| | |_   _ / _(_)_ __
-    \ \/ _ \ | | | | | |_| | '_ \
- /\_/ /  __/ | | |_| |  _| | | | |
- \___/ \___|_|_|\__, |_| |_|_| |_|
-                |___/
-   ___          _                  _
-  / __\   _ ___| |_ ___  _ __ ___ (_)_______ ____
- / / | | | / __| __/ _ \|  _   _ \| |_  / _ \  __|
-/ /__| |_| \__ \ || (_) | | | | | | |/ /  __/ |
-\____/\__,_|___/\__\___/|_| |_| |_|_/___\___|_|
+       ______________            __"
+      / / ____/_  __/___  ____  / /"
+ __  / / /_    / / / __ \/ __ \/ / "
+/ /_/ / __/   / / / /_/ / /_/ / /  "
+\____/_/     /_/  \____/\____/_/  
 
-Jellyfin Customizer v3.0
+JFTool v4.0
 ```
 
-JFTool now works with 10.6 *wild fanfair and fireworks* but due to the rush i put to get this version out it may have some minor bugs do not worry you cant totally destroy your install but you may experiance some bugs or errors along the way. If you do please let me know.
-Due to the rush I have removed some minor features leaving main ones intact, but dont dispare these features will return in the end when I get more free time. For the most part they should work still
+JFTool now works with 10.7 at a slimmed down rate (more features to be added in the future for 10.7.x versions)
+- Change Page Title (working)
+- Replace Logos (Working)
+- Dynamic Login Background (Working)
+- Custom links in sidebar / logo in side bar (working)
 
-For pre 10.6 (like versions of jellyfin 10.4 through 10.5) go to the releases and download that version or look in the pre 10.6 folder :)
+we have a few changes to the folder layout, but they are all pretty much the same as before you just need to navigate to the version you want to apply it to and run the tool for the specified operating system (some have more features and some do not).
 
+JFTool may be untested for your operating system please use with caution and expect bugs in the lastest versions (not breaking bugs) but errors in the code because i have a very odd way of porting this to each deployment of jellyfin (might ditch cygwin support at some point for WSL overall because it is simply easier to work with).
+
+if you get permission issues on linux you may need to chmod +x for the files you require (i would do this by default but this is a bit more transparent so the end user can only activate the ones they wish to activate)
 
 
 # Instructions
@@ -34,7 +32,7 @@ For pre 10.6 (like versions of jellyfin 10.4 through 10.5) go to the releases an
 - Extract the file to your machine with the jellyfin install on it.
 - Edit the images inside the images folder with your favorite image editor and replace them with your own images with the same dimensions (or go wild and change the dimensions.. but if you do your mileage may vary).
 - Stop jellyfin from running `sudo service jellyfin stop`
-- run `./tool.sh`
+- run `./run.sh`
 - select your options you want to apply from the numbered menu
 - once done exit the program using option 8 on the menu or pressing ctrl+c 
 - restart you jellyfin install with `sudo service jellyfin start
@@ -67,7 +65,7 @@ sudo docker run -it -v tool_vol:/jellyfin/jellyfin-web jellyfin/jellyfin
 ```
 
 now you just need to open another terminal window (leaving the one you was just in open and running) 
-and run the `./tool-dockerlinux.sh` from the jftool-master folder
+and run the `./run.sh` from the jftool-master folder
 
 once done close both terminal windows and launch your jellyfin docker again.
 
@@ -86,7 +84,7 @@ by default this is "C:/Program Files/Jellyfin" if this is not the case, please m
 - Now you have enabled WSL but you need a platform, pick your flavour in the microsoft store but i personally went with the Ubuntu option.. install it.
 - Open Ubuntu (or your flavour picked in previous step) as admin from the start menu not from the launch option (you are editing files installed by an admin so you need to run this as an admin)
 - navigate to where you downloaded the script i.e. if you downloaded it on windows and decided to leave them in unzipped form just modify this line with your username. ` cd "/mnt/c/Users/YOURUSERNAMEHERE/Downloads/JFTool-master/"`
-- now run the windows version of the tool `./tool-win.sh`
+- now run the windows version of the tool `./run.sh`
 - enjoy your modifications when done you can close the ubuntu window (or whatever flavour you picked earlier)
 
 I am unsure if crontab would work this way with the ubuntu window not open.. I have not attempted maybe someone else can if their server is their main daily driver, but for me it is not (if you do send me a message on reddit at u/HeroinPigeon or on here and this will get updated for the crontab)
@@ -102,7 +100,7 @@ Okay this one is for people that dont have the ability to use or just dont want 
 - Open cygwin as administrator (start > cygwin > right-click > run as admin)
 - Navigate to your dir that your JFtool-master folder (by default if you just unzip the zip in your downloads folder it will only take this command just edit your username) 
 `cd "/cygdrive/c/Users/YOURUSERNAMEHERE/Downloads/JFTool-master/JFTool-master"`
-- Run jftool `./tool-cygwin.sh`
+- Run jftool `./run.sh`
 - Once complete simply close the cygwin tool
 
 
@@ -128,19 +126,19 @@ now run
 docker run -it -v tool_vol:/jellyfin/jellyfin-web jellyfin/jellyfin
 ```
 
-now you just need to open cygwin `./tool-dockerlinux.sh` from the jftool-master folder
+now you just need to open cygwin `./run.sh` from the jftool-master folder
 
 if you have it in your Downloads folder you simply need to run this (changing your username)
 
 `cd /cygdrive/c/Users/YOURUSERNAME/Downloads/JFTool-master/`
 
-then run `./tool-dockercygwin.sh`
+then run `./run.sh`
 
 once you are done with the tool close the windows and launch your jellyfin docker again.
 
 ### Docker on windows using WSL
 
-same instructions as cygwin but use ./tool-dockerwsl.sh instead of ./tool-dockercygwin.sh
+same instructions as cygwin
 
 ---
 
@@ -372,22 +370,8 @@ This one is fairly simple in the movies we had a broken trailers tab without a t
 ***My favicon has not changed what do i do?***
 Please clear you cache in your browser google will help you clear your cache correctly (or test using inprivate browsing).
 
-***Is the script outdated? i keep getting errors?***
-This script is not outdated, please know this was designed not just for the latest version of jellyfin but the older ones as well. The "Errors" as you put them are not always errors if they are happening when changing images or themes etc and it is a cp line error saying file not found this is normal. How cp works in this script is if it does not have the directory that exists it will skip that one file but continue for the ones where the dir is correct.. allowing the scripts to be one for all versions of jellyfin instead of one for each.. please do not worry about this.
-
-***This broke my login page, all i see is a few logos and no login box***
-This only applys to an older version of the script current version 1.0 and above do not have the issue. but on older versions if you added more than 1 logo on login page and tried to remove them you would be left with a broken login page. to get around this you would have to remove the images and </div> tag for each one in the login.html located at your server root. **For the current version of this script this has been fixed by making the logo a simple one line html code added and removed with a single line also instead of being split into 3**
-
 ***Do i have to rescan after using this tool?***
 No, not unless you want to.. I mean this tool does not touch your database and has no intention of modifying the database.. personally I would not see a reason to add this in the future either. However you should rescan if you add new video content to your server.
 
-***I Tried to get the trailers to requests to work and it doesnt load***
-Please check your content security policy and make sure that it is able to get to the url you are aiming for by default it should only accept the same domain name as a iframe solution. if this is on the same domain name please contact me and send me the current movietrailers.js and what url you are trying to hit via a private message.
-
-***Dark to Clear didnt work***
-This was an oversight by myself and the themes are different between 10.4 and 10.5 so i have to remake a theme for 10.5.x this is in the works and a new option will be added.
-
 ***Why Does this exist?***
 This exists to allow the masses to easily modify their installs on their own hardware, my main philosophy is if you are running it you might aswell customize it to look and feel exactly how you want.
-
-If you have any other feedback please contact me at u/HeroinPigeon or add an issue here if there is an issue/bug not covered here.
