@@ -26,7 +26,7 @@ do
 	
 	"Logo in sidebar")
 	  echo "Adding logo to the side bar"
-	  cp ./modded/side-menu/libraryMenu0linksjusticon.js /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
+	  cp ./JFTool-10.7.x/modded/side-menu/libraryMenu0linksjusticon.js /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
 	  ;;
     "One custom link in side bar")
 	  echo ""
@@ -38,7 +38,7 @@ do
 	  echo "Link name? (e.g. Request TV Shows and Movies)"
 	  read customlinkname1
 	  echo ""
-	  cp ./modded/side-menu/libraryMenu1link.js /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
+	  cp ./JFTool-10.7.x/modded/side-menu/libraryMenu1link.js /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
 	  sed -i "s~TOPLINKHERE~$customlink1~g" /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
       sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
       sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
@@ -61,7 +61,7 @@ do
 	  read customlinkicon2
 	  echo "Link name:"
 	  read customlinkname2
-	  cp ./modded/side-menu/libraryMenu2links.js /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
+	  cp ./JFTool-10.7.x/modded/side-menu/libraryMenu2links.js /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
 	  sed -i "s~TOPLINKHERE~$customlink1~g" /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
       sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
       sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
@@ -95,7 +95,7 @@ do
 	  read customlinkicon3
 	  echo "Link name:"
 	  read customlinkname3
-	  cp ./modded/side-menu/libraryMenu3links.js /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
+	  cp ./JFTool-10.7.x/modded/side-menu/libraryMenu3links.js /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
 	  sed -i "s~TOPLINKHERE~$customlink1~g" /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
       sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
       sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
@@ -141,7 +141,7 @@ do
 	  echo "Link name:"
 	  read customlinkname4
 	  echo ""
-	  cp ./modded/side-menu/libraryMenu4links.js /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
+	  cp ./JFTool-10.7.x/modded/side-menu/libraryMenu4links.js /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
 	  sed -i "s~TOPLINKHERE~$customlink1~g" /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
       sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
       sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
@@ -165,7 +165,7 @@ do
 	  echo "Link name? (e.g. Request TV Shows and Movies)"
 	  read customlinkname1
       echo ""
-	  cp ./modded/side-menu/libraryMenu1linksandicon.js /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
+	  cp ./JFTool-10.7.x/modded/side-menu/libraryMenu1linksandicon.js /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
 	  sed -i "s~TOPLINKHERE~$customlink1~g" /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
       sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
       sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
@@ -189,7 +189,7 @@ do
 	  echo "Link name:"
 	  read customlinkname2
 	  echo ""
-	  cp ./modded/side-menu/libraryMenu2linksandicon.js /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
+	  cp ./JFTool-10.7.x/modded/side-menu/libraryMenu2linksandicon.js /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
 	  sed -i "s~TOPLINKHERE~$customlink1~g" /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
       sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
       sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
@@ -224,7 +224,7 @@ do
 	  echo "Link name:"
 	  read customlinkname3
 	  echo ""
-	  cp ./modded/side-menu/libraryMenu3linksandicon.js /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
+	  cp ./JFTool-10.7.x/modded/side-menu/libraryMenu3linksandicon.js /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
 	  sed -i "s~TOPLINKHERE~$customlink1~g" /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
       sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
       sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
@@ -270,7 +270,7 @@ do
 	  echo "Link name:"
 	  read customlinkname4
 	  echo ""
-	  cp ./modded/side-menu/libraryMenu4linksandicon.js /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
+	  cp ./JFTool-10.7.x/modded/side-menu/libraryMenu4linksandicon.js /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
 	  sed -i "s~TOPLINKHERE~$customlink1~g" /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
       sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
       sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" /mnt/c/Docker/jellyfin/jellyfin-web/main.bundle.js
@@ -298,24 +298,24 @@ do
 	  ;;
 	"Change Icons")
 	  echo "favicon.png"
-	  cp ./images/favicon.png /mnt/c/Docker/jellyfin/jellyfin-web/
-	  cp ./images/favicon.png /mnt/c/Docker/jellyfin/jellyfin-web/assets/img/icon-transparent.png
+	  cp ./JFTool-10.7.x/images/favicon.png /mnt/c/Docker/jellyfin/jellyfin-web/
+	  cp ./JFTool-10.7.x/images/favicon.png /mnt/c/Docker/jellyfin/jellyfin-web/assets/img/icon-transparent.png
 	  echo "logodark.png"
-	  cp ./images/logodark.png /mnt/c/Docker/jellyfin/jellyfin-web/assets/img/banner-dark.png
-	  cp ./images/logodark.png /mnt/c/Docker/jellyfin/jellyfin-web/assets/img/icon-transparent.png
+	  cp ./JFTool-10.7.x/images/logodark.png /mnt/c/Docker/jellyfin/jellyfin-web/assets/img/banner-dark.png
+	  cp ./JFTool-10.7.x/images/logodark.png /mnt/c/Docker/jellyfin/jellyfin-web/assets/img/icon-transparent.png
 	  echo "logowhite.png"
-	  cp ./images/logowhite.png /mnt/c/Docker/jellyfin/jellyfin-web/assets/img/banner-light.png
+	  cp ./JFTool-10.7.x/images/logowhite.png /mnt/c/Docker/jellyfin/jellyfin-web/assets/img/banner-light.png
 	  echo "favicon.ico"
-	  cp ./images/favicon.ico /mnt/c/Docker/jellyfin/jellyfin-web/
+	  cp ./JFTool-10.7.x/images/favicon.ico /mnt/c/Docker/jellyfin/jellyfin-web/
 	  ;;
    "add Dynamic login background")
 	echo ""
 	echo "This will make your background on the login page change between 6 pictures in the" 
-	echo "/mnt/c/Docker/jellyfin/jellyfin-web/fanart/ dir and it will be a random one on each reload"
+	echo "/mnt/c/Docker/jellyfin/jellyfin-web/JFTool-10.7.x/fanart/ dir and it will be a random one on each reload"
   	echo ""
 	echo "copying files now"
 	echo ""
-	cp -r ./fanart /mnt/c/Docker/jellyfin/jellyfin-web/fanart
+	cp -r ./JFTool-10.7.x/fanart /mnt/c/Docker/jellyfin/jellyfin-web/JFTool-10.7.x/fanart
 	echo "injecting the cssbuster.js"
     loginbackjs='</script><script src="fanart/cssbuster.js"></script>'
     scriptkey="</script>"

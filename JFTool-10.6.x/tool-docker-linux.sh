@@ -25,7 +25,7 @@ do
 	
 	"Logo in sidebar")
 	  echo "Adding logo to the side bar"
-	  sudo cp ./modded/side-menu/libraryMenu0linksjusticon.js ${HOME}/Docker/scripts/libraryMenu.js
+	  sudo cp ./JFTool-10.6.x/modded/side-menu/libraryMenu0linksjusticon.js ${HOME}/Docker/scripts/libraryMenu.js
 	  ;;
     "One custom link in side bar")
 	  echo ""
@@ -37,7 +37,7 @@ do
 	  echo "Link name? (e.g. Request TV Shows and Movies)"
 	  read customlinkname1
 	  echo ""
-	  sudo cp ./modded/side-menu/libraryMenu1link.js ${HOME}/Docker/scripts/libraryMenu.js
+	  sudo cp ./JFTool-10.6.x/modded/side-menu/libraryMenu1link.js ${HOME}/Docker/scripts/libraryMenu.js
 	  sudo sed -i "s~TOPLINKHERE~$customlink1~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" ${HOME}/Docker/scripts/libraryMenu.js
@@ -60,7 +60,7 @@ do
 	  read customlinkicon2
 	  echo "Link name:"
 	  read customlinkname2
-	  sudo cp ./modded/side-menu/libraryMenu2links.js ${HOME}/Docker/scripts/libraryMenu.js
+	  sudo cp ./JFTool-10.6.x/modded/side-menu/libraryMenu2links.js ${HOME}/Docker/scripts/libraryMenu.js
 	  sudo sed -i "s~TOPLINKHERE~$customlink1~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" ${HOME}/Docker/scripts/libraryMenu.js
@@ -94,7 +94,7 @@ do
 	  read customlinkicon3
 	  echo "Link name:"
 	  read customlinkname3
-	  sudo cp ./modded/side-menu/libraryMenu3links.js ${HOME}/Docker/scripts/libraryMenu.js
+	  sudo cp ./JFTool-10.6.x/modded/side-menu/libraryMenu3links.js ${HOME}/Docker/scripts/libraryMenu.js
 	  sudo sed -i "s~TOPLINKHERE~$customlink1~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" ${HOME}/Docker/scripts/libraryMenu.js
@@ -140,7 +140,7 @@ do
 	  echo "Link name:"
 	  read customlinkname4
 	  echo ""
-	  sudo cp ./modded/side-menu/libraryMenu4links.js ${HOME}/Docker/scripts/libraryMenu.js
+	  sudo cp ./JFTool-10.6.x/modded/side-menu/libraryMenu4links.js ${HOME}/Docker/scripts/libraryMenu.js
 	  sudo sed -i "s~TOPLINKHERE~$customlink1~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" ${HOME}/Docker/scripts/libraryMenu.js
@@ -164,7 +164,7 @@ do
 	  echo "Link name? (e.g. Request TV Shows and Movies)"
 	  read customlinkname1
       echo ""
-	  sudo cp ./modded/side-menu/libraryMenu1linksandicon.js ${HOME}/Docker/scripts/libraryMenu.js
+	  sudo cp ./JFTool-10.6.x/modded/side-menu/libraryMenu1linksandicon.js ${HOME}/Docker/scripts/libraryMenu.js
 	  sudo sed -i "s~TOPLINKHERE~$customlink1~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" ${HOME}/Docker/scripts/libraryMenu.js
@@ -188,7 +188,7 @@ do
 	  echo "Link name:"
 	  read customlinkname2
 	  echo ""
-	  sudo cp ./modded/side-menu/libraryMenu2linksandicon.js ${HOME}/Docker/scripts/libraryMenu.js
+	  sudo cp ./JFTool-10.6.x/modded/side-menu/libraryMenu2linksandicon.js ${HOME}/Docker/scripts/libraryMenu.js
 	  sudo sed -i "s~TOPLINKHERE~$customlink1~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" ${HOME}/Docker/scripts/libraryMenu.js
@@ -223,7 +223,7 @@ do
 	  echo "Link name:"
 	  read customlinkname3
 	  echo ""
-	  sudo cp ./modded/side-menu/libraryMenu3linksandicon.js ${HOME}/Docker/scripts/libraryMenu.js
+	  sudo cp ./JFTool-10.6.x/modded/side-menu/libraryMenu3linksandicon.js ${HOME}/Docker/scripts/libraryMenu.js
 	  sudo sed -i "s~TOPLINKHERE~$customlink1~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" ${HOME}/Docker/scripts/libraryMenu.js
@@ -269,7 +269,7 @@ do
 	  echo "Link name:"
 	  read customlinkname4
 	  echo ""
-	  sudo cp ./modded/side-menu/libraryMenu4linksandicon.js ${HOME}/Docker/scripts/libraryMenu.js
+	  sudo cp ./JFTool-10.6.x/modded/side-menu/libraryMenu4linksandicon.js ${HOME}/Docker/scripts/libraryMenu.js
 	  sudo sed -i "s~TOPLINKHERE~$customlink1~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" ${HOME}/Docker/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" ${HOME}/Docker/scripts/libraryMenu.js
@@ -299,76 +299,76 @@ do
 	"Change Icons")
 	  echo "This has errors, But ignore all these errors, it works.. it doesnt harm your system at all and wont move the files if the dir doesnt exist so it is harmless"
 	  echo "favicon.png"
-	  sudo cp ./images/favicon.png ${HOME}/Docker/
-	  sudo cp ./images/favicon.png ${HOME}/Docker/components/themes/
-	  sudo cp ./images/favicon.png ${HOME}/Docker/assets/img/icon-transparent.png
+	  sudo cp ./JFTool-10.6.x/images/favicon.png ${HOME}/Docker/
+	  sudo cp ./JFTool-10.6.x/images/favicon.png ${HOME}/Docker/components/themes/
+	  sudo cp ./JFTool-10.6.x/images/favicon.png ${HOME}/Docker/assets/img/icon-transparent.png
 	  echo "favicon180.png"
-	  sudo cp ./images/favicon180.png ${HOME}/Docker/
-	  sudo cp ./images/favicon180.png ${HOME}/Docker/components/themes/
-	  sudo cp ./images/favicon180.png ${HOME}/Docker/assets/img/
+	  sudo cp ./JFTool-10.6.x/images/favicon180.png ${HOME}/Docker/
+	  sudo cp ./JFTool-10.6.x/images/favicon180.png ${HOME}/Docker/components/themes/
+	  sudo cp ./JFTool-10.6.x/images/favicon180.png ${HOME}/Docker/assets/img/
 	  echo "logodark.png"
-	  sudo cp ./images/logodark.png ${HOME}/Docker/
-	  sudo cp ./images/logodark.png ${HOME}/Docker/themes/
-	  sudo cp ./images/logodark.png ${HOME}/Docker/components/themes/
-	  sudo cp ./images/logodark.png ${HOME}/Docker/assets/img/banner-dark.png
-	  sudo cp ./images/logodark.png ${HOME}/Docker/assets/img/icon-transparent.png
-	  sudo cp ./images/logodark.png ${HOME}/Docker/assets/img/touchicon.png
-	  sudo cp ./images/logodark.png ${HOME}/Docker/assets/img/touchicon.png
-	  sudo cp ./images/logodark.png ${HOME}/Docker/assets/img/touchicon72.png
-	  sudo cp ./images/logodark.png ${HOME}/Docker/assets/img/touchicon114.png
-	  sudo cp ./images/logodark.png ${HOME}/Docker/assets/img/touchicon144.png
-	  sudo cp ./images/logodark.png ${HOME}/Docker/assets/img/touchicon512.png
-	  sudo cp ./images/logodark.png ${HOME}/Docker/assets/img/banner-dark.png
-	  sudo cp ./images/logodark.png ${HOME}/Docker/themes/banner-dark.png
+	  sudo cp ./JFTool-10.6.x/images/logodark.png ${HOME}/Docker/
+	  sudo cp ./JFTool-10.6.x/images/logodark.png ${HOME}/Docker/themes/
+	  sudo cp ./JFTool-10.6.x/images/logodark.png ${HOME}/Docker/components/themes/
+	  sudo cp ./JFTool-10.6.x/images/logodark.png ${HOME}/Docker/assets/img/banner-dark.png
+	  sudo cp ./JFTool-10.6.x/images/logodark.png ${HOME}/Docker/assets/img/icon-transparent.png
+	  sudo cp ./JFTool-10.6.x/images/logodark.png ${HOME}/Docker/assets/img/touchicon.png
+	  sudo cp ./JFTool-10.6.x/images/logodark.png ${HOME}/Docker/assets/img/touchicon.png
+	  sudo cp ./JFTool-10.6.x/images/logodark.png ${HOME}/Docker/assets/img/touchicon72.png
+	  sudo cp ./JFTool-10.6.x/images/logodark.png ${HOME}/Docker/assets/img/touchicon114.png
+	  sudo cp ./JFTool-10.6.x/images/logodark.png ${HOME}/Docker/assets/img/touchicon144.png
+	  sudo cp ./JFTool-10.6.x/images/logodark.png ${HOME}/Docker/assets/img/touchicon512.png
+	  sudo cp ./JFTool-10.6.x/images/logodark.png ${HOME}/Docker/assets/img/banner-dark.png
+	  sudo cp ./JFTool-10.6.x/images/logodark.png ${HOME}/Docker/themes/banner-dark.png
 	  echo "logowhite.png"
-	  sudo cp ./images/logowhite.png ${HOME}/Docker/themes/banner-light.png
-	  sudo cp ./images/logowhite.png ${HOME}/Docker/components/themes/
-	  sudo cp ./images/logowhite.png ${HOME}/Docker/
-	  sudo cp ./images/logowhite.png ${HOME}/Docker/assets/img/banner-light.png
+	  sudo cp ./JFTool-10.6.x/images/logowhite.png ${HOME}/Docker/themes/banner-light.png
+	  sudo cp ./JFTool-10.6.x/images/logowhite.png ${HOME}/Docker/components/themes/
+	  sudo cp ./JFTool-10.6.x/images/logowhite.png ${HOME}/Docker/
+	  sudo cp ./JFTool-10.6.x/images/logowhite.png ${HOME}/Docker/assets/img/banner-light.png
 	  echo "touchicon.png"
-	  sudo cp ./images/touchicon.png ${HOME}/Docker/themes/icon-transparent.png
-	  sudo cp ./images/touchicon.png ${HOME}/Docker/components/themes/
-	  sudo cp ./images/touchicon.png ${HOME}/Docker/themes/
-	  sudo cp ./images/touchicon.png ${HOME}/Docker/
-	  sudo cp ./images/touchicon.png ${HOME}/Docker/assets/img/
+	  sudo cp ./JFTool-10.6.x/images/touchicon.png ${HOME}/Docker/themes/icon-transparent.png
+	  sudo cp ./JFTool-10.6.x/images/touchicon.png ${HOME}/Docker/components/themes/
+	  sudo cp ./JFTool-10.6.x/images/touchicon.png ${HOME}/Docker/themes/
+	  sudo cp ./JFTool-10.6.x/images/touchicon.png ${HOME}/Docker/
+	  sudo cp ./JFTool-10.6.x/images/touchicon.png ${HOME}/Docker/assets/img/
 	  echo "touchicon72.png"
-	  sudo cp ./images/touchicon72.png ${HOME}/Docker/components/themes/
-	  sudo cp ./images/touchicon72.png ${HOME}/Docker/themes/
-	  sudo cp ./images/touchicon72.png ${HOME}/Docker/
-	  sudo cp ./images/touchicon72.png ${HOME}/Docker/assets/img/
+	  sudo cp ./JFTool-10.6.x/images/touchicon72.png ${HOME}/Docker/components/themes/
+	  sudo cp ./JFTool-10.6.x/images/touchicon72.png ${HOME}/Docker/themes/
+	  sudo cp ./JFTool-10.6.x/images/touchicon72.png ${HOME}/Docker/
+	  sudo cp ./JFTool-10.6.x/images/touchicon72.png ${HOME}/Docker/assets/img/
 	  echo "touchicon114.png"
-	  sudo cp ./images/touchicon114.png ${HOME}/Docker/components/themes/
-	  sudo cp ./images/touchicon114.png ${HOME}/Docker/themes/
-	  sudo cp ./images/touchicon114.png ${HOME}/Docker/
-	  sudo cp ./images/touchicon114.png ${HOME}/Docker/assets/img/
+	  sudo cp ./JFTool-10.6.x/images/touchicon114.png ${HOME}/Docker/components/themes/
+	  sudo cp ./JFTool-10.6.x/images/touchicon114.png ${HOME}/Docker/themes/
+	  sudo cp ./JFTool-10.6.x/images/touchicon114.png ${HOME}/Docker/
+	  sudo cp ./JFTool-10.6.x/images/touchicon114.png ${HOME}/Docker/assets/img/
 	  echo "touchicon144.png"
-	  sudo cp ./images/touchicon144.png ${HOME}/Docker/components/themes/
-	  sudo cp ./images/touchicon144.png ${HOME}/Docker/themes/
-	  sudo cp ./images/touchicon144.png ${HOME}/Docker/
-	  sudo cp ./images/touchicon144.png ${HOME}/Docker/assets/img/
+	  sudo cp ./JFTool-10.6.x/images/touchicon144.png ${HOME}/Docker/components/themes/
+	  sudo cp ./JFTool-10.6.x/images/touchicon144.png ${HOME}/Docker/themes/
+	  sudo cp ./JFTool-10.6.x/images/touchicon144.png ${HOME}/Docker/
+	  sudo cp ./JFTool-10.6.x/images/touchicon144.png ${HOME}/Docker/assets/img/
 	  echo "touchicons512"
-	  sudo cp ./images/touchicon512.png ${HOME}/Docker/components/themes/
-	  sudo cp ./images/touchicon512.png ${HOME}/Docker/themes/
-	  sudo cp ./images/touchicon512.png ${HOME}/Docker/
-	  sudo cp ./images/touchicon512.png ${HOME}/Docker/assets/img/
+	  sudo cp ./JFTool-10.6.x/images/touchicon512.png ${HOME}/Docker/components/themes/
+	  sudo cp ./JFTool-10.6.x/images/touchicon512.png ${HOME}/Docker/themes/
+	  sudo cp ./JFTool-10.6.x/images/touchicon512.png ${HOME}/Docker/
+	  sudo cp ./JFTool-10.6.x/images/touchicon512.png ${HOME}/Docker/assets/img/
 	  echo "favicon.ico"
-	  sudo cp ./images/favicon.ico ${HOME}/Docker/components/themes/
-	  sudo cp ./images/favicon.ico ${HOME}/Docker/themes/
-	  sudo cp ./images/favicon.ico ${HOME}/Docker/
-  	  sudo cp ./images/favicon.ico ${HOME}/Docker/assets/img/
-      sudo cp ./images/favicon.ico ${HOME}/Docker/assets/favicon.ico
-      sudo cp ./images/favicon.ico ${HOME}/Docker/components/themes/favicon.ico
+	  sudo cp ./JFTool-10.6.x/images/favicon.ico ${HOME}/Docker/components/themes/
+	  sudo cp ./JFTool-10.6.x/images/favicon.ico ${HOME}/Docker/themes/
+	  sudo cp ./JFTool-10.6.x/images/favicon.ico ${HOME}/Docker/
+  	  sudo cp ./JFTool-10.6.x/images/favicon.ico ${HOME}/Docker/assets/img/
+      sudo cp ./JFTool-10.6.x/images/favicon.ico ${HOME}/Docker/assets/favicon.ico
+      sudo cp ./JFTool-10.6.x/images/favicon.ico ${HOME}/Docker/components/themes/favicon.ico
 	  ;;
 	"Add logo above login")
 	  echo "bleep bloop adding the logo"
-      sudo cp ./modded/login.html ${HOME}/Docker/login.html
+      sudo cp ./JFTool-10.6.x/modded/login.html ${HOME}/Docker/login.html
 	  ;;
 	 "Backup current icons")
-	  mkdir ./backedupimages
-	  sudo cp ${HOME}/Docker/*.png ./backedupimages/
-	  sudo cp ${HOME}/Docker/components/themes/*.png ./backedupimages/
-	  sudo cp ${HOME}/Docker/assets/img/*.png ./backedupimages/
-	  sudo cp ${HOME}/Docker/favicon.ico ./backedupimages/favicon.ico
+	  mkdir ./JFTool-10.6.x/backedupimages
+	  sudo cp ${HOME}/Docker/*.png ./JFTool-10.6.x/backedupimages/
+	  sudo cp ${HOME}/Docker/components/themes/*.png ./JFTool-10.6.x/backedupimages/
+	  sudo cp ${HOME}/Docker/assets/img/*.png ./JFTool-10.6.x/backedupimages/
+	  sudo cp ${HOME}/Docker/favicon.ico ./JFTool-10.6.x/backedupimages/favicon.ico
 	  echo "Done"
 	  ;;
 #	"Change to original jellyfin icons")
@@ -378,60 +378,60 @@ do
 #	  sudo cp ./originalimages/favicon.ico ${HOME}/Docker/favicon.ico
 #	  ;; 
 	"Add snow animation")
-	   sudo cp ./animation/videoosd.css ${HOME}/Docker/assets/css/videoosd.css
-	   sudo cp ./animation/videohtmlplayer/style.css ${HOME}/Docker/plugins/htmlVideoPlayer/style.css	
-	   sudo cp ./animation/snow.html ${HOME}/Docker/index.html
+	   sudo cp ./JFTool-10.6.x/animation/stock/videoosd.css ${HOME}/Docker/assets/css/videoosd.css
+	   sudo cp ./JFTool-10.6.x/animation/stock/videohtmlplayer/style.css ${HOME}/Docker/plugins/htmlVideoPlayer/style.css	
+	   sudo cp ./JFTool-10.6.x/animation/stock/snow.html ${HOME}/Docker/index.html
 	   echo "Added snow (note you may have to change your page title again from 'Jellyfin')"
 	   ;;
 	 "Add Heart animation")
-	   sudo cp ./animation/videoosd.css ${HOME}/Docker/assets/css/videoosd.css
-	   sudo cp ./animation/videohtmlplayer/style.css ${HOME}/Docker/plugins/htmlVideoPlayer/style.css	
-	   sudo cp ./animation/valentines.html ${HOME}/Docker/index.html
+	   sudo cp ./JFTool-10.6.x/animation/stock/videoosd.css ${HOME}/Docker/assets/css/videoosd.css
+	   sudo cp ./JFTool-10.6.x/animation/stock/videohtmlplayer/style.css ${HOME}/Docker/plugins/htmlVideoPlayer/style.css	
+	   sudo cp ./JFTool-10.6.x/animation/stock/valentines.html ${HOME}/Docker/index.html
 	   echo "Added hearts (note you may have to change your page title again from 'Jellyfin')"
 	   ;;
 	 "Add Halloween animation")
-	   sudo cp ./animation/videohtmlplayer/style.css ${HOME}/Docker/plugins/htmlVideoPlayer/style.css	
-	   sudo cp ./animation/videoosd.css ${HOME}/Docker/assets/css/videoosd.css
-	   sudo cp ./animation/halloween.html ${HOME}/Docker/index.html
-	   sudo cp ./animation/ghost_20x20.png ${HOME}/Docker/
-	   sudo cp ./animation/bat_20x20.png ${HOME}/Docker/
-  	   sudo cp ./animation/pumpkin_20x20.png ${HOME}/Docker/
+	   sudo cp ./JFTool-10.6.x/animation/stock/videohtmlplayer/style.css ${HOME}/Docker/plugins/htmlVideoPlayer/style.css	
+	   sudo cp ./JFTool-10.6.x/animation/stock/videoosd.css ${HOME}/Docker/assets/css/videoosd.css
+	   sudo cp ./JFTool-10.6.x/animation/stock/halloween.html ${HOME}/Docker/index.html
+	   sudo cp ./JFTool-10.6.x/animation/stock/ghost_20x20.png ${HOME}/Docker/
+	   sudo cp ./JFTool-10.6.x/animation/stock/bat_20x20.png ${HOME}/Docker/
+  	   sudo cp ./JFTool-10.6.x/animation/stock/pumpkin_20x20.png ${HOME}/Docker/
   	   echo "Added Halloween animations (note you may have to change your page title again from 'Jellyfin')"
 	   ;;
 	 "Add Fireworks")
-	   sudo cp ./animation/videohtmlplayer/style.css ${HOME}/Docker/plugins/htmlVideoPlayer/style.css	
-	   sudo cp ./animation/videoosd.css ${HOME}/Docker/assets/css/videoosd.css
-       sudo cp ./animation/fireworks.html ${HOME}/Docker/index.html
-       sudo cp ./animation/fireworks.css ${HOME}/Docker/fireworks.css
+	   sudo cp ./JFTool-10.6.x/animation/stock/videohtmlplayer/style.css ${HOME}/Docker/plugins/htmlVideoPlayer/style.css	
+	   sudo cp ./JFTool-10.6.x/animation/stock/videoosd.css ${HOME}/Docker/assets/css/videoosd.css
+       sudo cp ./JFTool-10.6.x/animation/stock/fireworks.html ${HOME}/Docker/index.html
+       sudo cp ./JFTool-10.6.x/animation/stock/fireworks.css ${HOME}/Docker/fireworks.css
        echo "Added fireworks (note you may have to change your page title again from 'Jellyfin')"
        ;;
      "Add Pattys day")
-	   sudo cp ./animation/videohtmlplayer/style.css ${HOME}/Docker/plugins/htmlVideoPlayer/style.css	
-	   sudo cp ./animation/videoosd.css ${HOME}/Docker/assets/css/videoosd.css
-       sudo cp ./animation/pattysday.html ${HOME}/Docker/index.html
-	   sudo cp ./animation/lep_30x30.png ${HOME}/Docker/
-  	   sudo cp ./animation/clover_20x20.png ${HOME}/Docker/
+	   sudo cp ./JFTool-10.6.x/animation/stock/videohtmlplayer/style.css ${HOME}/Docker/plugins/htmlVideoPlayer/style.css	
+	   sudo cp ./JFTool-10.6.x/animation/stock/videoosd.css ${HOME}/Docker/assets/css/videoosd.css
+       sudo cp ./JFTool-10.6.x/animation/stock/pattysday.html ${HOME}/Docker/index.html
+	   sudo cp ./JFTool-10.6.x/animation/stock/lep_30x30.png ${HOME}/Docker/
+  	   sudo cp ./JFTool-10.6.x/animation/stock/clover_20x20.png ${HOME}/Docker/
        echo "Added Pattys day (note you may have to change your page title again from 'Jellyfin')"
        ;;
 	 "Remove Animations")
-	   sudo cp ./stock/videoosd.css ${HOME}/Docker/assets/css/videoosd.css
-	   sudo cp ./stock/htmlvideoplayer/stylestock.css ${HOME}/Docker/plugins/htmlVideoPlayer/style.css	
-	   sudo cp ./animation/index.html ${HOME}/Docker/index.html
+	   sudo cp ./JFTool-10.6.x/stock/videoosd.css ${HOME}/Docker/assets/css/videoosd.css
+	   sudo cp ./JFTool-10.6.x/stock/htmlvideoplayer/stylestock.css ${HOME}/Docker/plugins/htmlVideoPlayer/style.css	
+	   sudo cp ./JFTool-10.6.x/animation/stock/index.html ${HOME}/Docker/index.html
 	   echo "Removed animations (note you may have to change your page title again)"
 	   ;; 
 	"Remove logo above login")
 	  echo "bleep bloop Removing the logo"
-      sudo cp ./stock/login.html ${HOME}/Docker/login.html
+      sudo cp ./JFTool-10.6.x/stock/login.html ${HOME}/Docker/login.html
       ;;
 	"Change scenes to ExtraFanart")
 	  echo "This changes the Scenes in the item page to show extrafanart when clicked these also open a new window to show full size image"
-      sudo cp ./modded/extrafanart/index.js ${HOME}/Docker/controllers/itemDetails/
-      sudo cp ./modded/extrafanart/index.html ${HOME}/Docker/controllers/itemDetails/
+      sudo cp ./JFTool-10.6.x/modded/extrafanart/index.js ${HOME}/Docker/controllers/itemDetails/
+      sudo cp ./JFTool-10.6.x/modded/extrafanart/index.html ${HOME}/Docker/controllers/itemDetails/
 	  ;;
 	"Change ExtraFanart back to scenes")
       echo "Changing the itemdetails page back to normal before we touched it"
-      sudo cp ./stock/extrafanart/index.js ${HOME}/Docker/controllers/itemDetails/
-      sudo cp ./stock/extrafanart/index.html ${HOME}/Docker/controllers/itemDetails/
+      sudo cp ./JFTool-10.6.x/stock/extrafanart/index.js ${HOME}/Docker/controllers/itemDetails/
+      sudo cp ./JFTool-10.6.x/stock/extrafanart/index.html ${HOME}/Docker/controllers/itemDetails/
 	  ;;
 #	"Force Backdrops")
 #	echo ""
@@ -459,7 +459,7 @@ do
 	echo "their reverse proxy settings to allow x-frames from other sources if not on the same domain"
 	echo ""
 	echo "now we will copy the files"
-	sudo cp ./modded/movies/*.js ${HOME}/Docker/controllers/movies/
+	sudo cp ./JFTool-10.6.x/modded/movies/*.js ${HOME}/Docker/controllers/movies/
 	echo "finished copying files"
 	echo ""
 	echo "Please Input the URL of your ombi install (e.g. domain.com/ombi without https:// or http://) :"
@@ -475,31 +475,31 @@ do
 	echo ""
 	echo "This will restore the stock files for movietrailers.js and moviesrecommended.js making the tab go to the trailers plugin"
 	echo ""
-	sudo cp ./stock/moviesrecommended.js ${HOME}/Docker/controllers/movies/
-	sudo cp ./stock/movietrailers.js ${HOME}/Docker/controllers/movies/
+	sudo cp ./JFTool-10.6.x/stock/moviesrecommended.js ${HOME}/Docker/controllers/movies/
+	sudo cp ./JFTool-10.6.x/stock/movietrailers.js ${HOME}/Docker/controllers/movies/
 	;;
 	"Return to stock")
     echo ""
 	echo "This makes your mods go back to stock, incase something messes up or you missed something"
 	echo ""
-	sudo cp ./stock/home.html ${HOME}/Docker/
-	sudo cp ./stock/index.html ${HOME}/Docker/
-	sudo cp ./stock/login.html ${HOME}/Docker/
-	sudo cp ./stock/manifest.json ${HOME}/Docker/
-	sudo cp ./stock/moviesrecommended.js ${HOME}/Docker/controllers/movies/
-	sudo cp ./stock/movietrailers.js ${HOME}/Docker/controllers/movies/
-	sudo cp ./stock/extrafanart/index.html ${HOME}/Docker/controllers/itemDetails/
-	sudo cp ./stock/extrafanart/index.js ${HOME}/Docker/controllers/itemDetails/
-	sudo cp ./stock/libraryMenu.js ${HOME}/Docker/scripts/
+	sudo cp ./JFTool-10.6.x/stock/home.html ${HOME}/Docker/
+	sudo cp ./JFTool-10.6.x/stock/index.html ${HOME}/Docker/
+	sudo cp ./JFTool-10.6.x/stock/login.html ${HOME}/Docker/
+	sudo cp ./JFTool-10.6.x/stock/manifest.json ${HOME}/Docker/
+	sudo cp ./JFTool-10.6.x/stock/moviesrecommended.js ${HOME}/Docker/controllers/movies/
+	sudo cp ./JFTool-10.6.x/stock/movietrailers.js ${HOME}/Docker/controllers/movies/
+	sudo cp ./JFTool-10.6.x/stock/extrafanart/index.html ${HOME}/Docker/controllers/itemDetails/
+	sudo cp ./JFTool-10.6.x/stock/extrafanart/index.js ${HOME}/Docker/controllers/itemDetails/
+	sudo cp ./JFTool-10.6.x/stock/libraryMenu.js ${HOME}/Docker/scripts/
 	;;
 	"add Dynamic login background")
 	echo ""
 	echo "This will make your background on the login page change between 6 pictures in the" 
-	echo "${HOME}/Docker/fanart dir and it will be a random one on each reload"
+	echo "${HOME}/Docker/JFTool-10.6.x/fanart dir and it will be a random one on each reload"
   	echo ""
 	echo "copying files now"
 	echo ""
-	sudo cp -r ./fanart ${HOME}/Docker/fanart
+	sudo cp -r ./JFTool-10.6.x/fanart ${HOME}/Docker/JFTool-10.6.x/fanart
 	echo "injecting the cssbuster.js"
     loginbackjs='    <script src="fanart/cssbuster.js"></script>'
     sudo sed -i "/endinject/i \

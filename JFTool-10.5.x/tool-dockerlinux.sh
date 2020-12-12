@@ -74,55 +74,55 @@ do
 	  ;;
 	"Change Icons")
 	  echo "favicon.png"
-	  sudo cp ./images/favicon.png ${HOME}/Docker/jellyfin/jellyfin-web/
-	  sudo cp ./images/favicon.png ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/
-	  sudo cp ./images/favicon.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/icon-transparent.png
+	  sudo cp ./JFTool-10.5.x/images/favicon.png ${HOME}/Docker/jellyfin/jellyfin-web/
+	  sudo cp ./JFTool-10.5.x/images/favicon.png ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/
+	  sudo cp ./JFTool-10.5.x/images/favicon.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/icon-transparent.png
 	  echo "favicon180.png"
-	  sudo cp ./images/favicon180.png ${HOME}/Docker/jellyfin/jellyfin-web/
-	  sudo cp ./images/favicon180.png ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/
-	  sudo cp ./images/favicon180.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/
+	  sudo cp ./JFTool-10.5.x/images/favicon180.png ${HOME}/Docker/jellyfin/jellyfin-web/
+	  sudo cp ./JFTool-10.5.x/images/favicon180.png ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/
+	  sudo cp ./JFTool-10.5.x/images/favicon180.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/
 	  echo "logodark.png"
-	  sudo cp ./images/logodark.png ${HOME}/Docker/jellyfin/jellyfin-web/
-	  sudo cp ./images/logodark.png ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/
-	  sudo cp ./images/logodark.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/banner-dark.png
-	  sudo cp ./images/logodark.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/icon-transparent.png
-	  sudo cp ./images/logodark.png ${HOME}/Docker/jellyfin/jellyfin-web/themes/banner-dark.png
-	  sudo cp ./images/logodark.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/touchicon.png
-	  sudo cp ./images/logodark.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/touchicon.png
-	  sudo cp ./images/logodark.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/touchicon72.png
-	  sudo cp ./images/logodark.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/touchicon114.png
-	  sudo cp ./images/logodark.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/touchicon144.png
-	  sudo cp ./images/logodark.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/touchicon512.png
+	  sudo cp ./JFTool-10.5.x/images/logodark.png ${HOME}/Docker/jellyfin/jellyfin-web/
+	  sudo cp ./JFTool-10.5.x/images/logodark.png ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/
+	  sudo cp ./JFTool-10.5.x/images/logodark.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/banner-dark.png
+	  sudo cp ./JFTool-10.5.x/images/logodark.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/icon-transparent.png
+	  sudo cp ./JFTool-10.5.x/images/logodark.png ${HOME}/Docker/jellyfin/jellyfin-web/themes/banner-dark.png
+	  sudo cp ./JFTool-10.5.x/images/logodark.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/touchicon.png
+	  sudo cp ./JFTool-10.5.x/images/logodark.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/touchicon.png
+	  sudo cp ./JFTool-10.5.x/images/logodark.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/touchicon72.png
+	  sudo cp ./JFTool-10.5.x/images/logodark.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/touchicon114.png
+	  sudo cp ./JFTool-10.5.x/images/logodark.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/touchicon144.png
+	  sudo cp ./JFTool-10.5.x/images/logodark.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/touchicon512.png
 	  echo "logowhite.png"
-	  sudo cp ./images/logowhite.png ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/
-	  sudo cp ./images/logowhite.png ${HOME}/Docker/jellyfin/jellyfin-web/
-	  sudo cp ./images/logowhite.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/banner-light.png
-	  sudo cp ./images/logowhite.png ${HOME}/Docker/jellyfin/jellyfin-web/themes/banner-light.png
+	  sudo cp ./JFTool-10.5.x/images/logowhite.png ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/
+	  sudo cp ./JFTool-10.5.x/images/logowhite.png ${HOME}/Docker/jellyfin/jellyfin-web/
+	  sudo cp ./JFTool-10.5.x/images/logowhite.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/banner-light.png
+	  sudo cp ./JFTool-10.5.x/images/logowhite.png ${HOME}/Docker/jellyfin/jellyfin-web/themes/banner-light.png
 	  echo "touchicon.png"
-	  sudo cp ./images/touchicon.png ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/
-	  sudo cp ./images/touchicon.png ${HOME}/Docker/jellyfin/jellyfin-web/
-	  sudo cp ./images/touchicon.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/
-	  sudo cp ./images/touchicon.png ${HOME}/Docker/jellyfin/jellyfin-web/themes/icon-transparent.png
+	  sudo cp ./JFTool-10.5.x/images/touchicon.png ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/
+	  sudo cp ./JFTool-10.5.x/images/touchicon.png ${HOME}/Docker/jellyfin/jellyfin-web/
+	  sudo cp ./JFTool-10.5.x/images/touchicon.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/
+	  sudo cp ./JFTool-10.5.x/images/touchicon.png ${HOME}/Docker/jellyfin/jellyfin-web/themes/icon-transparent.png
 	  echo "touchicon72.png"
-	  sudo cp ./images/touchicon72.png ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/
-	  sudo cp ./images/touchicon72.png ${HOME}/Docker/jellyfin/jellyfin-web/
-	  sudo cp ./images/touchicon72.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/
+	  sudo cp ./JFTool-10.5.x/images/touchicon72.png ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/
+	  sudo cp ./JFTool-10.5.x/images/touchicon72.png ${HOME}/Docker/jellyfin/jellyfin-web/
+	  sudo cp ./JFTool-10.5.x/images/touchicon72.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/
 	  echo "touchicon114.png"
-	  sudo cp ./images/touchicon114.png ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/
-	  sudo cp ./images/touchicon114.png ${HOME}/Docker/jellyfin/jellyfin-web/
-	  sudo cp ./images/touchicon114.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/
+	  sudo cp ./JFTool-10.5.x/images/touchicon114.png ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/
+	  sudo cp ./JFTool-10.5.x/images/touchicon114.png ${HOME}/Docker/jellyfin/jellyfin-web/
+	  sudo cp ./JFTool-10.5.x/images/touchicon114.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/
 	  echo "touchicon144.png"
-	  sudo cp ./images/touchicon144.png ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/
-	  sudo cp ./images/touchicon144.png ${HOME}/Docker/jellyfin/jellyfin-web/
-	  sudo cp ./images/touchicon144.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/
+	  sudo cp ./JFTool-10.5.x/images/touchicon144.png ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/
+	  sudo cp ./JFTool-10.5.x/images/touchicon144.png ${HOME}/Docker/jellyfin/jellyfin-web/
+	  sudo cp ./JFTool-10.5.x/images/touchicon144.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/
 	  echo "touchicons512"
-	  sudo cp ./images/touchicon512.png ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/
-	  sudo cp ./images/touchicon512.png ${HOME}/Docker/jellyfin/jellyfin-web/
-	  sudo cp ./images/touchicon512.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/
+	  sudo cp ./JFTool-10.5.x/images/touchicon512.png ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/
+	  sudo cp ./JFTool-10.5.x/images/touchicon512.png ${HOME}/Docker/jellyfin/jellyfin-web/
+	  sudo cp ./JFTool-10.5.x/images/touchicon512.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/
 	  echo "favicon.ico"
-	  sudo cp ./images/favicon.ico ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/
-	  sudo cp ./images/favicon.ico ${HOME}/Docker/jellyfin/jellyfin-web/
-  	  sudo cp ./images/favicon.ico ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/
+	  sudo cp ./JFTool-10.5.x/images/favicon.ico ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/
+	  sudo cp ./JFTool-10.5.x/images/favicon.ico ${HOME}/Docker/jellyfin/jellyfin-web/
+  	  sudo cp ./JFTool-10.5.x/images/favicon.ico ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/
 	  ;;
 	"Add icon to sidebar")
 	  sidebarlogo="\ \ \ \ \ \ \ \ html += '<img src="
@@ -148,66 +148,66 @@ do
           <div class="Login-Logo">${logowhite}</div>" ${HOME}/Docker/jellyfin/jellyfin-web/login.html
 	  ;;
 	  	"Backup current icons")
-	  mkdir ./backedupimages
-	  sudo cp ${HOME}/Docker/jellyfin/jellyfin-web/*.png ./backedupimages/
-	  sudo cp ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/*.png ./backedupimages/
-	  sudo cp ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/*.png ./backedupimages/
-	  sudo cp ${HOME}/Docker/jellyfin/jellyfin-web/favicon.ico ./backedupimages/favicon.ico
+	  mkdir ./JFTool-10.5.x/backedupimages
+	  sudo cp ${HOME}/Docker/jellyfin/jellyfin-web/*.png ./JFTool-10.5.x/backedupimages/
+	  sudo cp ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/*.png ./JFTool-10.5.x/backedupimages/
+	  sudo cp ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/*.png ./JFTool-10.5.x/backedupimages/
+	  sudo cp ${HOME}/Docker/jellyfin/jellyfin-web/favicon.ico ./JFTool-10.5.x/backedupimages/favicon.ico
 	  echo "Done"
 	  ;;
 	"Change to original jellyfin icons")
-	  sudo cp ./originalimages/*.png ${HOME}/Docker/jellyfin/jellyfin-web/
-	  sudo cp ./originalimages/*.png ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/
-	  sudo cp ./originalimages/*.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/
-	  sudo cp ./originalimages/favicon.ico ${HOME}/Docker/jellyfin/jellyfin-web/favicon.ico
+	  sudo cp ./JFTool-10.5.x/originalimages/*.png ${HOME}/Docker/jellyfin/jellyfin-web/
+	  sudo cp ./JFTool-10.5.x/originalimages/*.png ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/
+	  sudo cp ./JFTool-10.5.x/originalimages/*.png ${HOME}/Docker/jellyfin/jellyfin-web/assets/img/
+	  sudo cp ./JFTool-10.5.x/originalimages/favicon.ico ${HOME}/Docker/jellyfin/jellyfin-web/favicon.ico
 	  ;; 
 	"Add snow animation")
-      sudo cp ./animation/videoosd104.css.fix ${HOME}/Docker/jellyfin/jellyfin-web/css/videoosd.css
-	  sudo cp ./animation/videoosd.css.fix ${HOME}/Docker/jellyfin/jellyfin-web/assets/css/videoosd.css
-	  sudo cp ./animation/stylefix.css ${HOME}/Docker/jellyfin/jellyfin-web/components/htmlvideoplayer/style.css	
-	  sudo cp ./animation/snow.html ${HOME}/Docker/jellyfin/jellyfin-web/index.html
+      sudo cp ./JFTool-10.5.x/animation/videoosd104.css.fix ${HOME}/Docker/jellyfin/jellyfin-web/css/videoosd.css
+	  sudo cp ./JFTool-10.5.x/animation/videoosd.css.fix ${HOME}/Docker/jellyfin/jellyfin-web/assets/css/videoosd.css
+	  sudo cp ./JFTool-10.5.x/animation/stylefix.css ${HOME}/Docker/jellyfin/jellyfin-web/components/htmlvideoplayer/style.css	
+	  sudo cp ./JFTool-10.5.x/animation/snow.html ${HOME}/Docker/jellyfin/jellyfin-web/index.html
 	  echo "Added snow (note you may have to change your page title again from 'Jellyfin')"
 	  ;;
 	"Add Heart animation")
-      sudo cp ./animation/videoosd104.css.fix ${HOME}/Docker/jellyfin/jellyfin-web/css/videoosd.css
-	  sudo cp ./animation/videoosd.css.fix ${HOME}/Docker/jellyfin/jellyfin-web/assets/css/videoosd.css
-	  sudo cp ./animation/stylefix.css ${HOME}/Docker/jellyfin/jellyfin-web/components/htmlvideoplayer/style.css	
-	  sudo cp ./animation/valentines.html ${HOME}/Docker/jellyfin/jellyfin-web/index.html
+      sudo cp ./JFTool-10.5.x/animation/videoosd104.css.fix ${HOME}/Docker/jellyfin/jellyfin-web/css/videoosd.css
+	  sudo cp ./JFTool-10.5.x/animation/videoosd.css.fix ${HOME}/Docker/jellyfin/jellyfin-web/assets/css/videoosd.css
+	  sudo cp ./JFTool-10.5.x/animation/stylefix.css ${HOME}/Docker/jellyfin/jellyfin-web/components/htmlvideoplayer/style.css	
+	  sudo cp ./JFTool-10.5.x/animation/valentines.html ${HOME}/Docker/jellyfin/jellyfin-web/index.html
 	  echo "Added hearts (note you may have to change your page title again from 'Jellyfin')"
 	  ;;
 	"Add Halloween animation")
-      sudo cp ./animation/videoosd104.css.fix ${HOME}/Docker/jellyfin/jellyfin-web/css/videoosd.css
-	  sudo cp ./animation/stylefix.css ${HOME}/Docker/jellyfin/jellyfin-web/components/htmlvideoplayer/style.css	
-	  sudo cp ./animation/videoosd.css.fix ${HOME}/Docker/jellyfin/jellyfin-web/assets/css/videoosd.css
-	  sudo cp ./animation/halloween.html ${HOME}/Docker/jellyfin/jellyfin-web/index.html
-	  sudo cp ./animation/ghost_20x20.png ${HOME}/Docker/jellyfin/jellyfin-web/
-	  sudo cp ./animation/bat_20x20.png ${HOME}/Docker/jellyfin/jellyfin-web/
-  	  sudo cp ./animation/pumpkin_20x20.png ${HOME}/Docker/jellyfin/jellyfin-web/
+      sudo cp ./JFTool-10.5.x/animation/videoosd104.css.fix ${HOME}/Docker/jellyfin/jellyfin-web/css/videoosd.css
+	  sudo cp ./JFTool-10.5.x/animation/stylefix.css ${HOME}/Docker/jellyfin/jellyfin-web/components/htmlvideoplayer/style.css	
+	  sudo cp ./JFTool-10.5.x/animation/videoosd.css.fix ${HOME}/Docker/jellyfin/jellyfin-web/assets/css/videoosd.css
+	  sudo cp ./JFTool-10.5.x/animation/halloween.html ${HOME}/Docker/jellyfin/jellyfin-web/index.html
+	  sudo cp ./JFTool-10.5.x/animation/ghost_20x20.png ${HOME}/Docker/jellyfin/jellyfin-web/
+	  sudo cp ./JFTool-10.5.x/animation/bat_20x20.png ${HOME}/Docker/jellyfin/jellyfin-web/
+  	  sudo cp ./JFTool-10.5.x/animation/pumpkin_20x20.png ${HOME}/Docker/jellyfin/jellyfin-web/
   	  echo "Added Halloween animations (note you may have to change your page title again from 'Jellyfin')"
 	  ;;
 	"Add Fireworks")
-	  sudo cp ./animation/stylefix.css ${HOME}/Docker/jellyfin/jellyfin-web/components/htmlvideoplayer/style.css	
-	  sudo cp ./animation/videoosd.css.fix ${HOME}/Docker/jellyfin/jellyfin-web/assets/css/videoosd.css
-      sudo cp ./animation/fireworks.html ${HOME}/Docker/jellyfin/jellyfin-web/index.html
-      sudo cp ./animation/fireworks.css ${HOME}/Docker/jellyfin/jellyfin-web/fireworks.css
-      sudo cp ./animation/sitefix10.4.css ${HOME}/Docker/jellyfin/jellyfin-web/css/site.css
-      sudo cp ./animation/sitefix10.5.css ${HOME}/Docker/jellyfin/jellyfin-web/assets/css/site.css
+	  sudo cp ./JFTool-10.5.x/animation/stylefix.css ${HOME}/Docker/jellyfin/jellyfin-web/components/htmlvideoplayer/style.css	
+	  sudo cp ./JFTool-10.5.x/animation/videoosd.css.fix ${HOME}/Docker/jellyfin/jellyfin-web/assets/css/videoosd.css
+      sudo cp ./JFTool-10.5.x/animation/fireworks.html ${HOME}/Docker/jellyfin/jellyfin-web/index.html
+      sudo cp ./JFTool-10.5.x/animation/fireworks.css ${HOME}/Docker/jellyfin/jellyfin-web/fireworks.css
+      sudo cp ./JFTool-10.5.x/animation/sitefix10.4.css ${HOME}/Docker/jellyfin/jellyfin-web/css/site.css
+      sudo cp ./JFTool-10.5.x/animation/sitefix10.5.css ${HOME}/Docker/jellyfin/jellyfin-web/assets/css/site.css
       echo "Added fireworks (note you may have to change your page title again from 'Jellyfin')"
       ;;
     "Add Pattys day")
-      sudo cp ./animation/videoosd104.css.fix ${HOME}/Docker/jellyfin/jellyfin-web/css/videoosd.css
-	  sudo cp ./animation/stylefix.css ${HOME}/Docker/jellyfin/jellyfin-web/components/htmlvideoplayer/style.css	
-	  sudo cp ./animation/videoosd.css.fix ${HOME}/Docker/jellyfin/jellyfin-web/assets/css/videoosd.css
-      sudo cp ./animation/pattysday.html ${HOME}/Docker/jellyfin/jellyfin-web/index.html
-	  sudo cp ./animation/lep_30x30.png ${HOME}/Docker/jellyfin/jellyfin-web/
-  	  sudo cp ./animation/clover_20x20.png ${HOME}/Docker/jellyfin/jellyfin-web/
+      sudo cp ./JFTool-10.5.x/animation/videoosd104.css.fix ${HOME}/Docker/jellyfin/jellyfin-web/css/videoosd.css
+	  sudo cp ./JFTool-10.5.x/animation/stylefix.css ${HOME}/Docker/jellyfin/jellyfin-web/components/htmlvideoplayer/style.css	
+	  sudo cp ./JFTool-10.5.x/animation/videoosd.css.fix ${HOME}/Docker/jellyfin/jellyfin-web/assets/css/videoosd.css
+      sudo cp ./JFTool-10.5.x/animation/pattysday.html ${HOME}/Docker/jellyfin/jellyfin-web/index.html
+	  sudo cp ./JFTool-10.5.x/animation/lep_30x30.png ${HOME}/Docker/jellyfin/jellyfin-web/
+  	  sudo cp ./JFTool-10.5.x/animation/clover_20x20.png ${HOME}/Docker/jellyfin/jellyfin-web/
       echo "Added Pattys day (note you may have to change your page title again from 'Jellyfin')"
       ;;
 	"Remove Animations")
-	  sudo cp ./animation/videoosd104.css.original ${HOME}/Docker/jellyfin/jellyfin-web/css/videoosd.css
-	  sudo cp ./animation/videoosd.css.original ${HOME}/Docker/jellyfin/jellyfin-web/assets/css/videoosd.css
-	  sudo cp ./animation/stylestock.css ${HOME}/Docker/jellyfin/jellyfin-web/components/htmlvideoplayer/style.css	
-	  sudo cp ./animation/stockify.html ${HOME}/Docker/jellyfin/jellyfin-web/index.html
+	  sudo cp ./JFTool-10.5.x/animation/videoosd104.css.original ${HOME}/Docker/jellyfin/jellyfin-web/css/videoosd.css
+	  sudo cp ./JFTool-10.5.x/animation/videoosd.css.original ${HOME}/Docker/jellyfin/jellyfin-web/assets/css/videoosd.css
+	  sudo cp ./JFTool-10.5.x/animation/stylestock.css ${HOME}/Docker/jellyfin/jellyfin-web/components/htmlvideoplayer/style.css	
+	  sudo cp ./JFTool-10.5.x/animation/stockify.html ${HOME}/Docker/jellyfin/jellyfin-web/index.html
 	  echo "Removed animations (note you may have to change your page title again)"
 	  ;; 
 	"Remove logo above login")
@@ -216,7 +216,7 @@ do
       ;;
         "CSS injection fix")
           sudo mv /etc/jellyfin/branding.xml /etc/jellyfin/branding.originalxml
-          sudo cp ./css/brandingfix.xml /etc/jellyfin/branding.xml
+          sudo cp ./JFTool-10.5.x/css/brandingfix.xml /etc/jellyfin/branding.xml
           ;;
         "CSS Invisible background on top bar")
           sudo sed -i '/<CustomCss>/a div.skinHeader-withBackground {background-color: #10101000;} !important' /etc/jellyfin/branding.xml
@@ -240,34 +240,34 @@ do
           echo "also putting that side bar on a diet"
           echo "backing up your original dark theme"
           sudo cp ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/dark/theme.css ./darktheme.css.backup
-          sudo cp ./themes/darktoclear/theme.css ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/dark/theme.css
+          sudo cp ./JFTool-10.5.x/themes/darktoclear/theme.css ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/dark/theme.css
 	      sudo cp ${HOME}/Docker/jellyfin/jellyfin-web/themes/dark/theme.css ./darktheme.css.backup
-          sudo cp ./themes/darktoclear/theme10.5.css ${HOME}/Docker/jellyfin/jellyfin-web/themes/dark/theme.css
+          sudo cp ./JFTool-10.5.x/themes/darktoclear/theme10.5.css ${HOME}/Docker/jellyfin/jellyfin-web/themes/dark/theme.css
           ;;
 	"Change clear theme back to dark")
 	  echo "Changing clear theme back to dark"
-	  sudo cp ./themes/dark/theme.css ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/dark/theme.css
-	  sudo cp ./themes/dark/theme10.5.css ${HOME}/Docker/jellyfin/jellyfin-web/themes/dark/theme.css
+	  sudo cp ./JFTool-10.5.x/themes/dark/theme.css ${HOME}/Docker/jellyfin/jellyfin-web/components/themes/dark/theme.css
+	  sudo cp ./JFTool-10.5.x/themes/dark/theme10.5.css ${HOME}/Docker/jellyfin/jellyfin-web/themes/dark/theme.css
 	  ;;
 	"10.4 Change scenes to ExtraFanart")
 	  echo "This changes the Scenes in the item page to show extrafanart when clicked these also open a new window to show full size image"
-      sudo cp ./mods/10.4/extrafanart/itemdetailpage.js ${HOME}/Docker/jellyfin/jellyfin-web/controllers/
-      sudo cp ./mods/10.4/extrafanart/itemdetails.html ${HOME}/Docker/jellyfin/jellyfin-web/
+      sudo cp ./JFTool-10.5.x/mods/10.4/extrafanart/itemdetailpage.js ${HOME}/Docker/jellyfin/jellyfin-web/controllers/
+      sudo cp ./JFTool-10.5.x/mods/10.4/extrafanart/itemdetails.html ${HOME}/Docker/jellyfin/jellyfin-web/
 	  ;;
 	"10.4 Change ExtraFanart back to scenes")
       echo "Changing the itemdetails page back to normal before we touched it"
-      sudo cp ./mods/10.4/stock/itemdetailpage.js ${HOME}/Docker/jellyfin/jellyfin-web/controllers/
-      sudo cp ./mods/10.4/stock/itemdetails.html ${HOME}/Docker/jellyfin/jellyfin-web/
+      sudo cp ./JFTool-10.5.x/mods/10.4/stock/itemdetailpage.js ${HOME}/Docker/jellyfin/jellyfin-web/controllers/
+      sudo cp ./JFTool-10.5.x/mods/10.4/stock/itemdetails.html ${HOME}/Docker/jellyfin/jellyfin-web/
 	  ;;
 	"10.5 Change scenes to ExtraFanart")
 	  echo "This changes the Scenes in the item page to show extrafanart when clicked these also open a new window to show full size image"
-      sudo cp ./mods/10.5/extrafanart/itemdetailpage.js ${HOME}/Docker/jellyfin/jellyfin-web/controllers/
-      sudo cp ./mods/10.5/extrafanart/itemdetails.html ${HOME}/Docker/jellyfin/jellyfin-web/
+      sudo cp ./JFTool-10.5.x/mods/10.5/extrafanart/itemdetailpage.js ${HOME}/Docker/jellyfin/jellyfin-web/controllers/
+      sudo cp ./JFTool-10.5.x/mods/10.5/extrafanart/itemdetails.html ${HOME}/Docker/jellyfin/jellyfin-web/
 	  ;;
 	"10.5 Change ExtraFanart back to scenes")
       echo "Changing the itemdetails page back to normal before we touched it"
-      sudo cp ./mods/10.5/stock/itemdetails.html ${HOME}/Docker/jellyfin/jellyfin-web/itemdetails.html
-      sudo cp ./mods/10.5/stock/itemdetailpage.js ${HOME}/Docker/jellyfin/jellyfin-web/controllers/
+      sudo cp ./JFTool-10.5.x/mods/10.5/stock/itemdetails.html ${HOME}/Docker/jellyfin/jellyfin-web/itemdetails.html
+      sudo cp ./JFTool-10.5.x/mods/10.5/stock/itemdetailpage.js ${HOME}/Docker/jellyfin/jellyfin-web/controllers/
 	  ;;
 	"Force Backdrops")
 	echo ""
@@ -276,8 +276,8 @@ do
 	echo "Now for this to take effect you have to clear the cache on your browser (or your client will have to) or just wait for your cache"
 	echo "to clear itself and reload the .js file we will load in"
 	echo ""
-	sudo cp ./mods/10.4/forcebackdrops.10.4.js ${HOME}/Docker/jellyfin/jellyfin-web/components/usersettings/usersettingsbuilder.js
-    sudo cp ./mods/10.5/forcedbackdrops.10.5.js ${HOME}/Docker/jellyfin/jellyfin-web/scripts/settings/userSettingsBuilder.js
+	sudo cp ./JFTool-10.5.x/mods/10.4/forcebackdrops.10.4.js ${HOME}/Docker/jellyfin/jellyfin-web/components/usersettings/usersettingsbuilder.js
+    sudo cp ./JFTool-10.5.x/mods/10.5/forcedbackdrops.10.5.js ${HOME}/Docker/jellyfin/jellyfin-web/scripts/settings/userSettingsBuilder.js
 	;;
 	"Remove Forced Backdrops")
     echo ""
@@ -286,8 +286,8 @@ do
 	echo "Now for this to take effect you have to clear the cache on your browser (or your client will have to) or just wait for your cache"
 	echo "to clear itself and reload the .js file we will load in"
 	echo ""
-	sudo cp ./mods/10.4/usersettingsbuilder.10.4.js ${HOME}/Docker/jellyfin/jellyfin-web/components/usersettings/usersettingsbuilder.js
-    sudo cp ./mods/10.5/userSettingsBuilder.10.5.js ${HOME}/Docker/jellyfin/jellyfin-web/scripts/settings/userSettingsBuilder.js
+	sudo cp ./JFTool-10.5.x/mods/10.4/usersettingsbuilder.10.4.js ${HOME}/Docker/jellyfin/jellyfin-web/components/usersettings/usersettingsbuilder.js
+    sudo cp ./JFTool-10.5.x/mods/10.5/userSettingsBuilder.10.5.js ${HOME}/Docker/jellyfin/jellyfin-web/scripts/settings/userSettingsBuilder.js
 	;;
 	"10.4 Change Trailer Tab To Requests")
 	echo ""
@@ -295,7 +295,7 @@ do
 	echo "their reverse proxy settings to allow x-frames from other sources if not on the same domain"
 	echo ""
 	echo "now we will copy the files"
-	sudo cp ./mods/10.4/trailertab/*.js ${HOME}/Docker/jellyfin/jellyfin-web/controllers/movies/
+	sudo cp ./JFTool-10.5.x/mods/10.4/trailertab/*.js ${HOME}/Docker/jellyfin/jellyfin-web/controllers/movies/
 	echo "finished copying files"
 	echo ""
 	echo "Please Input the URL of your ombi install (e.g. domain.com/ombi WITHOUT https:// or http://) :"
@@ -311,8 +311,8 @@ do
 	echo ""
 	echo "This will restore the stock files for movietrailers.js and moviesrecommended.js making the tab go to the trailers plugin"
 	echo ""
-	sudo cp ./mods/10.4/stock/moviesrecommended.js ${HOME}/Docker/jellyfin/jellyfin-web/controllers/movies/
-	sudo cp ./mods/10.4/stock/movietrailers.js ${HOME}/Docker/jellyfin/jellyfin-web/controllers/movies/
+	sudo cp ./JFTool-10.5.x/mods/10.4/stock/moviesrecommended.js ${HOME}/Docker/jellyfin/jellyfin-web/controllers/movies/
+	sudo cp ./JFTool-10.5.x/mods/10.4/stock/movietrailers.js ${HOME}/Docker/jellyfin/jellyfin-web/controllers/movies/
 	;;
 	"10.5 Change Trailer Tab To Requests")
 	echo ""
@@ -320,7 +320,7 @@ do
 	echo "their reverse proxy settings to allow x-frames from other sources if not on the same domain"
 	echo ""
 	echo "now we will copy the files"
-	sudo cp ./mods/10.5/trailertab/*.js ${HOME}/Docker/jellyfin/jellyfin-web/controllers/movies/
+	sudo cp ./JFTool-10.5.x/mods/10.5/trailertab/*.js ${HOME}/Docker/jellyfin/jellyfin-web/controllers/movies/
 	echo "finished copying files"
 	echo ""
 	echo "Please Input the URL of your ombi install (e.g. domain.com/ombi WITHOUT https:// or http://) :"
@@ -336,8 +336,8 @@ do
 	echo ""
 	echo "This will restore the stock files for movietrailers.js and moviesrecommended.js making the tab go to the trailers plugin"
 	echo ""
-	sudo cp ./mods/10.5/stock/moviesrecommended.js ${HOME}/Docker/jellyfin/jellyfin-web/controllers/movies/
-	sudo cp ./mods/10.5/stock/movietrailers.js ${HOME}/Docker/jellyfin/jellyfin-web/controllers/movies/
+	sudo cp ./JFTool-10.5.x/mods/10.5/stock/moviesrecommended.js ${HOME}/Docker/jellyfin/jellyfin-web/controllers/movies/
+	sudo cp ./JFTool-10.5.x/mods/10.5/stock/movietrailers.js ${HOME}/Docker/jellyfin/jellyfin-web/controllers/movies/
 	;;
 	"Quit")
 	  break

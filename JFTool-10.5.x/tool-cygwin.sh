@@ -76,55 +76,55 @@ do
 	  ;;
 	"Change Icons")
 	  echo "favicon.png"
-	  cp ./images/favicon.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
-	  cp ./images/favicon.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/"
-	  cp ./images/favicon.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/icon-transparent.png"
+	  cp ./JFTool-10.5.x/images/favicon.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
+	  cp ./JFTool-10.5.x/images/favicon.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/"
+	  cp ./JFTool-10.5.x/images/favicon.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/icon-transparent.png"
 	  echo "favicon180.png"
-	  cp ./images/favicon180.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
-	  cp ./images/favicon180.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/"
-	  cp ./images/favicon180.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/"
+	  cp ./JFTool-10.5.x/images/favicon180.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
+	  cp ./JFTool-10.5.x/images/favicon180.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/"
+	  cp ./JFTool-10.5.x/images/favicon180.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/"
 	  echo "logodark.png"
-	  cp ./images/logodark.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
-	  cp ./images/logodark.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/"
-	  cp ./images/logodark.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/banner-dark.png"
-	  cp ./images/logodark.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/themes/banner-dark.png"
-	  cp ./images/logodark.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/icon-transparent.png"
-	  cp ./images/logodark.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/touchicon.png"
-	  cp ./images/logodark.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/touchicon.png"
-	  cp ./images/logodark.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/touchicon72.png"
-	  cp ./images/logodark.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/touchicon114.png"
-	  cp ./images/logodark.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/touchicon144.png"
-	  cp ./images/logodark.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/touchicon512.png"
+	  cp ./JFTool-10.5.x/images/logodark.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
+	  cp ./JFTool-10.5.x/images/logodark.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/"
+	  cp ./JFTool-10.5.x/images/logodark.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/banner-dark.png"
+	  cp ./JFTool-10.5.x/images/logodark.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/themes/banner-dark.png"
+	  cp ./JFTool-10.5.x/images/logodark.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/icon-transparent.png"
+	  cp ./JFTool-10.5.x/images/logodark.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/touchicon.png"
+	  cp ./JFTool-10.5.x/images/logodark.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/touchicon.png"
+	  cp ./JFTool-10.5.x/images/logodark.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/touchicon72.png"
+	  cp ./JFTool-10.5.x/images/logodark.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/touchicon114.png"
+	  cp ./JFTool-10.5.x/images/logodark.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/touchicon144.png"
+	  cp ./JFTool-10.5.x/images/logodark.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/touchicon512.png"
 	  echo "logowhite.png"
-	  cp ./images/logowhite.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/"
-	  cp ./images/logowhite.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
-	  cp ./images/logowhite.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/banner-light.png"
-	  cp ./images/logowhite.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/themes/banner-light.png"
+	  cp ./JFTool-10.5.x/images/logowhite.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/"
+	  cp ./JFTool-10.5.x/images/logowhite.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
+	  cp ./JFTool-10.5.x/images/logowhite.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/banner-light.png"
+	  cp ./JFTool-10.5.x/images/logowhite.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/themes/banner-light.png"
 	  echo "touchicon.png"
-	  cp ./images/touchicon.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/"
-	  cp ./images/touchicon.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
-	  cp ./images/touchicon.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/"
-	  cp ./images/touchicon.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/themes/icon-trasparent.png"
+	  cp ./JFTool-10.5.x/images/touchicon.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/"
+	  cp ./JFTool-10.5.x/images/touchicon.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
+	  cp ./JFTool-10.5.x/images/touchicon.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/"
+	  cp ./JFTool-10.5.x/images/touchicon.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/themes/icon-trasparent.png"
 	  echo "touchicon72.png"
-	  cp ./images/touchicon72.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/"
-	  cp ./images/touchicon72.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
-	  cp ./images/touchicon72.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/"
+	  cp ./JFTool-10.5.x/images/touchicon72.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/"
+	  cp ./JFTool-10.5.x/images/touchicon72.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
+	  cp ./JFTool-10.5.x/images/touchicon72.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/"
 	  echo "touchicon114.png"
-	  cp ./images/touchicon114.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/"
-	  cp ./images/touchicon114.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
-	  cp ./images/touchicon114.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/"
+	  cp ./JFTool-10.5.x/images/touchicon114.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/"
+	  cp ./JFTool-10.5.x/images/touchicon114.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
+	  cp ./JFTool-10.5.x/images/touchicon114.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/"
 	  echo "touchicon144.png"
-	  cp ./images/touchicon144.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/"
-	  cp ./images/touchicon144.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
-	  cp ./images/touchicon144.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/"
+	  cp ./JFTool-10.5.x/images/touchicon144.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/"
+	  cp ./JFTool-10.5.x/images/touchicon144.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
+	  cp ./JFTool-10.5.x/images/touchicon144.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/"
 	  echo "touchicons512"
-	  cp ./images/touchicon512.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/"
-	  cp ./images/touchicon512.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
-	  cp ./images/touchicon512.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/"
+	  cp ./JFTool-10.5.x/images/touchicon512.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/"
+	  cp ./JFTool-10.5.x/images/touchicon512.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
+	  cp ./JFTool-10.5.x/images/touchicon512.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/"
 	  echo "favicon.ico"
-	  cp ./images/favicon.ico "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/"
-	  cp ./images/favicon.ico "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
-  	  cp ./images/favicon.ico "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/"
+	  cp ./JFTool-10.5.x/images/favicon.ico "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/"
+	  cp ./JFTool-10.5.x/images/favicon.ico "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
+  	  cp ./JFTool-10.5.x/images/favicon.ico "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/"
 	  ;;
 	"Add icon to sidebar")
 	  sidebarlogo="\ \ \ \ \ \ \ \ html += '<img src="
@@ -150,66 +150,66 @@ do
           <div class="Login-Logo">${logowhite}</div>" "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/login.html"
 	  ;;
 	  	"Backup current icons")
-	  mkdir ./backedupimages
-	  cp "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/*.png" ./backedupimages/
-	  cp "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/*.png" ./backedupimages/
-	  cp "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/*.png" ./backedupimages/
-	  cp "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/favicon.ico" ./backedupimages/favicon.ico
+	  mkdir ./JFTool-10.5.x/backedupimages
+	  cp "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/*.png" ./JFTool-10.5.x/backedupimages/
+	  cp "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/*.png" ./JFTool-10.5.x/backedupimages/
+	  cp "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/*.png" ./JFTool-10.5.x/backedupimages/
+	  cp "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/favicon.ico" ./JFTool-10.5.x/backedupimages/favicon.ico
 	  echo "Done"
 	  ;;
 	"Change to original jellyfin icons")
-	  cp ./originalimages/*.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
-	  cp ./originalimages/*.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/"
-	  cp ./originalimages/*.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/"
-	  cp ./originalimages/favicon.ico "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/favicon.ico"
+	  cp ./JFTool-10.5.x/originalimages/*.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
+	  cp ./JFTool-10.5.x/originalimages/*.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/"
+	  cp ./JFTool-10.5.x/originalimages/*.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/img/"
+	  cp ./JFTool-10.5.x/originalimages/favicon.ico "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/favicon.ico"
 	  ;; 
 	"Add snow animation")
-      cp ./animation/videoosd104.css.fix "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/css/videoosd.css"
-	  cp ./animation/videoosd.css.fix "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/css/videoosd.css"
-	  cp ./animation/stylefix.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/htmlvideoplayer/style.css"	
-	  cp ./animation/snow.html "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/index.html"
+      cp ./JFTool-10.5.x/animation/videoosd104.css.fix "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/css/videoosd.css"
+	  cp ./JFTool-10.5.x/animation/videoosd.css.fix "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/css/videoosd.css"
+	  cp ./JFTool-10.5.x/animation/stylefix.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/htmlvideoplayer/style.css"	
+	  cp ./JFTool-10.5.x/animation/snow.html "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/index.html"
 	  echo "Added snow (note you may have to change your page title again from 'Jellyfin')"
 	  ;;
 	"Add Heart animation")
-      cp ./animation/videoosd104.css.fix "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/css/videoosd.css"
-	  cp ./animation/videoosd.css.fix "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/css/videoosd.css"
-	  cp ./animation/stylefix.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/htmlvideoplayer/style.css"
-	  cp ./animation/valentines.html "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/index.html"
+      cp ./JFTool-10.5.x/animation/videoosd104.css.fix "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/css/videoosd.css"
+	  cp ./JFTool-10.5.x/animation/videoosd.css.fix "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/css/videoosd.css"
+	  cp ./JFTool-10.5.x/animation/stylefix.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/htmlvideoplayer/style.css"
+	  cp ./JFTool-10.5.x/animation/valentines.html "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/index.html"
 	  echo "Added hearts (note you may have to change your page title again from 'Jellyfin')"
 	  ;;
 	"Add Halloween animation")
-      cp ./animation/videoosd104.css.fix "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/css/videoosd.css"
-	  cp ./animation/stylefix.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/htmlvideoplayer/style.css"	
-	  cp ./animation/videoosd.css.fix "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/css/videoosd.css"
-	  cp ./animation/halloween.html "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/index.html"
-	  cp ./animation/ghost_20x20.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
-	  cp ./animation/bat_20x20.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
-  	  cp ./animation/pumpkin_20x20.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
+      cp ./JFTool-10.5.x/animation/videoosd104.css.fix "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/css/videoosd.css"
+	  cp ./JFTool-10.5.x/animation/stylefix.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/htmlvideoplayer/style.css"	
+	  cp ./JFTool-10.5.x/animation/videoosd.css.fix "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/css/videoosd.css"
+	  cp ./JFTool-10.5.x/animation/halloween.html "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/index.html"
+	  cp ./JFTool-10.5.x/animation/ghost_20x20.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
+	  cp ./JFTool-10.5.x/animation/bat_20x20.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
+  	  cp ./JFTool-10.5.x/animation/pumpkin_20x20.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
   	  echo "Added Halloween animations (note you may have to change your page title again from 'Jellyfin')"
 	  ;;
 	"Add Fireworks")
-	  cp ./animation/stylefix.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/htmlvideoplayer/style.css"	
-	  cp ./animation/videoosd.css.fix "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/css/videoosd.css"
-      cp ./animation/fireworks.html "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/index.html"
-      cp ./animation/fireworks.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/fireworks.css"
-      cp ./animation/sitefix10.4.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/css/site.css"
-      cp ./animation/sitefix10.5.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/css/site.css"
+	  cp ./JFTool-10.5.x/animation/stylefix.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/htmlvideoplayer/style.css"	
+	  cp ./JFTool-10.5.x/animation/videoosd.css.fix "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/css/videoosd.css"
+      cp ./JFTool-10.5.x/animation/fireworks.html "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/index.html"
+      cp ./JFTool-10.5.x/animation/fireworks.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/fireworks.css"
+      cp ./JFTool-10.5.x/animation/sitefix10.4.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/css/site.css"
+      cp ./JFTool-10.5.x/animation/sitefix10.5.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/css/site.css"
       echo "Added fireworks (note you may have to change your page title again from 'Jellyfin')"
       ;;
     "Add Pattys day")
-      cp ./animation/videoosd104.css.fix "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/css/videoosd.css"
-	  cp ./animation/stylefix.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/htmlvideoplayer/style.css"
-	  cp ./animation/videoosd.css.fix "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/css/videoosd.css"
-      cp ./animation/pattysday.html "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/index.html"
-	  cp ./animation/lep_30x30.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
-  	  cp ./animation/clover_20x20.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
+      cp ./JFTool-10.5.x/animation/videoosd104.css.fix "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/css/videoosd.css"
+	  cp ./JFTool-10.5.x/animation/stylefix.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/htmlvideoplayer/style.css"
+	  cp ./JFTool-10.5.x/animation/videoosd.css.fix "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/css/videoosd.css"
+      cp ./JFTool-10.5.x/animation/pattysday.html "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/index.html"
+	  cp ./JFTool-10.5.x/animation/lep_30x30.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
+  	  cp ./JFTool-10.5.x/animation/clover_20x20.png "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
       echo "Added Pattys day (note you may have to change your page title again from 'Jellyfin')"
       ;;
 	"Remove Animations")
-	  cp ./animation/videoosd104.css.original "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/css/videoosd.css"
-	  cp ./animation/videoosd.css.original "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/css/videoosd.css"
-	  cp ./animation/stylestock.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/htmlvideoplayer/style.css"
-	  cp ./animation/stockify.html "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/index.html"
+	  cp ./JFTool-10.5.x/animation/videoosd104.css.original "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/css/videoosd.css"
+	  cp ./JFTool-10.5.x/animation/videoosd.css.original "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/assets/css/videoosd.css"
+	  cp ./JFTool-10.5.x/animation/stylestock.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/htmlvideoplayer/style.css"
+	  cp ./JFTool-10.5.x/animation/stockify.html "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/index.html"
 	  echo "Removed animations (note you may have to change your page title again)"
 	  ;;
 	"Remove logo above login")
@@ -218,7 +218,7 @@ do
       ;;
         "CSS injection fix")
           mv "/cygdrive/c/ProgramData/Jellyfin/Server/config/branding.xml" "/cygdrive/c/ProgramData/Jellyfin/Server/config/branding.originalxml"
-          cp ./css/brandingfix.xml "/cygdrive/c/ProgramData/Jellyfin/Server/config/branding.xml"
+          cp ./JFTool-10.5.x/css/brandingfix.xml "/cygdrive/c/ProgramData/Jellyfin/Server/config/branding.xml"
           ;;
         "CSS Invisible background on top bar")
           sed -i '/<CustomCss>/a div.skinHeader-withBackground {background-color: #10101000;} !important' "/cygdrive/c/ProgramData/Jellyfin/Server/config/branding.xml"
@@ -239,34 +239,34 @@ do
           echo "also putting that side bar on a diet"
           echo "backing up your original dark theme"
           cp "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/dark/theme.css" ./darktheme.css.backup
-          cp ./themes/darktoclear/theme.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/dark/theme.css"
+          cp ./JFTool-10.5.x/themes/darktoclear/theme.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/dark/theme.css"
 	  cp "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/themes/dark/theme.css" ./darktheme.css.backup
-	  cp ./themes/darktoclear/theme10.5.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/themes/dark/theme.css"
+	  cp ./JFTool-10.5.x/themes/darktoclear/theme10.5.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/themes/dark/theme.css"
           ;;
 	"Change clear theme back to dark")
 	  echo "Changing clear theme back to dark"
-	  cp ./themes/dark/theme10.5.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/themes/dark/"
-	  cp ./themes/dark/theme.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/dark/"
+	  cp ./JFTool-10.5.x/themes/dark/theme10.5.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/themes/dark/"
+	  cp ./JFTool-10.5.x/themes/dark/theme.css "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/themes/dark/"
 	  ;;
 	 "10.4 Change scenes to ExtraFanart")
 	  echo "This changes the Scenes in the item page to show extrafanart when clicked these also open a new window to show full size image"
-      cp ./mods/10.4/extrafanart/itemdetailpage.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/"
-      cp ./mods/10.4/extrafanart/itemdetails.html "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
+      cp ./JFTool-10.5.x/mods/10.4/extrafanart/itemdetailpage.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/"
+      cp ./JFTool-10.5.x/mods/10.4/extrafanart/itemdetails.html "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
 	  ;;
 	"10.4 Change ExtraFanart back to scenes")
       echo "Changing the itemdetails page back to normal before we touched it"
-      cp ./mods/10.4/stock/itemdetailpage.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/"
-      cp ./mods/10.4/stock/itemdetails.html "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
+      cp ./JFTool-10.5.x/mods/10.4/stock/itemdetailpage.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/"
+      cp ./JFTool-10.5.x/mods/10.4/stock/itemdetails.html "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
 	  ;;
 	"10.5 Change scenes to ExtraFanart")
 	  echo "This changes the Scenes in the item page to show extrafanart when clicked these also open a new window to show full size image"
-      cp ./mods/10.5/extrafanart/itemdetailpage.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/"
-      cp ./mods/10.5/extrafanart/itemdetails.html "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
+      cp ./JFTool-10.5.x/mods/10.5/extrafanart/itemdetailpage.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/"
+      cp ./JFTool-10.5.x/mods/10.5/extrafanart/itemdetails.html "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
 	  ;;
 	"10.5 Change ExtraFanart back to scenes")
       echo "Changing the itemdetails page back to normal before we touched it"
-      cp ./mods/10.5/stock/itemdetails.html "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
-      cp ./mods/10.5/stock/itemdetailpage.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/"
+      cp ./JFTool-10.5.x/mods/10.5/stock/itemdetails.html "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/"
+      cp ./JFTool-10.5.x/mods/10.5/stock/itemdetailpage.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/"
 	  ;; 
 	"Force Backdrops")
 	echo ""
@@ -275,8 +275,8 @@ do
 	echo "Now for this to take effect you have to clear the cache on your browser (or your client will have to) or just wait for your cache"
 	echo "to clear itself and reload the .js file we will load in"
 	echo ""
-	cp ./mods/10.4/forcebackdrops.10.4.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/usersettings/usersettingsbuilder.js"
-    cp ./mods/10.5/forcedbackdrops.10.5.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/settings/userSettingsBuilder.js"
+	cp ./JFTool-10.5.x/mods/10.4/forcebackdrops.10.4.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/usersettings/usersettingsbuilder.js"
+    cp ./JFTool-10.5.x/mods/10.5/forcedbackdrops.10.5.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/settings/userSettingsBuilder.js"
 	;;
 	"Remove Forced Backdrops")
     echo ""
@@ -285,8 +285,8 @@ do
 	echo "Now for this to take effect you have to clear the cache on your browser (or your client will have to) or just wait for your cache"
 	echo "to clear itself and reload the .js file we will load in"
 	echo ""
-	cp ./mods/10.4/usersettingsbuilder.10.4.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/usersettings/usersettingsbuilder.js"
-    cp ./mods/10.5/userSettingsBuilder.10.5.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/settings/userSettingsBuilder.js"
+	cp ./JFTool-10.5.x/mods/10.4/usersettingsbuilder.10.4.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/components/usersettings/usersettingsbuilder.js"
+    cp ./JFTool-10.5.x/mods/10.5/userSettingsBuilder.10.5.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/scripts/settings/userSettingsBuilder.js"
 	;;
 	"10.4 Change Trailer Tab To Requests")
 	echo ""
@@ -294,7 +294,7 @@ do
 	echo "their reverse proxy settings to allow x-frames from other sources if not on the same domain"
 	echo ""
 	echo "now we will copy the files"
-	cp ./mods/10.4/trailertab/*.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/movies/"
+	cp ./JFTool-10.5.x/mods/10.4/trailertab/*.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/movies/"
 	echo "finished copying files"
 	echo ""
 	echo "Please Input the URL of your ombi install (e.g. domain.com/ombi WITHOUT https:// or http://) :"
@@ -310,8 +310,8 @@ do
 	echo ""
 	echo "This will restore the stock files for movietrailers.js and moviesrecommended.js making the tab go to the trailers plugin"
 	echo ""
-	cp ./mods/10.4/stock/moviesrecommended.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/movies/"
-	cp ./mods/10.4/stock/movietrailers.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/movies/"
+	cp ./JFTool-10.5.x/mods/10.4/stock/moviesrecommended.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/movies/"
+	cp ./JFTool-10.5.x/mods/10.4/stock/movietrailers.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/movies/"
 	;;
 	"10.5 Change Trailer Tab To Requests")
 	echo ""
@@ -319,7 +319,7 @@ do
 	echo "their reverse proxy settings to allow x-frames from other sources if not on the same domain"
 	echo ""
 	echo "now we will copy the files"
-	cp ./mods/10.5/trailertab/*.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/movies/"
+	cp ./JFTool-10.5.x/mods/10.5/trailertab/*.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/movies/"
 	echo "finished copying files"
 	echo ""
 	echo "Please Input the URL of your ombi install (e.g. domain.com/ombi WITHOUT https:// or http://) :"
@@ -335,8 +335,8 @@ do
 	echo ""
 	echo "This will restore the stock files for movietrailers.js and moviesrecommended.js making the tab go to the trailers plugin"
 	echo ""
-	cp ./mods/10.5/stock/moviesrecommended.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/movies/"
-	cp ./mods/10.5/stock/movietrailers.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/movies/"
+	cp ./JFTool-10.5.x/mods/10.5/stock/moviesrecommended.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/movies/"
+	cp ./JFTool-10.5.x/mods/10.5/stock/movietrailers.js "/cygdrive/c/Program Files/Jellyfin/Server/jellyfin-web/controllers/movies/"
 	;;
  	"Quit")
 	  break

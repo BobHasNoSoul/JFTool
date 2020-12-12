@@ -26,7 +26,7 @@ do
 	
 	"Logo in sidebar")
 	  echo "Adding logo to the side bar"
-	  sudo cp ./modded/side-menu/libraryMenu0linksjusticon.js ${HOME}/Docker/main.bundle.js
+	  sudo cp ./JFTool-10.7.x/modded/side-menu/libraryMenu0linksjusticon.js ${HOME}/Docker/main.bundle.js
 	  ;;
     "One custom link in side bar")
 	  echo ""
@@ -38,7 +38,7 @@ do
 	  echo "Link name? (e.g. Request TV Shows and Movies)"
 	  read customlinkname1
 	  echo ""
-	  sudo cp ./modded/side-menu/libraryMenu1link.js ${HOME}/Docker/main.bundle.js
+	  sudo cp ./JFTool-10.7.x/modded/side-menu/libraryMenu1link.js ${HOME}/Docker/main.bundle.js
 	  sudo sed -i "s~TOPLINKHERE~$customlink1~g" ${HOME}/Docker/main.bundle.js
       sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" ${HOME}/Docker/main.bundle.js
       sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" ${HOME}/Docker/main.bundle.js
@@ -61,7 +61,7 @@ do
 	  read customlinkicon2
 	  echo "Link name:"
 	  read customlinkname2
-	  sudo cp ./modded/side-menu/libraryMenu2links.js ${HOME}/Docker/main.bundle.js
+	  sudo cp ./JFTool-10.7.x/modded/side-menu/libraryMenu2links.js ${HOME}/Docker/main.bundle.js
 	  sudo sed -i "s~TOPLINKHERE~$customlink1~g" ${HOME}/Docker/main.bundle.js
       sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" ${HOME}/Docker/main.bundle.js
       sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" ${HOME}/Docker/main.bundle.js
@@ -95,7 +95,7 @@ do
 	  read customlinkicon3
 	  echo "Link name:"
 	  read customlinkname3
-	  sudo cp ./modded/side-menu/libraryMenu3links.js ${HOME}/Docker/main.bundle.js
+	  sudo cp ./JFTool-10.7.x/modded/side-menu/libraryMenu3links.js ${HOME}/Docker/main.bundle.js
 	  sudo sed -i "s~TOPLINKHERE~$customlink1~g" ${HOME}/Docker/main.bundle.js
       sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" ${HOME}/Docker/main.bundle.js
       sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" ${HOME}/Docker/main.bundle.js
@@ -141,7 +141,7 @@ do
 	  echo "Link name:"
 	  read customlinkname4
 	  echo ""
-	  sudo cp ./modded/side-menu/libraryMenu4links.js ${HOME}/Docker/main.bundle.js
+	  sudo cp ./JFTool-10.7.x/modded/side-menu/libraryMenu4links.js ${HOME}/Docker/main.bundle.js
 	  sudo sed -i "s~TOPLINKHERE~$customlink1~g" ${HOME}/Docker/main.bundle.js
       sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" ${HOME}/Docker/main.bundle.js
       sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" ${HOME}/Docker/main.bundle.js
@@ -165,7 +165,7 @@ do
 	  echo "Link name? (e.g. Request TV Shows and Movies)"
 	  read customlinkname1
       echo ""
-	  sudo cp ./modded/side-menu/libraryMenu1linksandicon.js ${HOME}/Docker/main.bundle.js
+	  sudo cp ./JFTool-10.7.x/modded/side-menu/libraryMenu1linksandicon.js ${HOME}/Docker/main.bundle.js
 	  sudo sed -i "s~TOPLINKHERE~$customlink1~g" ${HOME}/Docker/main.bundle.js
       sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" ${HOME}/Docker/main.bundle.js
       sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" ${HOME}/Docker/main.bundle.js
@@ -189,7 +189,7 @@ do
 	  echo "Link name:"
 	  read customlinkname2
 	  echo ""
-	  sudo cp ./modded/side-menu/libraryMenu2linksandicon.js ${HOME}/Docker/main.bundle.js
+	  sudo cp ./JFTool-10.7.x/modded/side-menu/libraryMenu2linksandicon.js ${HOME}/Docker/main.bundle.js
 	  sudo sed -i "s~TOPLINKHERE~$customlink1~g" ${HOME}/Docker/main.bundle.js
       sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" ${HOME}/Docker/main.bundle.js
       sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" ${HOME}/Docker/main.bundle.js
@@ -224,7 +224,7 @@ do
 	  echo "Link name:"
 	  read customlinkname3
 	  echo ""
-	  sudo cp ./modded/side-menu/libraryMenu3linksandicon.js ${HOME}/Docker/main.bundle.js
+	  sudo cp ./JFTool-10.7.x/modded/side-menu/libraryMenu3linksandicon.js ${HOME}/Docker/main.bundle.js
 	  sudo sed -i "s~TOPLINKHERE~$customlink1~g" ${HOME}/Docker/main.bundle.js
       sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" ${HOME}/Docker/main.bundle.js
       sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" ${HOME}/Docker/main.bundle.js
@@ -270,7 +270,7 @@ do
 	  echo "Link name:"
 	  read customlinkname4
 	  echo ""
-	  sudo cp ./modded/side-menu/libraryMenu4linksandicon.js ${HOME}/Docker/main.bundle.js
+	  sudo cp ./JFTool-10.7.x/modded/side-menu/libraryMenu4linksandicon.js ${HOME}/Docker/main.bundle.js
 	  sudo sed -i "s~TOPLINKHERE~$customlink1~g" ${HOME}/Docker/main.bundle.js
       sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" ${HOME}/Docker/main.bundle.js
       sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" ${HOME}/Docker/main.bundle.js
@@ -298,24 +298,24 @@ do
 	  ;;
 	"Change Icons")
 	  echo "favicon.png"
-	  sudo cp ./images/favicon.png ${HOME}/Docker/
-	  sudo cp ./images/favicon.png ${HOME}/Docker/assets/img/icon-transparent.png
+	  sudo cp ./JFTool-10.7.x/images/favicon.png ${HOME}/Docker/
+	  sudo cp ./JFTool-10.7.x/images/favicon.png ${HOME}/Docker/assets/img/icon-transparent.png
 	  echo "logodark.png"
-	  sudo cp ./images/logodark.png ${HOME}/Docker/assets/img/banner-dark.png
-	  sudo cp ./images/logodark.png ${HOME}/Docker/assets/img/icon-transparent.png
+	  sudo cp ./JFTool-10.7.x/images/logodark.png ${HOME}/Docker/assets/img/banner-dark.png
+	  sudo cp ./JFTool-10.7.x/images/logodark.png ${HOME}/Docker/assets/img/icon-transparent.png
 	  echo "logowhite.png"
-	  sudo cp ./images/logowhite.png ${HOME}/Docker/assets/img/banner-light.png
+	  sudo cp ./JFTool-10.7.x/images/logowhite.png ${HOME}/Docker/assets/img/banner-light.png
 	  echo "favicon.ico"
-	  sudo cp ./images/favicon.ico ${HOME}/Docker/
+	  sudo cp ./JFTool-10.7.x/images/favicon.ico ${HOME}/Docker/
 	  ;;
    "add Dynamic login background")
 	echo ""
 	echo "This will make your background on the login page change between 6 pictures in the" 
-	echo "${HOME}/Docker/fanart/ dir and it will be a random one on each reload"
+	echo "${HOME}/Docker/JFTool-10.7.x/fanart/ dir and it will be a random one on each reload"
   	echo ""
 	echo "copying files now"
 	echo ""
-	sudo cp -r ./fanart ${HOME}/Docker/fanart
+	sudo cp -r ./JFTool-10.7.x/fanart ${HOME}/Docker/fanart
 	echo "injecting the cssbuster.js"
     loginbackjs='</script><script src="fanart/cssbuster.js"></script>'
     scriptkey="</script>"

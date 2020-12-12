@@ -25,7 +25,7 @@ do
 	
 	"Logo in sidebar")
 	  echo "Adding logo to the side bar"
-	  sudo cp ./modded/side-menu/libraryMenu0linksjusticon.js /usr/share/jellyfin/web/scripts/libraryMenu.js
+	  sudo cp ./JFTool-10.6.x/JFTool-10.6.x/modded/side-menu/libraryMenu0linksjusticon.js /usr/share/jellyfin/web/scripts/libraryMenu.js
 	  ;;
     "One custom link in side bar")
 	  echo ""
@@ -37,7 +37,7 @@ do
 	  echo "Link name? (e.g. Request TV Shows and Movies)"
 	  read customlinkname1
 	  echo ""
-	  sudo cp ./modded/side-menu/libraryMenu1link.js /usr/share/jellyfin/web/scripts/libraryMenu.js
+	  sudo cp ./JFTool-10.6.x/modded/side-menu/libraryMenu1link.js /usr/share/jellyfin/web/scripts/libraryMenu.js
 	  sudo sed -i "s~TOPLINKHERE~$customlink1~g" /usr/share/jellyfin/web/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" /usr/share/jellyfin/web/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" /usr/share/jellyfin/web/scripts/libraryMenu.js
@@ -60,7 +60,7 @@ do
 	  read customlinkicon2
 	  echo "Link name:"
 	  read customlinkname2
-	  sudo cp ./modded/side-menu/libraryMenu2links.js /usr/share/jellyfin/web/scripts/libraryMenu.js
+	  sudo cp ./JFTool-10.6.x/modded/side-menu/libraryMenu2links.js /usr/share/jellyfin/web/scripts/libraryMenu.js
 	  sudo sed -i "s~TOPLINKHERE~$customlink1~g" /usr/share/jellyfin/web/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" /usr/share/jellyfin/web/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" /usr/share/jellyfin/web/scripts/libraryMenu.js
@@ -94,7 +94,7 @@ do
 	  read customlinkicon3
 	  echo "Link name:"
 	  read customlinkname3
-	  sudo cp ./modded/side-menu/libraryMenu3links.js /usr/share/jellyfin/web/scripts/libraryMenu.js
+	  sudo cp ./JFTool-10.6.x/modded/side-menu/libraryMenu3links.js /usr/share/jellyfin/web/scripts/libraryMenu.js
 	  sudo sed -i "s~TOPLINKHERE~$customlink1~g" /usr/share/jellyfin/web/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" /usr/share/jellyfin/web/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" /usr/share/jellyfin/web/scripts/libraryMenu.js
@@ -140,7 +140,7 @@ do
 	  echo "Link name:"
 	  read customlinkname4
 	  echo ""
-	  sudo cp ./modded/side-menu/libraryMenu4links.js /usr/share/jellyfin/web/scripts/libraryMenu.js
+	  sudo cp ./JFTool-10.6.x/modded/side-menu/libraryMenu4links.js /usr/share/jellyfin/web/scripts/libraryMenu.js
 	  sudo sed -i "s~TOPLINKHERE~$customlink1~g" /usr/share/jellyfin/web/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" /usr/share/jellyfin/web/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" /usr/share/jellyfin/web/scripts/libraryMenu.js
@@ -164,7 +164,7 @@ do
 	  echo "Link name? (e.g. Request TV Shows and Movies)"
 	  read customlinkname1
       echo ""
-	  sudo cp ./modded/side-menu/libraryMenu1linksandicon.js /usr/share/jellyfin/web/scripts/libraryMenu.js
+	  sudo cp ./JFTool-10.6.x/modded/side-menu/libraryMenu1linksandicon.js /usr/share/jellyfin/web/scripts/libraryMenu.js
 	  sudo sed -i "s~TOPLINKHERE~$customlink1~g" /usr/share/jellyfin/web/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" /usr/share/jellyfin/web/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" /usr/share/jellyfin/web/scripts/libraryMenu.js
@@ -188,7 +188,7 @@ do
 	  echo "Link name:"
 	  read customlinkname2
 	  echo ""
-	  sudo cp ./modded/side-menu/libraryMenu2linksandicon.js /usr/share/jellyfin/web/scripts/libraryMenu.js
+	  sudo cp ./JFTool-10.6.x/modded/side-menu/libraryMenu2linksandicon.js /usr/share/jellyfin/web/scripts/libraryMenu.js
 	  sudo sed -i "s~TOPLINKHERE~$customlink1~g" /usr/share/jellyfin/web/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" /usr/share/jellyfin/web/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" /usr/share/jellyfin/web/scripts/libraryMenu.js
@@ -223,7 +223,7 @@ do
 	  echo "Link name:"
 	  read customlinkname3
 	  echo ""
-	  sudo cp ./modded/side-menu/libraryMenu3linksandicon.js /usr/share/jellyfin/web/scripts/libraryMenu.js
+	  sudo cp ./JFTool-10.6.x/modded/side-menu/libraryMenu3linksandicon.js /usr/share/jellyfin/web/scripts/libraryMenu.js
 	  sudo sed -i "s~TOPLINKHERE~$customlink1~g" /usr/share/jellyfin/web/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" /usr/share/jellyfin/web/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" /usr/share/jellyfin/web/scripts/libraryMenu.js
@@ -269,7 +269,7 @@ do
 	  echo "Link name:"
 	  read customlinkname4
 	  echo ""
-	  sudo cp ./modded/side-menu/libraryMenu4linksandicon.js /usr/share/jellyfin/web/scripts/libraryMenu.js
+	  sudo cp ./JFTool-10.6.x/modded/side-menu/libraryMenu4linksandicon.js /usr/share/jellyfin/web/scripts/libraryMenu.js
 	  sudo sed -i "s~TOPLINKHERE~$customlink1~g" /usr/share/jellyfin/web/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKICONHERE~$customlinkicon1~g" /usr/share/jellyfin/web/scripts/libraryMenu.js
       sudo sed -i "s~TOPLINKNAMEHERE~$customlinkname1~g" /usr/share/jellyfin/web/scripts/libraryMenu.js
@@ -299,79 +299,79 @@ do
 	"Change Icons")
 	  echo "This has errors, these errors are normal, ignore these apparently there is a difference in version 10.6.0 and 10.6.3"
 	  echo "favicon.png"
-	  sudo cp ./images/favicon.png /usr/share/jellyfin/web/
-	  sudo cp ./images/favicon.png /usr/share/jellyfin/web/components/themes/
-	  sudo cp ./images/favicon.png /usr/share/jellyfin/web/themes/
-	  sudo cp ./images/favicon.png /usr/share/jellyfin/web/assets/img/icon-transparent.png
+	  sudo cp ./JFTool-10.6.x/images/favicon.png /usr/share/jellyfin/web/
+	  sudo cp ./JFTool-10.6.x/images/favicon.png /usr/share/jellyfin/web/components/themes/
+	  sudo cp ./JFTool-10.6.x/images/favicon.png /usr/share/jellyfin/web/themes/
+	  sudo cp ./JFTool-10.6.x/images/favicon.png /usr/share/jellyfin/web/assets/img/icon-transparent.png
 	  echo "favicon180.png"
-	  sudo cp ./images/favicon180.png /usr/share/jellyfin/web/
-	  sudo cp ./images/favicon180.png /usr/share/jellyfin/web/components/themes/
-	  sudo cp ./images/favicon180.png /usr/share/jellyfin/web/themes/
-	  sudo cp ./images/favicon180.png /usr/share/jellyfin/web/assets/img/
+	  sudo cp ./JFTool-10.6.x/images/favicon180.png /usr/share/jellyfin/web/
+	  sudo cp ./JFTool-10.6.x/images/favicon180.png /usr/share/jellyfin/web/components/themes/
+	  sudo cp ./JFTool-10.6.x/images/favicon180.png /usr/share/jellyfin/web/themes/
+	  sudo cp ./JFTool-10.6.x/images/favicon180.png /usr/share/jellyfin/web/assets/img/
 	  echo "logodark.png"
-	  sudo cp ./images/logodark.png /usr/share/jellyfin/web/
-	  sudo cp ./images/logodark.png /usr/share/jellyfin/web/components/themes/
-	  sudo cp ./images/logodark.png /usr/share/jellyfin/web/themes/
-	  sudo cp ./images/logodark.png /usr/share/jellyfin/web/assets/img/banner-dark.png
-	  sudo cp ./images/logodark.png /usr/share/jellyfin/web/assets/img/icon-transparent.png
-	  sudo cp ./images/logodark.png /usr/share/jellyfin/web/assets/img/touchicon.png
-	  sudo cp ./images/logodark.png /usr/share/jellyfin/web/assets/img/touchicon.png
-	  sudo cp ./images/logodark.png /usr/share/jellyfin/web/assets/img/touchicon72.png
-	  sudo cp ./images/logodark.png /usr/share/jellyfin/web/assets/img/touchicon114.png
-	  sudo cp ./images/logodark.png /usr/share/jellyfin/web/assets/img/touchicon144.png
-	  sudo cp ./images/logodark.png /usr/share/jellyfin/web/assets/img/touchicon512.png
-	  sudo cp ./images/logodark.png /usr/share/jellyfin/web/assets/img/banner-dark.png
-	  sudo cp ./images/logodark.png /usr/share/jellyfin/web/themes/banner-dark.png
+	  sudo cp ./JFTool-10.6.x/images/logodark.png /usr/share/jellyfin/web/
+	  sudo cp ./JFTool-10.6.x/images/logodark.png /usr/share/jellyfin/web/components/themes/
+	  sudo cp ./JFTool-10.6.x/images/logodark.png /usr/share/jellyfin/web/themes/
+	  sudo cp ./JFTool-10.6.x/images/logodark.png /usr/share/jellyfin/web/assets/img/banner-dark.png
+	  sudo cp ./JFTool-10.6.x/images/logodark.png /usr/share/jellyfin/web/assets/img/icon-transparent.png
+	  sudo cp ./JFTool-10.6.x/images/logodark.png /usr/share/jellyfin/web/assets/img/touchicon.png
+	  sudo cp ./JFTool-10.6.x/images/logodark.png /usr/share/jellyfin/web/assets/img/touchicon.png
+	  sudo cp ./JFTool-10.6.x/images/logodark.png /usr/share/jellyfin/web/assets/img/touchicon72.png
+	  sudo cp ./JFTool-10.6.x/images/logodark.png /usr/share/jellyfin/web/assets/img/touchicon114.png
+	  sudo cp ./JFTool-10.6.x/images/logodark.png /usr/share/jellyfin/web/assets/img/touchicon144.png
+	  sudo cp ./JFTool-10.6.x/images/logodark.png /usr/share/jellyfin/web/assets/img/touchicon512.png
+	  sudo cp ./JFTool-10.6.x/images/logodark.png /usr/share/jellyfin/web/assets/img/banner-dark.png
+	  sudo cp ./JFTool-10.6.x/images/logodark.png /usr/share/jellyfin/web/themes/banner-dark.png
 	  echo "logowhite.png"
-	  sudo cp ./images/logowhite.png /usr/share/jellyfin/web/themes/banner-light.png
-	  sudo cp ./images/logowhite.png /usr/share/jellyfin/web/components/themes/
-	  sudo cp ./images/logowhite.png /usr/share/jellyfin/web/themes/
-	  sudo cp ./images/logowhite.png /usr/share/jellyfin/web/
-	  sudo cp ./images/logowhite.png /usr/share/jellyfin/web/assets/img/banner-light.png
+	  sudo cp ./JFTool-10.6.x/images/logowhite.png /usr/share/jellyfin/web/themes/banner-light.png
+	  sudo cp ./JFTool-10.6.x/images/logowhite.png /usr/share/jellyfin/web/components/themes/
+	  sudo cp ./JFTool-10.6.x/images/logowhite.png /usr/share/jellyfin/web/themes/
+	  sudo cp ./JFTool-10.6.x/images/logowhite.png /usr/share/jellyfin/web/
+	  sudo cp ./JFTool-10.6.x/images/logowhite.png /usr/share/jellyfin/web/assets/img/banner-light.png
 	  echo "touchicon.png"
-	  sudo cp ./images/touchicon.png /usr/share/jellyfin/web/themes/icon-transparent.png
-	  sudo cp ./images/touchicon.png /usr/share/jellyfin/web/components/themes/
-	  sudo cp ./images/touchicon.png /usr/share/jellyfin/web/themes/
-	  sudo cp ./images/touchicon.png /usr/share/jellyfin/web/
-	  sudo cp ./images/touchicon.png /usr/share/jellyfin/web/assets/img/
+	  sudo cp ./JFTool-10.6.x/images/touchicon.png /usr/share/jellyfin/web/themes/icon-transparent.png
+	  sudo cp ./JFTool-10.6.x/images/touchicon.png /usr/share/jellyfin/web/components/themes/
+	  sudo cp ./JFTool-10.6.x/images/touchicon.png /usr/share/jellyfin/web/themes/
+	  sudo cp ./JFTool-10.6.x/images/touchicon.png /usr/share/jellyfin/web/
+	  sudo cp ./JFTool-10.6.x/images/touchicon.png /usr/share/jellyfin/web/assets/img/
 	  echo "touchicon72.png"
-	  sudo cp ./images/touchicon72.png /usr/share/jellyfin/web/components/themes/
-	  sudo cp ./images/touchicon72.png /usr/share/jellyfin/web/themes/
-	  sudo cp ./images/touchicon72.png /usr/share/jellyfin/web/
-	  sudo cp ./images/touchicon72.png /usr/share/jellyfin/web/assets/img/
+	  sudo cp ./JFTool-10.6.x/images/touchicon72.png /usr/share/jellyfin/web/components/themes/
+	  sudo cp ./JFTool-10.6.x/images/touchicon72.png /usr/share/jellyfin/web/themes/
+	  sudo cp ./JFTool-10.6.x/images/touchicon72.png /usr/share/jellyfin/web/
+	  sudo cp ./JFTool-10.6.x/images/touchicon72.png /usr/share/jellyfin/web/assets/img/
 	  echo "touchicon114.png"
-	  sudo cp ./images/touchicon114.png /usr/share/jellyfin/web/components/themes/
-	  sudo cp ./images/touchicon114.png /usr/share/jellyfin/web/themes/
-	  sudo cp ./images/touchicon114.png /usr/share/jellyfin/web/
-	  sudo cp ./images/touchicon114.png /usr/share/jellyfin/web/assets/img/
+	  sudo cp ./JFTool-10.6.x/images/touchicon114.png /usr/share/jellyfin/web/components/themes/
+	  sudo cp ./JFTool-10.6.x/images/touchicon114.png /usr/share/jellyfin/web/themes/
+	  sudo cp ./JFTool-10.6.x/images/touchicon114.png /usr/share/jellyfin/web/
+	  sudo cp ./JFTool-10.6.x/images/touchicon114.png /usr/share/jellyfin/web/assets/img/
 	  echo "touchicon144.png"
-	  sudo cp ./images/touchicon144.png /usr/share/jellyfin/web/components/themes/
-	  sudo cp ./images/touchicon144.png /usr/share/jellyfin/web/themes/
-	  sudo cp ./images/touchicon144.png /usr/share/jellyfin/web/
-	  sudo cp ./images/touchicon144.png /usr/share/jellyfin/web/assets/img/
+	  sudo cp ./JFTool-10.6.x/images/touchicon144.png /usr/share/jellyfin/web/components/themes/
+	  sudo cp ./JFTool-10.6.x/images/touchicon144.png /usr/share/jellyfin/web/themes/
+	  sudo cp ./JFTool-10.6.x/images/touchicon144.png /usr/share/jellyfin/web/
+	  sudo cp ./JFTool-10.6.x/images/touchicon144.png /usr/share/jellyfin/web/assets/img/
 	  echo "touchicons512"
-	  sudo cp ./images/touchicon512.png /usr/share/jellyfin/web/components/themes/
-	  sudo cp ./images/touchicon512.png /usr/share/jellyfin/web/themes/
-	  sudo cp ./images/touchicon512.png /usr/share/jellyfin/web/
-	  sudo cp ./images/touchicon512.png /usr/share/jellyfin/web/assets/img/
+	  sudo cp ./JFTool-10.6.x/images/touchicon512.png /usr/share/jellyfin/web/components/themes/
+	  sudo cp ./JFTool-10.6.x/images/touchicon512.png /usr/share/jellyfin/web/themes/
+	  sudo cp ./JFTool-10.6.x/images/touchicon512.png /usr/share/jellyfin/web/
+	  sudo cp ./JFTool-10.6.x/images/touchicon512.png /usr/share/jellyfin/web/assets/img/
 	  echo "favicon.ico"
-	  sudo cp ./images/favicon.ico /usr/share/jellyfin/web/components/themes/
-	  sudo cp ./images/favicon.ico /usr/share/jellyfin/web/themes/
-	  sudo cp ./images/favicon.ico /usr/share/jellyfin/web/
-  	  sudo cp ./images/favicon.ico /usr/share/jellyfin/web/assets/img/
-      sudo cp ./images/favicon.ico /usr/share/jellyfin/web/assets/favicon.ico
-      sudo cp ./images/favicon.ico /usr/share/jellyfin/web/components/themes/favicon.ico
+	  sudo cp ./JFTool-10.6.x/images/favicon.ico /usr/share/jellyfin/web/components/themes/
+	  sudo cp ./JFTool-10.6.x/images/favicon.ico /usr/share/jellyfin/web/themes/
+	  sudo cp ./JFTool-10.6.x/images/favicon.ico /usr/share/jellyfin/web/
+  	  sudo cp ./JFTool-10.6.x/images/favicon.ico /usr/share/jellyfin/web/assets/img/
+      sudo cp ./JFTool-10.6.x/images/favicon.ico /usr/share/jellyfin/web/assets/favicon.ico
+      sudo cp ./JFTool-10.6.x/images/favicon.ico /usr/share/jellyfin/web/components/themes/favicon.ico
 	  ;;
 	"Add logo above login")
 	  echo "bleep bloop adding the logo"
-      sudo cp ./modded/login.html /usr/share/jellyfin/web/login.html
+      sudo cp ./JFTool-10.6.x/modded/login.html /usr/share/jellyfin/web/login.html
 	  ;;
 	 "Backup current icons")
-	  mkdir ./backedupimages
-	  sudo cp /usr/share/jellyfin/web/*.png ./backedupimages/
-	  sudo cp /usr/share/jellyfin/web/components/themes/*.png ./backedupimages/
-	  sudo cp /usr/share/jellyfin/web/assets/img/*.png ./backedupimages/
-	  sudo cp /usr/share/jellyfin/web/favicon.ico ./backedupimages/favicon.ico
+	  mkdir ./JFTool-10.6.x/backedupimages
+	  sudo cp /usr/share/jellyfin/web/*.png ./JFTool-10.6.x/backedupimages/
+	  sudo cp /usr/share/jellyfin/web/components/themes/*.png ./JFTool-10.6.x/backedupimages/
+	  sudo cp /usr/share/jellyfin/web/assets/img/*.png ./JFTool-10.6.x/backedupimages/
+	  sudo cp /usr/share/jellyfin/web/favicon.ico ./JFTool-10.6.x/backedupimages/favicon.ico
 	  echo "Done"
 	  ;;
 #	"Change to original jellyfin icons")
@@ -381,60 +381,60 @@ do
 #	  sudo cp ./originalimages/favicon.ico /usr/share/jellyfin/web/favicon.ico
 #	  ;; 
 	"Add snow animation")
-	   sudo cp ./animation/videoosd.css /usr/share/jellyfin/web/assets/css/videoosd.css
-	   sudo cp ./animation/style.css /usr/share/jellyfin/web/plugins/htmlVideoPlayer/style.css	
-	   sudo cp ./animation/snow.html /usr/share/jellyfin/web/index.html
+	   sudo cp ./JFTool-10.6.x/animation/videoosd.css /usr/share/jellyfin/web/assets/css/videoosd.css
+	   sudo cp ./JFTool-10.6.x/animation/style.css /usr/share/jellyfin/web/plugins/htmlVideoPlayer/style.css	
+	   sudo cp ./JFTool-10.6.x/animation/snow.html /usr/share/jellyfin/web/index.html
 	   echo "Added snow (note you may have to change your page title again from 'Jellyfin')"
 	   ;;
 	 "Add Heart animation")
-	   sudo cp ./animation/videoosd.css /usr/share/jellyfin/web/assets/css/videoosd.css
-	   sudo cp ./animation/style.css /usr/share/jellyfin/plugins/htmlVideoPlayer/style.css	
-	   sudo cp ./animation/valentines.html /usr/share/jellyfin/web/index.html
+	   sudo cp ./JFTool-10.6.x/animation/videoosd.css /usr/share/jellyfin/web/assets/css/videoosd.css
+	   sudo cp ./JFTool-10.6.x/animation/style.css /usr/share/jellyfin/plugins/htmlVideoPlayer/style.css	
+	   sudo cp ./JFTool-10.6.x/animation/valentines.html /usr/share/jellyfin/web/index.html
 	   echo "Added hearts (note you may have to change your page title again from 'Jellyfin')"
 	   ;;
 	 "Add Halloween animation")
-       sudo cp ./animation/videoosd.css /usr/share/jellyfin/web/css/videoosd.css
-	   sudo cp ./animation/style.css /usr/share/jellyfin/plugins/htmlVideoPlayer/style.css	
-	   sudo cp ./animation/halloween.html /usr/share/jellyfin/web/index.html
-	   sudo cp ./animation/ghost_20x20.png /usr/share/jellyfin/web/
-	   sudo cp ./animation/bat_20x20.png /usr/share/jellyfin/web/
-  	   sudo cp ./animation/pumpkin_20x20.png /usr/share/jellyfin/web/
+       sudo cp ./JFTool-10.6.x/animation/videoosd.css /usr/share/jellyfin/web/css/videoosd.css
+	   sudo cp ./JFTool-10.6.x/animation/style.css /usr/share/jellyfin/plugins/htmlVideoPlayer/style.css	
+	   sudo cp ./JFTool-10.6.x/animation/halloween.html /usr/share/jellyfin/web/index.html
+	   sudo cp ./JFTool-10.6.x/animation/ghost_20x20.png /usr/share/jellyfin/web/
+	   sudo cp ./JFTool-10.6.x/animation/bat_20x20.png /usr/share/jellyfin/web/
+  	   sudo cp ./JFTool-10.6.x/animation/pumpkin_20x20.png /usr/share/jellyfin/web/
   	   echo "Added Halloween animations (note you may have to change your page title again from 'Jellyfin')"
 	   ;;
 	 "Add Fireworks")
-	   sudo cp ./animation/style.css /usr/share/jellyfin/plugins/htmlVideoPlayer/style.css	
-	   sudo cp ./animation/videoosd.css /usr/share/jellyfin/web/assets/css/videoosd.css
-       sudo cp ./animation/fireworks.html /usr/share/jellyfin/web/index.html
-       sudo cp ./animation/fireworks.css /usr/share/jellyfin/web/fireworks.css
+	   sudo cp ./JFTool-10.6.x/animation/style.css /usr/share/jellyfin/plugins/htmlVideoPlayer/style.css	
+	   sudo cp ./JFTool-10.6.x/animation/videoosd.css /usr/share/jellyfin/web/assets/css/videoosd.css
+       sudo cp ./JFTool-10.6.x/animation/fireworks.html /usr/share/jellyfin/web/index.html
+       sudo cp ./JFTool-10.6.x/animation/fireworks.css /usr/share/jellyfin/web/fireworks.css
        echo "Added fireworks (note you may have to change your page title again from 'Jellyfin')"
        ;;
      "Add Pattys day")
-	   sudo cp ./animation/style.css /usr/share/jellyfin/plugins/htmlVideoPlayer/style.css	
-	   sudo cp ./animation/videoosd.css /usr/share/jellyfin/web/assets/css/videoosd.css
-       sudo cp ./animation/pattysday.html /usr/share/jellyfin/web/index.html
-	   sudo cp ./animation/lep_30x30.png /usr/share/jellyfin/web/
-  	   sudo cp ./animation/clover_20x20.png /usr/share/jellyfin/web/
+	   sudo cp ./JFTool-10.6.x/animation/style.css /usr/share/jellyfin/plugins/htmlVideoPlayer/style.css	
+	   sudo cp ./JFTool-10.6.x/animation/videoosd.css /usr/share/jellyfin/web/assets/css/videoosd.css
+       sudo cp ./JFTool-10.6.x/animation/pattysday.html /usr/share/jellyfin/web/index.html
+	   sudo cp ./JFTool-10.6.x/animation/lep_30x30.png /usr/share/jellyfin/web/
+  	   sudo cp ./JFTool-10.6.x/animation/clover_20x20.png /usr/share/jellyfin/web/
        echo "Added Pattys day (note you may have to change your page title again from 'Jellyfin')"
        ;;
 	 "Remove Animations")
-	   sudo cp ./stock/videoosd.css /usr/share/jellyfin/web/assets/css/videoosd.css
-	   sudo cp ./stock/htmlvideoplayer/style.css /usr/share/jellyfin/plugins/htmlVideoPlayer/style.css	
-	   sudo cp ./stock/index.html /usr/share/jellyfin/web/index.html
+	   sudo cp ./JFTool-10.6.x/stock/videoosd.css /usr/share/jellyfin/web/assets/css/videoosd.css
+	   sudo cp ./JFTool-10.6.x/stock/htmlvideoplayer/style.css /usr/share/jellyfin/plugins/htmlVideoPlayer/style.css	
+	   sudo cp ./JFTool-10.6.x/stock/index.html /usr/share/jellyfin/web/index.html
 	   echo "Removed animations (note you may have to change your page title again)"
 	   ;; 
 	"Remove logo above login")
 	  echo "bleep bloop Removing the logo"
-      sudo cp ./stock/login.html /usr/share/jellyfin/web/login.html
+      sudo cp ./JFTool-10.6.x/stock/login.html /usr/share/jellyfin/web/login.html
       ;;
 	"Change scenes to ExtraFanart")
 	  echo "This changes the Scenes in the item page to show extrafanart when clicked these also open a new window to show full size image"
-      sudo cp ./modded/extrafanart/index.js /usr/share/jellyfin/web/controllers/itemDetails/
-      sudo cp ./modded/extrafanart/index.html /usr/share/jellyfin/web/controllers/itemDetails/
+      sudo cp ./JFTool-10.6.x/modded/extrafanart/index.js /usr/share/jellyfin/web/controllers/itemDetails/
+      sudo cp ./JFTool-10.6.x/modded/extrafanart/index.html /usr/share/jellyfin/web/controllers/itemDetails/
 	  ;;
 	"Change ExtraFanart back to scenes")
       echo "Changing the itemdetails page back to normal before we touched it"
-      sudo cp ./stock/extrafanart/index.js /usr/share/jellyfin/web/controllers/itemDetails/
-      sudo cp ./stock/extrafanart/index.html /usr/share/jellyfin/web/controllers/itemDetails/
+      sudo cp ./JFTool-10.6.x/stock/extrafanart/index.js /usr/share/jellyfin/web/controllers/itemDetails/
+      sudo cp ./JFTool-10.6.x/stock/extrafanart/index.html /usr/share/jellyfin/web/controllers/itemDetails/
 	  ;;
 #	"Force Backdrops")
 #	echo ""
@@ -462,7 +462,7 @@ do
 	echo "their reverse proxy settings to allow x-frames from other sources if not on the same domain"
 	echo ""
 	echo "now we will copy the files"
-	sudo cp ./modded/movies/*.js /usr/share/jellyfin/web/controllers/movies/
+	sudo cp ./JFTool-10.6.x/modded/movies/*.js /usr/share/jellyfin/web/controllers/movies/
 	echo "finished copying files"
 	echo ""
 	echo "Please Input the URL of your ombi install (e.g. domain.com/ombi without https:// or http://) :"
@@ -478,31 +478,31 @@ do
 	echo ""
 	echo "This will restore the stock files for movietrailers.js and moviesrecommended.js making the tab go to the trailers plugin"
 	echo ""
-	sudo cp ./stock/moviesrecommended.js /usr/share/jellyfin/web/controllers/movies/
-	sudo cp ./stock/movietrailers.js /usr/share/jellyfin/web/controllers/movies/
+	sudo cp ./JFTool-10.6.x/stock/moviesrecommended.js /usr/share/jellyfin/web/controllers/movies/
+	sudo cp ./JFTool-10.6.x/stock/movietrailers.js /usr/share/jellyfin/web/controllers/movies/
 	;;
 	"Return to stock")
     echo ""
 	echo "This makes your mods go back to stock, incase something messes up or you missed something"
 	echo ""
-	sudo cp ./stock/home.html /usr/share/jellyfin/web/
-	sudo cp ./stock/index.html /usr/share/jellyfin/web/
-	sudo cp ./stock/login.html /usr/share/jellyfin/web/
-	sudo cp ./stock/manifest.json /usr/share/jellyfin/web/
-	sudo cp ./stock/moviesrecommended.js /usr/share/jellyfin/web/controllers/movies/
-	sudo cp ./stock/movietrailers.js /usr/share/jellyfin/web/controllers/movies/
-	sudo cp ./stock/extrafanart/index.html /usr/share/jellyfin/web/controllers/itemDetails/
-	sudo cp ./stock/extrafanart/index.js /usr/share/jellyfin/web/controllers/itemDetails/
-    sudo cp ./stock/libraryMenu.js /usr/share/jellyfin/web/scripts/
+	sudo cp ./JFTool-10.6.x/stock/home.html /usr/share/jellyfin/web/
+	sudo cp ./JFTool-10.6.x/stock/index.html /usr/share/jellyfin/web/
+	sudo cp ./JFTool-10.6.x/stock/login.html /usr/share/jellyfin/web/
+	sudo cp ./JFTool-10.6.x/stock/manifest.json /usr/share/jellyfin/web/
+	sudo cp ./JFTool-10.6.x/stock/moviesrecommended.js /usr/share/jellyfin/web/controllers/movies/
+	sudo cp ./JFTool-10.6.x/stock/movietrailers.js /usr/share/jellyfin/web/controllers/movies/
+	sudo cp ./JFTool-10.6.x/stock/extrafanart/index.html /usr/share/jellyfin/web/controllers/itemDetails/
+	sudo cp ./JFTool-10.6.x/stock/extrafanart/index.js /usr/share/jellyfin/web/controllers/itemDetails/
+    sudo cp ./JFTool-10.6.x/stock/libraryMenu.js /usr/share/jellyfin/web/scripts/
 	;;
 	"add Dynamic login background")
 	echo ""
 	echo "This will make your background on the login page change between 6 pictures in the" 
-	echo "/usr/share/jellyfin/web/fanart/ dir and it will be a random one on each reload"
+	echo "/usr/share/jellyfin/web/JFTool-10.6.x/fanart/ dir and it will be a random one on each reload"
   	echo ""
 	echo "copying files now"
 	echo ""
-	sudo cp -r ./fanart /usr/share/jellyfin/web/fanart
+	sudo cp -r ./JFTool-10.6.x/fanart /usr/share/jellyfin/web/JFTool-10.6.x/fanart
 	echo "injecting the cssbuster.js"
     loginbackjs='    <script src="fanart/cssbuster.js"></script>'
     sudo sed -i "/endinject/i \
