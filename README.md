@@ -1,5 +1,15 @@
 
-# JFTool
+# update: 28th dec 2020
+#
+# Due to many issues in my personal life i will not be continuing to maintain the project this was a fun little
+# project while it lasted, many thanks.
+#
+# -bobhasnosoul
+#
+============================================================================================================
+ JFTool
+
+----
 
 ```
        ______________            __"
